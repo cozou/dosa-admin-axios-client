@@ -135,29 +135,29 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定結果取得
-         * @param {number} participantId 測定者ID
-         * @param {number} meetId 測定会ID
-         * @param {number} measurementId 測定結果ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} meet_id 測定会ID
+         * @param {number} measurement_id 測定結果ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participantId, meetId, measurementId, options = {}) {
-            // verify required parameter 'participantId' is not null or undefined
-            if (participantId === null || participantId === undefined) {
-                throw new base_1.RequiredError('participantId', 'Required parameter participantId was null or undefined when calling getMeasurement.');
+        getMeasurement(participant_id, meet_id, measurement_id, options = {}) {
+            // verify required parameter 'participant_id' is not null or undefined
+            if (participant_id === null || participant_id === undefined) {
+                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getMeasurement.');
             }
-            // verify required parameter 'meetId' is not null or undefined
-            if (meetId === null || meetId === undefined) {
-                throw new base_1.RequiredError('meetId', 'Required parameter meetId was null or undefined when calling getMeasurement.');
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getMeasurement.');
             }
-            // verify required parameter 'measurementId' is not null or undefined
-            if (measurementId === null || measurementId === undefined) {
-                throw new base_1.RequiredError('measurementId', 'Required parameter measurementId was null or undefined when calling getMeasurement.');
+            // verify required parameter 'measurement_id' is not null or undefined
+            if (measurement_id === null || measurement_id === undefined) {
+                throw new base_1.RequiredError('measurement_id', 'Required parameter measurement_id was null or undefined when calling getMeasurement.');
             }
             const localVarPath = `/api/v1/participants/{participant_id}/measurement_meets/{meet_id}/measurements/{measurement_id}`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participantId)))
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meetId)))
-                .replace(`{${"measurement_id"}}`, encodeURIComponent(String(measurementId)));
+                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)))
+                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)))
+                .replace(`{${"measurement_id"}}`, encodeURIComponent(String(measurement_id)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -185,17 +185,17 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定会取得
-         * @param {number} meetId 測定会ID
+         * @param {number} meet_id 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meetId, options = {}) {
-            // verify required parameter 'meetId' is not null or undefined
-            if (meetId === null || meetId === undefined) {
-                throw new base_1.RequiredError('meetId', 'Required parameter meetId was null or undefined when calling getMeasurementMeet.');
+        getMeasurementMeet(meet_id, options = {}) {
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getMeasurementMeet.');
             }
             const localVarPath = `/api/v1/measurement_meets/{meet_id}`
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meetId)));
+                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -223,18 +223,18 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 申込み測定会一覧取得
-         * @param {number} participantId 測定者ID
-         * @param {number} [meetId] 測定会ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} [meet_id] 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeetRequest(participantId, meetId, options = {}) {
-            // verify required parameter 'participantId' is not null or undefined
-            if (participantId === null || participantId === undefined) {
-                throw new base_1.RequiredError('participantId', 'Required parameter participantId was null or undefined when calling getMeasurementMeetRequest.');
+        getMeasurementMeetRequest(participant_id, meet_id, options = {}) {
+            // verify required parameter 'participant_id' is not null or undefined
+            if (participant_id === null || participant_id === undefined) {
+                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getMeasurementMeetRequest.');
             }
             const localVarPath = `/api/v1/participants/{participant_id}/measurement_meet_requests`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participantId)));
+                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -250,8 +250,8 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
                     : configuration.apiKey;
                 localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
             }
-            if (meetId !== undefined) {
-                localVarQueryParameter['meet_id'] = meetId;
+            if (meet_id !== undefined) {
+                localVarQueryParameter['meet_id'] = meet_id;
             }
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
@@ -301,11 +301,11 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mailAddress] メールアドレス
+         * @param {string} [mail_address] メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipants(mailAddress, options = {}) {
+        getParticipants(mail_address, options = {}) {
             const localVarPath = `/api/v1/participants`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -322,8 +322,8 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
                     : configuration.apiKey;
                 localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
             }
-            if (mailAddress !== undefined) {
-                localVarQueryParameter['mail_address'] = mailAddress;
+            if (mail_address !== undefined) {
+                localVarQueryParameter['mail_address'] = mail_address;
             }
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
@@ -337,17 +337,17 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 参加測定会一覧取得
-         * @param {number} participantId 測定者ID
+         * @param {number} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipatedMeasurementMeets(participantId, options = {}) {
-            // verify required parameter 'participantId' is not null or undefined
-            if (participantId === null || participantId === undefined) {
-                throw new base_1.RequiredError('participantId', 'Required parameter participantId was null or undefined when calling getParticipatedMeasurementMeets.');
+        getParticipatedMeasurementMeets(participant_id, options = {}) {
+            // verify required parameter 'participant_id' is not null or undefined
+            if (participant_id === null || participant_id === undefined) {
+                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getParticipatedMeasurementMeets.');
             }
             const localVarPath = `/api/v1/participants/{participant_id}/measurement_meets`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participantId)));
+                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -375,12 +375,12 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
          * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rankRange, sex, options = {}) {
+        getRankings(rank_range, sex, options = {}) {
             const localVarPath = `/api/v1/rankings`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -397,8 +397,8 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
                     : configuration.apiKey;
                 localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
             }
-            if (rankRange !== undefined) {
-                localVarQueryParameter['rank_range'] = rankRange;
+            if (rank_range !== undefined) {
+                localVarQueryParameter['rank_range'] = rank_range;
             }
             if (sex !== undefined) {
                 localVarQueryParameter['sex'] = sex;
@@ -415,18 +415,18 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定会申込み
-         * @param {number} meetId 測定会ID
-         * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+         * @param {number} meet_id 測定会ID
+         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meetId, measurementMeetRequestData, options = {}) {
-            // verify required parameter 'meetId' is not null or undefined
-            if (meetId === null || meetId === undefined) {
-                throw new base_1.RequiredError('meetId', 'Required parameter meetId was null or undefined when calling postMeasurementMeet.');
+        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options = {}) {
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling postMeasurementMeet.');
             }
             const localVarPath = `/api/v1/meaasuremnt_meets/{meet_id}`
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meetId)));
+                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)));
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -447,8 +447,8 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            const needsSerialization = (typeof measurementMeetRequestData !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(measurementMeetRequestData !== undefined ? measurementMeetRequestData : {}) : (measurementMeetRequestData || "");
+            const needsSerialization = (typeof MeasurementMeetRequestData !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(MeasurementMeetRequestData !== undefined ? MeasurementMeetRequestData : {}) : (MeasurementMeetRequestData || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -457,11 +457,11 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject} [InlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(inlineObject, options = {}) {
+        postSendTestMail(InlineObject, options = {}) {
             const localVarPath = `/api/v1/send_test_mail`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
@@ -483,8 +483,8 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            const needsSerialization = (typeof inlineObject !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(inlineObject !== undefined ? inlineObject : {}) : (inlineObject || "");
+            const needsSerialization = (typeof InlineObject !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
+            localVarRequestOptions.data = needsSerialization ? JSON.stringify(InlineObject !== undefined ? InlineObject : {}) : (InlineObject || "");
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -501,14 +501,14 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 測定結果取得
-         * @param {number} participantId 測定者ID
-         * @param {number} meetId 測定会ID
-         * @param {number} measurementId 測定結果ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} meet_id 測定会ID
+         * @param {number} measurement_id 測定結果ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participantId, meetId, measurementId, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurement(participantId, meetId, measurementId, options);
+        getMeasurement(participant_id, meet_id, measurement_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurement(participant_id, meet_id, measurement_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -517,12 +517,12 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 測定会取得
-         * @param {number} meetId 測定会ID
+         * @param {number} meet_id 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meetId, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeet(meetId, options);
+        getMeasurementMeet(meet_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeet(meet_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -531,13 +531,13 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 申込み測定会一覧取得
-         * @param {number} participantId 測定者ID
-         * @param {number} [meetId] 測定会ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} [meet_id] 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeetRequest(participantId, meetId, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeetRequest(participantId, meetId, options);
+        getMeasurementMeetRequest(participant_id, meet_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeetRequest(participant_id, meet_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -560,12 +560,12 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mailAddress] メールアドレス
+         * @param {string} [mail_address] メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipants(mailAddress, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getParticipants(mailAddress, options);
+        getParticipants(mail_address, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getParticipants(mail_address, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -574,12 +574,12 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 参加測定会一覧取得
-         * @param {number} participantId 測定者ID
+         * @param {number} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipatedMeasurementMeets(participantId, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getParticipatedMeasurementMeets(participantId, options);
+        getParticipatedMeasurementMeets(participant_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getParticipatedMeasurementMeets(participant_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -588,13 +588,13 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
          * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rankRange, sex, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getRankings(rankRange, sex, options);
+        getRankings(rank_range, sex, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getRankings(rank_range, sex, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -603,13 +603,13 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 測定会申込み
-         * @param {number} meetId 測定会ID
-         * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+         * @param {number} meet_id 測定会ID
+         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meetId, measurementMeetRequestData, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postMeasurementMeet(meetId, measurementMeetRequestData, options);
+        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -618,12 +618,12 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject} [InlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(inlineObject, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postSendTestMail(inlineObject, options);
+        postSendTestMail(InlineObject, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postSendTestMail(InlineObject, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -640,35 +640,35 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
         /**
          *
          * @summary 測定結果取得
-         * @param {number} participantId 測定者ID
-         * @param {number} meetId 測定会ID
-         * @param {number} measurementId 測定結果ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} meet_id 測定会ID
+         * @param {number} measurement_id 測定結果ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participantId, meetId, measurementId, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurement(participantId, meetId, measurementId, options)(axios, basePath);
+        getMeasurement(participant_id, meet_id, measurement_id, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurement(participant_id, meet_id, measurement_id, options)(axios, basePath);
         },
         /**
          *
          * @summary 測定会取得
-         * @param {number} meetId 測定会ID
+         * @param {number} meet_id 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meetId, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurementMeet(meetId, options)(axios, basePath);
+        getMeasurementMeet(meet_id, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurementMeet(meet_id, options)(axios, basePath);
         },
         /**
          *
          * @summary 申込み測定会一覧取得
-         * @param {number} participantId 測定者ID
-         * @param {number} [meetId] 測定会ID
+         * @param {number} participant_id 測定者ID
+         * @param {number} [meet_id] 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeetRequest(participantId, meetId, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurementMeetRequest(participantId, meetId, options)(axios, basePath);
+        getMeasurementMeetRequest(participant_id, meet_id, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurementMeetRequest(participant_id, meet_id, options)(axios, basePath);
         },
         /**
          *
@@ -683,54 +683,54 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mailAddress] メールアドレス
+         * @param {string} [mail_address] メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipants(mailAddress, options) {
-            return exports.DosaAdminApiFp(configuration).getParticipants(mailAddress, options)(axios, basePath);
+        getParticipants(mail_address, options) {
+            return exports.DosaAdminApiFp(configuration).getParticipants(mail_address, options)(axios, basePath);
         },
         /**
          *
          * @summary 参加測定会一覧取得
-         * @param {number} participantId 測定者ID
+         * @param {number} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipatedMeasurementMeets(participantId, options) {
-            return exports.DosaAdminApiFp(configuration).getParticipatedMeasurementMeets(participantId, options)(axios, basePath);
+        getParticipatedMeasurementMeets(participant_id, options) {
+            return exports.DosaAdminApiFp(configuration).getParticipatedMeasurementMeets(participant_id, options)(axios, basePath);
         },
         /**
          *
          * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
          * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rankRange, sex, options) {
-            return exports.DosaAdminApiFp(configuration).getRankings(rankRange, sex, options)(axios, basePath);
+        getRankings(rank_range, sex, options) {
+            return exports.DosaAdminApiFp(configuration).getRankings(rank_range, sex, options)(axios, basePath);
         },
         /**
          *
          * @summary 測定会申込み
-         * @param {number} meetId 測定会ID
-         * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+         * @param {number} meet_id 測定会ID
+         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meetId, measurementMeetRequestData, options) {
-            return exports.DosaAdminApiFp(configuration).postMeasurementMeet(meetId, measurementMeetRequestData, options)(axios, basePath);
+        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
+            return exports.DosaAdminApiFp(configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options)(axios, basePath);
         },
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [inlineObject]
+         * @param {InlineObject} [InlineObject]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(inlineObject, options) {
-            return exports.DosaAdminApiFp(configuration).postSendTestMail(inlineObject, options)(axios, basePath);
+        postSendTestMail(InlineObject, options) {
+            return exports.DosaAdminApiFp(configuration).postSendTestMail(InlineObject, options)(axios, basePath);
         },
     };
 };
@@ -744,38 +744,38 @@ class DosaAdminApi extends base_1.BaseAPI {
     /**
      *
      * @summary 測定結果取得
-     * @param {number} participantId 測定者ID
-     * @param {number} meetId 測定会ID
-     * @param {number} measurementId 測定結果ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} meet_id 測定会ID
+     * @param {number} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurement(participantId, meetId, measurementId, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurement(participantId, meetId, measurementId, options)(this.axios, this.basePath);
+    getMeasurement(participant_id, meet_id, measurement_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurement(participant_id, meet_id, measurement_id, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary 測定会取得
-     * @param {number} meetId 測定会ID
+     * @param {number} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeet(meetId, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeet(meetId, options)(this.axios, this.basePath);
+    getMeasurementMeet(meet_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeet(meet_id, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary 申込み測定会一覧取得
-     * @param {number} participantId 測定者ID
-     * @param {number} [meetId] 測定会ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeetRequest(participantId, meetId, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeetRequest(participantId, meetId, options)(this.axios, this.basePath);
+    getMeasurementMeetRequest(participant_id, meet_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeetRequest(participant_id, meet_id, options)(this.axios, this.basePath);
     }
     /**
      *
@@ -791,59 +791,59 @@ class DosaAdminApi extends base_1.BaseAPI {
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mailAddress] メールアドレス
+     * @param {string} [mail_address] メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipants(mailAddress, options) {
-        return exports.DosaAdminApiFp(this.configuration).getParticipants(mailAddress, options)(this.axios, this.basePath);
+    getParticipants(mail_address, options) {
+        return exports.DosaAdminApiFp(this.configuration).getParticipants(mail_address, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary 参加測定会一覧取得
-     * @param {number} participantId 測定者ID
+     * @param {number} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipatedMeasurementMeets(participantId, options) {
-        return exports.DosaAdminApiFp(this.configuration).getParticipatedMeasurementMeets(participantId, options)(this.axios, this.basePath);
+    getParticipatedMeasurementMeets(participant_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getParticipatedMeasurementMeets(participant_id, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
      * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getRankings(rankRange, sex, options) {
-        return exports.DosaAdminApiFp(this.configuration).getRankings(rankRange, sex, options)(this.axios, this.basePath);
+    getRankings(rank_range, sex, options) {
+        return exports.DosaAdminApiFp(this.configuration).getRankings(rank_range, sex, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary 測定会申込み
-     * @param {number} meetId 測定会ID
-     * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+     * @param {number} meet_id 測定会ID
+     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meetId, measurementMeetRequestData, options) {
-        return exports.DosaAdminApiFp(this.configuration).postMeasurementMeet(meetId, measurementMeetRequestData, options)(this.axios, this.basePath);
+    postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
+        return exports.DosaAdminApiFp(this.configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject} [InlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(inlineObject, options) {
-        return exports.DosaAdminApiFp(this.configuration).postSendTestMail(inlineObject, options)(this.axios, this.basePath);
+    postSendTestMail(InlineObject, options) {
+        return exports.DosaAdminApiFp(this.configuration).postSendTestMail(InlineObject, options)(this.axios, this.basePath);
     }
 }
 exports.DosaAdminApi = DosaAdminApi;

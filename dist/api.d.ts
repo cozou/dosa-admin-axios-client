@@ -23,7 +23,7 @@ export interface InlineObject {
      * @type {string}
      * @memberof InlineObject
      */
-    mailAddress?: string;
+    mail_address?: string;
 }
 /**
  *
@@ -88,7 +88,7 @@ export interface InlineResponse201 {
      * @type {number}
      * @memberof InlineResponse201
      */
-    requestId?: number;
+    request_id?: number;
 }
 /**
  * 測定結果詳細
@@ -101,31 +101,31 @@ export interface Measurement {
      * @type {number}
      * @memberof Measurement
      */
-    participantId: number;
+    participant_id: number;
     /**
      * 測定会ID
      * @type {number}
      * @memberof Measurement
      */
-    meetId: number;
+    meet_id: number;
     /**
      * 測定結果ID
      * @type {number}
      * @memberof Measurement
      */
-    measurementId: number;
+    measurement_id: number;
     /**
      * 測定会名
      * @type {string}
      * @memberof Measurement
      */
-    meetName: string;
+    meet_name: string;
     /**
      * 測定会実施日
      * @type {string}
      * @memberof Measurement
      */
-    startDate: string;
+    start_date: string;
     /**
      * 名前
      * @type {string}
@@ -155,7 +155,7 @@ export interface Measurement {
      * @type {number}
      * @memberof Measurement
      */
-    participateTime: number;
+    participate_time: number;
     /**
      * 身長(cm)
      * @type {number}
@@ -173,19 +173,19 @@ export interface Measurement {
      * @type {Array<string>}
      * @memberof Measurement
      */
-    sportsType: Array<string>;
+    sports_type: Array<string>;
     /**
      * その他の習ったスポーツ
      * @type {string}
      * @memberof Measurement
      */
-    sportsTypeOther: string;
+    sports_type_other: string;
     /**
      * 所属チーム名
      * @type {string}
      * @memberof Measurement
      */
-    teamName: string;
+    team_name: string;
     /**
      * バージョン
      * @type {number}
@@ -230,13 +230,13 @@ export interface MeasurementAdvice {
      * @type {Array<string>}
      * @memberof MeasurementAdvice
      */
-    recommendSports: Array<string>;
+    recommend_sports: Array<string>;
     /**
      * 活かせる能力（上位3つ）
      * @type {Array<MeasurementAdviceRecommendAbility>}
      * @memberof MeasurementAdvice
      */
-    recommendAbility: Array<MeasurementAdviceRecommendAbility>;
+    recommend_ability: Array<MeasurementAdviceRecommendAbility>;
 }
 /**
  * 活かせる能力
@@ -286,7 +286,7 @@ export interface MeasurementData {
      * @type {number}
      * @memberof MeasurementData
      */
-    rankRange: MeasurementDataRankRangeEnum;
+    rank_range: MeasurementDataRankRangeEnum;
 }
 /**
     * @export
@@ -320,25 +320,25 @@ export interface MeasurementMeet {
      * @type {number}
      * @memberof MeasurementMeet
      */
-    meetId: number;
+    meet_id: number;
     /**
      * 測定会名
      * @type {string}
      * @memberof MeasurementMeet
      */
-    meetName: string;
+    meet_name: string;
     /**
      * 測定会実施日
      * @type {string}
      * @memberof MeasurementMeet
      */
-    startDate: string;
+    start_date: string;
     /**
      * 開始時間
      * @type {Array<string>}
      * @memberof MeasurementMeet
      */
-    startTime: Array<string>;
+    start_time: Array<string>;
     /**
      * 測定会ステータス（1: 募集受付中, 2: 募集終了）
      * @type {number}
@@ -365,49 +365,49 @@ export interface MeasurementMeetRequest {
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    requestId: number;
+    request_id: number;
     /**
      * 測定会ID
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    meetId: number;
+    meet_id: number;
     /**
      * 測定者ID
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    participantId: number;
+    participant_id: number;
     /**
      * 第1希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    firstHopeTime: string;
+    first_hope_time: string;
     /**
      * 第2希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    secondHopeTime: string;
+    second_hope_time: string;
     /**
      * 第3希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    thirdHopeTime: string;
+    third_hope_time: string;
     /**
      * 当落選結果（1: 当選, 2: 落選）
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    isWin: MeasurementMeetRequestIsWinEnum;
+    is_win: MeasurementMeetRequestIsWinEnum;
     /**
      * 開始時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    startTime: string;
+    start_time: string;
     /**
      * ステータス（1: 未応募, 2: 応募済み）
      * @type {number}
@@ -448,7 +448,7 @@ export interface MeasurementMeetRequestData {
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    nameKana: string;
+    name_kana: string;
     /**
      * 性別（1:男性, 2:女性）
      * @type {number}
@@ -460,13 +460,13 @@ export interface MeasurementMeetRequestData {
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    zipCode1: string;
+    zip_code1: string;
     /**
      * 郵便番号2
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    zipCode2: string;
+    zip_code2: string;
     /**
      * 住所
      * @type {string}
@@ -484,13 +484,13 @@ export interface MeasurementMeetRequestData {
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    mailAddress: string;
+    mail_address: string;
     /**
      * 保護者氏名
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    parentName: string;
+    parent_name: string;
     /**
      * 生年月日
      * @type {string}
@@ -502,43 +502,43 @@ export interface MeasurementMeetRequestData {
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    firstHopeTime: string;
+    first_hope_time: string;
     /**
      * 希望測定開始時間2
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    secondHopeTime: string;
+    second_hope_time: string;
     /**
      * 希望測定開始時間3
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    thirdHopeTime: string;
+    third_hope_time: string;
     /**
      * 習ったスポーツ
      * @type {Array<string>}
      * @memberof MeasurementMeetRequestData
      */
-    sportsType: Array<string>;
+    sports_type: Array<string>;
     /**
      * その他の習ったスポーツ
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    sportsTypeOther: string;
+    sports_type_other: string;
     /**
      * 学校名
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    schoolName: string;
+    school_name: string;
     /**
      * 所属チーム
      * @type {string}
      * @memberof MeasurementMeetRequestData
      */
-    teamName: string;
+    team_name: string;
     /**
      * 身長(cm)
      * @type {number}
@@ -556,13 +556,13 @@ export interface MeasurementMeetRequestData {
      * @type {number}
      * @memberof MeasurementMeetRequestData
      */
-    participateTime: number;
+    participate_time: number;
     /**
      * 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
      * @type {number}
      * @memberof MeasurementMeetRequestData
      */
-    enduranceLongSelf: MeasurementMeetRequestDataEnduranceLongSelfEnum;
+    endurance_long_self: MeasurementMeetRequestDataEnduranceLongSelfEnum;
 }
 /**
     * @export
@@ -594,19 +594,19 @@ export interface MeasurementResults {
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    dash10?: MeasurementData;
+    dash_10?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    enduranceLong?: MeasurementData;
+    endurance_long?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    enduranceShort?: MeasurementData;
+    endurance_short?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
@@ -624,37 +624,37 @@ export interface MeasurementResults {
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    stepVisualResponse?: MeasurementData;
+    step_visual_response?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    stepPower?: MeasurementData;
+    step_power?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    swingSpeed?: MeasurementData;
+    swing_speed?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    balanceL?: MeasurementData;
+    balance_l?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    balanceR?: MeasurementData;
+    balance_r?: MeasurementData;
     /**
      *
      * @type {MeasurementData}
      * @memberof MeasurementResults
      */
-    balanceLrDifference?: MeasurementData;
+    balance_lr_difference?: MeasurementData;
 }
 /**
  *
@@ -680,7 +680,7 @@ export interface Participant {
      * @type {number}
      * @memberof Participant
      */
-    participantId: number;
+    participant_id: number;
     /**
      * 氏名
      * @type {string}
@@ -692,7 +692,7 @@ export interface Participant {
      * @type {string}
      * @memberof Participant
      */
-    nameKana: string;
+    name_kana: string;
     /**
      * 性別（1:男性, 2:女性）
      * @type {number}
@@ -710,7 +710,7 @@ export interface Participant {
      * @type {string}
      * @memberof Participant
      */
-    mailAddress: string;
+    mail_address: string;
 }
 /**
     * @export
@@ -731,37 +731,37 @@ export interface ParticipantMeasurementMeet {
      * @type {number}
      * @memberof ParticipantMeasurementMeet
      */
-    participantId: number;
+    participant_id: number;
     /**
      * 測定会ID
      * @type {number}
      * @memberof ParticipantMeasurementMeet
      */
-    meetId: number;
+    meet_id: number;
     /**
      * 測定結果ID
      * @type {number}
      * @memberof ParticipantMeasurementMeet
      */
-    measurementId: number;
+    measurement_id: number;
     /**
      * 測定会名
      * @type {string}
      * @memberof ParticipantMeasurementMeet
      */
-    meetName: string;
+    meet_name: string;
     /**
      * 測定会実施日
      * @type {string}
      * @memberof ParticipantMeasurementMeet
      */
-    startDate: string;
+    start_date: string;
     /**
      * 開始時間
      * @type {string}
      * @memberof ParticipantMeasurementMeet
      */
-    startTime: string;
+    start_time: string;
 }
 /**
  *
@@ -774,19 +774,19 @@ export interface Ranking {
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    dash10: Array<RankingData>;
+    dash_10: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    enduranceLong: Array<RankingData>;
+    endurance_long: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    enduranceShort: Array<RankingData>;
+    endurance_short: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
@@ -804,37 +804,37 @@ export interface Ranking {
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    stepVisualResponse: Array<RankingData>;
+    step_visual_response: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    stepPower: Array<RankingData>;
+    step_power: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    swingSpeed: Array<RankingData>;
+    swing_speed: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    balanceL: Array<RankingData>;
+    balance_l: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    balanceR: Array<RankingData>;
+    balance_r: Array<RankingData>;
     /**
      *
      * @type {Array<RankingData>}
      * @memberof Ranking
      */
-    balanceLrDifference: Array<RankingData>;
+    balance_lr_difference: Array<RankingData>;
 }
 /**
  *
@@ -877,31 +877,31 @@ export interface RankingData {
      * @type {number}
      * @memberof RankingData
      */
-    rankRange: RankingDataRankRangeEnum;
+    rank_range: RankingDataRankRangeEnum;
     /**
      * 測定会名
      * @type {string}
      * @memberof RankingData
      */
-    meetName: string;
+    meet_name: string;
     /**
      * 測定者ID
      * @type {number}
      * @memberof RankingData
      */
-    participantId: number;
+    participant_id: number;
     /**
      * 測定会ID
      * @type {number}
      * @memberof RankingData
      */
-    meetId: number;
+    meet_id: number;
     /**
      * 測定結果ID
      * @type {number}
      * @memberof RankingData
      */
-    measurementId: number;
+    measurement_id: number;
 }
 /**
     * @export
@@ -929,30 +929,30 @@ export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configurati
     /**
      *
      * @summary 測定結果取得
-     * @param {number} participantId 測定者ID
-     * @param {number} meetId 測定会ID
-     * @param {number} measurementId 測定結果ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} meet_id 測定会ID
+     * @param {number} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participantId: number, meetId: number, measurementId: number, options?: any): RequestArgs;
+    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): RequestArgs;
     /**
      *
      * @summary 測定会取得
-     * @param {number} meetId 測定会ID
+     * @param {number} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeet(meetId: number, options?: any): RequestArgs;
+    getMeasurementMeet(meet_id: number, options?: any): RequestArgs;
     /**
      *
      * @summary 申込み測定会一覧取得
-     * @param {number} participantId 測定者ID
-     * @param {number} [meetId] 測定会ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeetRequest(participantId: number, meetId?: number, options?: any): RequestArgs;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): RequestArgs;
     /**
      *
      * @summary 測定会一覧取得
@@ -964,45 +964,45 @@ export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configurati
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mailAddress] メールアドレス
+     * @param {string} [mail_address] メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mailAddress?: string, options?: any): RequestArgs;
+    getParticipants(mail_address?: string, options?: any): RequestArgs;
     /**
      *
      * @summary 参加測定会一覧取得
-     * @param {number} participantId 測定者ID
+     * @param {number} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participantId: number, options?: any): RequestArgs;
+    getParticipatedMeasurementMeets(participant_id: number, options?: any): RequestArgs;
     /**
      *
      * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
      * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rankRange?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): RequestArgs;
+    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): RequestArgs;
     /**
      *
      * @summary 測定会申込み
-     * @param {number} meetId 測定会ID
-     * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+     * @param {number} meet_id 測定会ID
+     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meetId: number, measurementMeetRequestData?: MeasurementMeetRequestData, options?: any): RequestArgs;
+    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): RequestArgs;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject} [InlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(inlineObject?: InlineObject, options?: any): RequestArgs;
+    postSendTestMail(InlineObject?: InlineObject, options?: any): RequestArgs;
 };
 /**
  * DosaAdminApi - functional programming interface
@@ -1012,30 +1012,30 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
     /**
      *
      * @summary 測定結果取得
-     * @param {number} participantId 測定者ID
-     * @param {number} meetId 測定会ID
-     * @param {number} measurementId 測定結果ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} meet_id 測定会ID
+     * @param {number} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participantId: number, meetId: number, measurementId: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2002>;
+    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会取得
-     * @param {number} meetId 測定会ID
+     * @param {number} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeet(meetId: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeet>;
     /**
      *
      * @summary 申込み測定会一覧取得
-     * @param {number} participantId 測定者ID
-     * @param {number} [meetId] 測定会ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeetRequest(participantId: number, meetId?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeetRequest>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1047,45 +1047,45 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mailAddress] メールアドレス
+     * @param {string} [mail_address] メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mailAddress?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
     /**
      *
      * @summary 参加測定会一覧取得
-     * @param {number} participantId 測定者ID
+     * @param {number} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participantId: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2001>;
+    getParticipatedMeasurementMeets(participant_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2001>;
     /**
      *
      * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
      * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rankRange?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Ranking>;
+    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Ranking>;
     /**
      *
      * @summary 測定会申込み
-     * @param {number} meetId 測定会ID
-     * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+     * @param {number} meet_id 測定会ID
+     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meetId: number, measurementMeetRequestData?: MeasurementMeetRequestData, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse201>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject} [InlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(inlineObject?: InlineObject, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>;
+    postSendTestMail(InlineObject?: InlineObject, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>;
 };
 /**
  * DosaAdminApi - factory interface
@@ -1095,30 +1095,30 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
     /**
      *
      * @summary 測定結果取得
-     * @param {number} participantId 測定者ID
-     * @param {number} meetId 測定会ID
-     * @param {number} measurementId 測定結果ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} meet_id 測定会ID
+     * @param {number} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participantId: number, meetId: number, measurementId: number, options?: any): AxiosPromise<InlineResponse2002>;
+    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会取得
-     * @param {number} meetId 測定会ID
+     * @param {number} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeet(meetId: number, options?: any): AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<MeasurementMeet>;
     /**
      *
      * @summary 申込み測定会一覧取得
-     * @param {number} participantId 測定者ID
-     * @param {number} [meetId] 測定会ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeetRequest(participantId: number, meetId?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1130,45 +1130,45 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mailAddress] メールアドレス
+     * @param {string} [mail_address] メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mailAddress?: string, options?: any): AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address?: string, options?: any): AxiosPromise<InlineResponse200>;
     /**
      *
      * @summary 参加測定会一覧取得
-     * @param {number} participantId 測定者ID
+     * @param {number} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participantId: number, options?: any): AxiosPromise<InlineResponse2001>;
+    getParticipatedMeasurementMeets(participant_id: number, options?: any): AxiosPromise<InlineResponse2001>;
     /**
      *
      * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
      * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rankRange?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): AxiosPromise<Ranking>;
+    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): AxiosPromise<Ranking>;
     /**
      *
      * @summary 測定会申込み
-     * @param {number} meetId 測定会ID
-     * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+     * @param {number} meet_id 測定会ID
+     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meetId: number, measurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject} [InlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(inlineObject?: InlineObject, options?: any): AxiosPromise<void>;
+    postSendTestMail(InlineObject?: InlineObject, options?: any): AxiosPromise<void>;
 };
 /**
  * DosaAdminApi - object-oriented interface
@@ -1180,33 +1180,33 @@ export declare class DosaAdminApi extends BaseAPI {
     /**
      *
      * @summary 測定結果取得
-     * @param {number} participantId 測定者ID
-     * @param {number} meetId 測定会ID
-     * @param {number} measurementId 測定結果ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} meet_id 測定会ID
+     * @param {number} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurement(participantId: number, meetId: number, measurementId: number, options?: any): AxiosPromise<InlineResponse2002>;
+    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会取得
-     * @param {number} meetId 測定会ID
+     * @param {number} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeet(meetId: number, options?: any): AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<MeasurementMeet>;
     /**
      *
      * @summary 申込み測定会一覧取得
-     * @param {number} participantId 測定者ID
-     * @param {number} [meetId] 測定会ID
+     * @param {number} participant_id 測定者ID
+     * @param {number} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeetRequest(participantId: number, meetId?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1219,48 +1219,48 @@ export declare class DosaAdminApi extends BaseAPI {
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mailAddress] メールアドレス
+     * @param {string} [mail_address] メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipants(mailAddress?: string, options?: any): AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address?: string, options?: any): AxiosPromise<InlineResponse200>;
     /**
      *
      * @summary 参加測定会一覧取得
-     * @param {number} participantId 測定者ID
+     * @param {number} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipatedMeasurementMeets(participantId: number, options?: any): AxiosPromise<InlineResponse2001>;
+    getParticipatedMeasurementMeets(participant_id: number, options?: any): AxiosPromise<InlineResponse2001>;
     /**
      *
      * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rankRange] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
+     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
      * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getRankings(rankRange?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<Ranking>;
+    getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<Ranking>;
     /**
      *
      * @summary 測定会申込み
-     * @param {number} meetId 測定会ID
-     * @param {MeasurementMeetRequestData} [measurementMeetRequestData]
+     * @param {number} meet_id 測定会ID
+     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meetId: number, measurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [inlineObject]
+     * @param {InlineObject} [InlineObject]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(inlineObject?: InlineObject, options?: any): AxiosPromise<void>;
+    postSendTestMail(InlineObject?: InlineObject, options?: any): AxiosPromise<void>;
 }
