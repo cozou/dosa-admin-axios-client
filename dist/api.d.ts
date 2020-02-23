@@ -692,7 +692,7 @@ export interface Participant {
      * @type {string}
      * @memberof Participant
      */
-    nameKane?: string;
+    nameKana: string;
     /**
      * 性別（1:男性, 2:女性）
      * @type {number}
