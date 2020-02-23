@@ -1,0 +1,28 @@
+{
+  "name": "dosa-admin-axios-client",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "author": "hiro-su <h.sugipon@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc --outDir dist/",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "typescript": "^2.4"
+  },
+  "description": "",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozou/dosa-admin-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cozou/dosa-admin-client/issues"
+  },
+  "homepage": "https://github.com/cozou/dosa-admin-client#readme"
+}
