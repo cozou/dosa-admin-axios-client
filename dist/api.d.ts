@@ -80,6 +80,45 @@ export interface InlineResponse2003 {
 /**
  *
  * @export
+ * @interface InlineResponse2004
+ */
+export interface InlineResponse2004 {
+    /**
+     *
+     * @type {MeasurementMeet}
+     * @memberof InlineResponse2004
+     */
+    data?: MeasurementMeet;
+}
+/**
+ *
+ * @export
+ * @interface InlineResponse2005
+ */
+export interface InlineResponse2005 {
+    /**
+     *
+     * @type {Array<MeasurementMeetRequest>}
+     * @memberof InlineResponse2005
+     */
+    data?: Array<MeasurementMeetRequest>;
+}
+/**
+ *
+ * @export
+ * @interface InlineResponse2006
+ */
+export interface InlineResponse2006 {
+    /**
+     *
+     * @type {Ranking}
+     * @memberof InlineResponse2006
+     */
+    data?: Ranking;
+}
+/**
+ *
+ * @export
  * @interface InlineResponse201
  */
 export interface InlineResponse201 {
@@ -1026,7 +1065,7 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2004>;
     /**
      *
      * @summary 申込み測定会一覧取得
@@ -1035,7 +1074,7 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1068,7 +1107,7 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Ranking>;
+    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2006>;
     /**
      *
      * @summary 測定会申込み
@@ -1109,7 +1148,7 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<InlineResponse2004>;
     /**
      *
      * @summary 申込み測定会一覧取得
@@ -1118,7 +1157,7 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1151,7 +1190,7 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): AxiosPromise<Ranking>;
+    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): AxiosPromise<InlineResponse2006>;
     /**
      *
      * @summary 測定会申込み
@@ -1196,7 +1235,7 @@ export declare class DosaAdminApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<MeasurementMeet>;
+    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<InlineResponse2004>;
     /**
      *
      * @summary 申込み測定会一覧取得
@@ -1206,7 +1245,7 @@ export declare class DosaAdminApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<MeasurementMeetRequest>;
+    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定会一覧取得
@@ -1243,7 +1282,7 @@ export declare class DosaAdminApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<Ranking>;
+    getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<InlineResponse2006>;
     /**
      *
      * @summary 測定会申込み

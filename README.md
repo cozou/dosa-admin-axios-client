@@ -1,4 +1,4 @@
-# dosa-admin-axios-client
+# dosa-admin-client
 
 ## How to use
 

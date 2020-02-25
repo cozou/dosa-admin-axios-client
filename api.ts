@@ -87,6 +87,45 @@ export interface InlineResponse2003 {
 /**
  * 
  * @export
+ * @interface InlineResponse2004
+ */
+export interface InlineResponse2004 {
+    /**
+     * 
+     * @type {MeasurementMeet}
+     * @memberof InlineResponse2004
+     */
+    data?: MeasurementMeet;
+}
+/**
+ * 
+ * @export
+ * @interface InlineResponse2005
+ */
+export interface InlineResponse2005 {
+    /**
+     * 
+     * @type {Array<MeasurementMeetRequest>}
+     * @memberof InlineResponse2005
+     */
+    data?: Array<MeasurementMeetRequest>;
+}
+/**
+ * 
+ * @export
+ * @interface InlineResponse2006
+ */
+export interface InlineResponse2006 {
+    /**
+     * 
+     * @type {Ranking}
+     * @memberof InlineResponse2006
+     */
+    data?: Ranking;
+}
+/**
+ * 
+ * @export
  * @interface InlineResponse201
  */
 export interface InlineResponse201 {
@@ -1391,7 +1430,7 @@ export const DosaAdminApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeet> {
+        getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2004> {
             const localVarAxiosArgs = DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeet(meet_id, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -1406,7 +1445,7 @@ export const DosaAdminApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<MeasurementMeetRequest> {
+        getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2005> {
             const localVarAxiosArgs = DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeetRequest(participant_id, meet_id, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -1463,7 +1502,7 @@ export const DosaAdminApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<Ranking> {
+        getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2006> {
             const localVarAxiosArgs = DosaAdminApiAxiosParamCreator(configuration).getRankings(rank_range, sex, options);
             return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
                 const axiosRequestArgs = {...localVarAxiosArgs.options, url: basePath + localVarAxiosArgs.url};
@@ -1527,7 +1566,7 @@ export const DosaAdminApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<MeasurementMeet> {
+        getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<InlineResponse2004> {
             return DosaAdminApiFp(configuration).getMeasurementMeet(meet_id, options)(axios, basePath);
         },
         /**
@@ -1538,7 +1577,7 @@ export const DosaAdminApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<MeasurementMeetRequest> {
+        getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<InlineResponse2005> {
             return DosaAdminApiFp(configuration).getMeasurementMeetRequest(participant_id, meet_id, options)(axios, basePath);
         },
         /**
@@ -1579,7 +1618,7 @@ export const DosaAdminApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<Ranking> {
+        getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<InlineResponse2006> {
             return DosaAdminApiFp(configuration).getRankings(rank_range, sex, options)(axios, basePath);
         },
         /**
