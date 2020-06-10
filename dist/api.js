@@ -21,111 +21,280 @@ const base_1 = require("./base");
     * @export
     * @enum {string}
     */
-var MeasurementSexEnum;
-(function (MeasurementSexEnum) {
-    MeasurementSexEnum[MeasurementSexEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementSexEnum[MeasurementSexEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(MeasurementSexEnum = exports.MeasurementSexEnum || (exports.MeasurementSexEnum = {}));
+var InlineObject4StatusEnum;
+(function (InlineObject4StatusEnum) {
+    InlineObject4StatusEnum["_0"] = "0";
+    InlineObject4StatusEnum["_1"] = "1";
+    InlineObject4StatusEnum["_2"] = "2";
+    InlineObject4StatusEnum["_3"] = "3";
+})(InlineObject4StatusEnum = exports.InlineObject4StatusEnum || (exports.InlineObject4StatusEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementDataGradeEnum;
-(function (MeasurementDataGradeEnum) {
-    MeasurementDataGradeEnum[MeasurementDataGradeEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementDataGradeEnum[MeasurementDataGradeEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    MeasurementDataGradeEnum[MeasurementDataGradeEnum["NUMBER_3"] = 3] = "NUMBER_3";
-    MeasurementDataGradeEnum[MeasurementDataGradeEnum["NUMBER_4"] = 4] = "NUMBER_4";
-    MeasurementDataGradeEnum[MeasurementDataGradeEnum["NUMBER_5"] = 5] = "NUMBER_5";
-})(MeasurementDataGradeEnum = exports.MeasurementDataGradeEnum || (exports.MeasurementDataGradeEnum = {}));
+var InlineObject7SexEnum;
+(function (InlineObject7SexEnum) {
+    InlineObject7SexEnum["\u7537\u6027"] = "\u7537\u6027";
+    InlineObject7SexEnum["\u5973\u6027"] = "\u5973\u6027";
+})(InlineObject7SexEnum = exports.InlineObject7SexEnum || (exports.InlineObject7SexEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementDataRankRangeEnum;
-(function (MeasurementDataRankRangeEnum) {
-    MeasurementDataRankRangeEnum[MeasurementDataRankRangeEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementDataRankRangeEnum[MeasurementDataRankRangeEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    MeasurementDataRankRangeEnum[MeasurementDataRankRangeEnum["NUMBER_3"] = 3] = "NUMBER_3";
-    MeasurementDataRankRangeEnum[MeasurementDataRankRangeEnum["NUMBER_4"] = 4] = "NUMBER_4";
-})(MeasurementDataRankRangeEnum = exports.MeasurementDataRankRangeEnum || (exports.MeasurementDataRankRangeEnum = {}));
+var InlineObject7EnduranceLongSelfEnum;
+(function (InlineObject7EnduranceLongSelfEnum) {
+    InlineObject7EnduranceLongSelfEnum["_1"] = "1";
+    InlineObject7EnduranceLongSelfEnum["_2"] = "2";
+    InlineObject7EnduranceLongSelfEnum["_3"] = "3";
+    InlineObject7EnduranceLongSelfEnum["_4"] = "4";
+    InlineObject7EnduranceLongSelfEnum["_5"] = "5";
+})(InlineObject7EnduranceLongSelfEnum = exports.InlineObject7EnduranceLongSelfEnum || (exports.InlineObject7EnduranceLongSelfEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementMeetStatusEnum;
-(function (MeasurementMeetStatusEnum) {
-    MeasurementMeetStatusEnum[MeasurementMeetStatusEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetStatusEnum[MeasurementMeetStatusEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(MeasurementMeetStatusEnum = exports.MeasurementMeetStatusEnum || (exports.MeasurementMeetStatusEnum = {}));
+var InlineObject8TypeEnum;
+(function (InlineObject8TypeEnum) {
+    InlineObject8TypeEnum["DASH10"] = "DASH_10";
+    InlineObject8TypeEnum["JUMP"] = "JUMP";
+    InlineObject8TypeEnum["AGILITY"] = "AGILITY";
+    InlineObject8TypeEnum["STEPVISUALRESPONSE"] = "STEP_VISUAL_RESPONSE";
+    InlineObject8TypeEnum["STEPPOWER"] = "STEP_POWER";
+    InlineObject8TypeEnum["SWINGSPEED"] = "SWING_SPEED";
+    InlineObject8TypeEnum["BALANCEL"] = "BALANCE_L";
+    InlineObject8TypeEnum["BALANCER"] = "BALANCE_R";
+    InlineObject8TypeEnum["BALANCELRDIFFERENCE"] = "BALANCE_LR_DIFFERENCE";
+    InlineObject8TypeEnum["ENDURANCELONG"] = "ENDURANCE_LONG";
+    InlineObject8TypeEnum["ENDURANCESHORT"] = "ENDURANCE_SHORT";
+})(InlineObject8TypeEnum = exports.InlineObject8TypeEnum || (exports.InlineObject8TypeEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementMeetRequestIsWinEnum;
-(function (MeasurementMeetRequestIsWinEnum) {
-    MeasurementMeetRequestIsWinEnum[MeasurementMeetRequestIsWinEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetRequestIsWinEnum[MeasurementMeetRequestIsWinEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(MeasurementMeetRequestIsWinEnum = exports.MeasurementMeetRequestIsWinEnum || (exports.MeasurementMeetRequestIsWinEnum = {}));
+var InlineObject8SexEnum;
+(function (InlineObject8SexEnum) {
+    InlineObject8SexEnum["_1"] = "1";
+    InlineObject8SexEnum["_2"] = "2";
+})(InlineObject8SexEnum = exports.InlineObject8SexEnum || (exports.InlineObject8SexEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementMeetRequestStatusEnum;
-(function (MeasurementMeetRequestStatusEnum) {
-    MeasurementMeetRequestStatusEnum[MeasurementMeetRequestStatusEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetRequestStatusEnum[MeasurementMeetRequestStatusEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(MeasurementMeetRequestStatusEnum = exports.MeasurementMeetRequestStatusEnum || (exports.MeasurementMeetRequestStatusEnum = {}));
+var InlineObject8OrderEnum;
+(function (InlineObject8OrderEnum) {
+    InlineObject8OrderEnum["Asc"] = "asc";
+    InlineObject8OrderEnum["Desc"] = "desc";
+})(InlineObject8OrderEnum = exports.InlineObject8OrderEnum || (exports.InlineObject8OrderEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementMeetRequestDataSexEnum;
-(function (MeasurementMeetRequestDataSexEnum) {
-    MeasurementMeetRequestDataSexEnum[MeasurementMeetRequestDataSexEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetRequestDataSexEnum[MeasurementMeetRequestDataSexEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(MeasurementMeetRequestDataSexEnum = exports.MeasurementMeetRequestDataSexEnum || (exports.MeasurementMeetRequestDataSexEnum = {}));
+var InlineResponse200StatusEnum;
+(function (InlineResponse200StatusEnum) {
+    InlineResponse200StatusEnum["_200"] = "200";
+    InlineResponse200StatusEnum["_402"] = "402";
+})(InlineResponse200StatusEnum = exports.InlineResponse200StatusEnum || (exports.InlineResponse200StatusEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var MeasurementMeetRequestDataEnduranceLongSelfEnum;
-(function (MeasurementMeetRequestDataEnduranceLongSelfEnum) {
-    MeasurementMeetRequestDataEnduranceLongSelfEnum[MeasurementMeetRequestDataEnduranceLongSelfEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetRequestDataEnduranceLongSelfEnum[MeasurementMeetRequestDataEnduranceLongSelfEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    MeasurementMeetRequestDataEnduranceLongSelfEnum[MeasurementMeetRequestDataEnduranceLongSelfEnum["NUMBER_3"] = 3] = "NUMBER_3";
-    MeasurementMeetRequestDataEnduranceLongSelfEnum[MeasurementMeetRequestDataEnduranceLongSelfEnum["NUMBER_4"] = 4] = "NUMBER_4";
-    MeasurementMeetRequestDataEnduranceLongSelfEnum[MeasurementMeetRequestDataEnduranceLongSelfEnum["NUMBER_5"] = 5] = "NUMBER_5";
-})(MeasurementMeetRequestDataEnduranceLongSelfEnum = exports.MeasurementMeetRequestDataEnduranceLongSelfEnum || (exports.MeasurementMeetRequestDataEnduranceLongSelfEnum = {}));
+var InlineResponse2001StatusEnum;
+(function (InlineResponse2001StatusEnum) {
+    InlineResponse2001StatusEnum["_200"] = "200";
+    InlineResponse2001StatusEnum["_404"] = "404";
+})(InlineResponse2001StatusEnum = exports.InlineResponse2001StatusEnum || (exports.InlineResponse2001StatusEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var ParticipantSexEnum;
-(function (ParticipantSexEnum) {
-    ParticipantSexEnum[ParticipantSexEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    ParticipantSexEnum[ParticipantSexEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(ParticipantSexEnum = exports.ParticipantSexEnum || (exports.ParticipantSexEnum = {}));
+var InlineResponse2001DataSEXEnum;
+(function (InlineResponse2001DataSEXEnum) {
+    InlineResponse2001DataSEXEnum["\u7537\u6027"] = "\u7537\u6027";
+    InlineResponse2001DataSEXEnum["\u5973\u6027"] = "\u5973\u6027";
+})(InlineResponse2001DataSEXEnum = exports.InlineResponse2001DataSEXEnum || (exports.InlineResponse2001DataSEXEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var RankingDataSexEnum;
-(function (RankingDataSexEnum) {
-    RankingDataSexEnum[RankingDataSexEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    RankingDataSexEnum[RankingDataSexEnum["NUMBER_2"] = 2] = "NUMBER_2";
-})(RankingDataSexEnum = exports.RankingDataSexEnum || (exports.RankingDataSexEnum = {}));
+var InlineResponse2002StatusEnum;
+(function (InlineResponse2002StatusEnum) {
+    InlineResponse2002StatusEnum["_200"] = "200";
+    InlineResponse2002StatusEnum["_404"] = "404";
+})(InlineResponse2002StatusEnum = exports.InlineResponse2002StatusEnum || (exports.InlineResponse2002StatusEnum = {}));
 /**
     * @export
     * @enum {string}
     */
-var RankingDataRankRangeEnum;
-(function (RankingDataRankRangeEnum) {
-    RankingDataRankRangeEnum[RankingDataRankRangeEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    RankingDataRankRangeEnum[RankingDataRankRangeEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    RankingDataRankRangeEnum[RankingDataRankRangeEnum["NUMBER_3"] = 3] = "NUMBER_3";
-    RankingDataRankRangeEnum[RankingDataRankRangeEnum["NUMBER_4"] = 4] = "NUMBER_4";
-})(RankingDataRankRangeEnum = exports.RankingDataRankRangeEnum || (exports.RankingDataRankRangeEnum = {}));
+var InlineResponse2003StatusEnum;
+(function (InlineResponse2003StatusEnum) {
+    InlineResponse2003StatusEnum["_200"] = "200";
+    InlineResponse2003StatusEnum["_404"] = "404";
+})(InlineResponse2003StatusEnum = exports.InlineResponse2003StatusEnum || (exports.InlineResponse2003StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2003DataSEXEnum;
+(function (InlineResponse2003DataSEXEnum) {
+    InlineResponse2003DataSEXEnum["\u7537\u6027"] = "\u7537\u6027";
+    InlineResponse2003DataSEXEnum["\u5973\u6027"] = "\u5973\u6027";
+})(InlineResponse2003DataSEXEnum = exports.InlineResponse2003DataSEXEnum || (exports.InlineResponse2003DataSEXEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2004StatusEnum;
+(function (InlineResponse2004StatusEnum) {
+    InlineResponse2004StatusEnum["_200"] = "200";
+    InlineResponse2004StatusEnum["_404"] = "404";
+})(InlineResponse2004StatusEnum = exports.InlineResponse2004StatusEnum || (exports.InlineResponse2004StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2004DataSTATUSEnum;
+(function (InlineResponse2004DataSTATUSEnum) {
+    InlineResponse2004DataSTATUSEnum["_0"] = "0";
+    InlineResponse2004DataSTATUSEnum["_1"] = "1";
+    InlineResponse2004DataSTATUSEnum["_2"] = "2";
+    InlineResponse2004DataSTATUSEnum["_3"] = "3";
+})(InlineResponse2004DataSTATUSEnum = exports.InlineResponse2004DataSTATUSEnum || (exports.InlineResponse2004DataSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2005StatusEnum;
+(function (InlineResponse2005StatusEnum) {
+    InlineResponse2005StatusEnum["_200"] = "200";
+    InlineResponse2005StatusEnum["_404"] = "404";
+})(InlineResponse2005StatusEnum = exports.InlineResponse2005StatusEnum || (exports.InlineResponse2005StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2005DataSTATUSEnum;
+(function (InlineResponse2005DataSTATUSEnum) {
+    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_0"] = 0] = "NUMBER_0";
+    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_1"] = 1] = "NUMBER_1";
+    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_2"] = 2] = "NUMBER_2";
+    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_3"] = 3] = "NUMBER_3";
+})(InlineResponse2005DataSTATUSEnum = exports.InlineResponse2005DataSTATUSEnum || (exports.InlineResponse2005DataSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2006StatusEnum;
+(function (InlineResponse2006StatusEnum) {
+    InlineResponse2006StatusEnum["_200"] = "200";
+    InlineResponse2006StatusEnum["_404"] = "404";
+})(InlineResponse2006StatusEnum = exports.InlineResponse2006StatusEnum || (exports.InlineResponse2006StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2006DataISWINEnum;
+(function (InlineResponse2006DataISWINEnum) {
+    InlineResponse2006DataISWINEnum[InlineResponse2006DataISWINEnum["NUMBER_1"] = 1] = "NUMBER_1";
+    InlineResponse2006DataISWINEnum[InlineResponse2006DataISWINEnum["NUMBER_2"] = 2] = "NUMBER_2";
+})(InlineResponse2006DataISWINEnum = exports.InlineResponse2006DataISWINEnum || (exports.InlineResponse2006DataISWINEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2006DataSTATUSEnum;
+(function (InlineResponse2006DataSTATUSEnum) {
+    InlineResponse2006DataSTATUSEnum["_1"] = "1";
+    InlineResponse2006DataSTATUSEnum["_2"] = "2";
+    InlineResponse2006DataSTATUSEnum["_3"] = "3";
+    InlineResponse2006DataSTATUSEnum["_4"] = "4";
+})(InlineResponse2006DataSTATUSEnum = exports.InlineResponse2006DataSTATUSEnum || (exports.InlineResponse2006DataSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2007StatusEnum;
+(function (InlineResponse2007StatusEnum) {
+    InlineResponse2007StatusEnum["_200"] = "200";
+    InlineResponse2007StatusEnum["_404"] = "404";
+})(InlineResponse2007StatusEnum = exports.InlineResponse2007StatusEnum || (exports.InlineResponse2007StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2008StatusEnum;
+(function (InlineResponse2008StatusEnum) {
+    InlineResponse2008StatusEnum["_200"] = "200";
+    InlineResponse2008StatusEnum["_404"] = "404";
+})(InlineResponse2008StatusEnum = exports.InlineResponse2008StatusEnum || (exports.InlineResponse2008StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2008DataSEXEnum;
+(function (InlineResponse2008DataSEXEnum) {
+    InlineResponse2008DataSEXEnum["\u7537\u6027"] = "\u7537\u6027";
+    InlineResponse2008DataSEXEnum["\u5973\u6027"] = "\u5973\u6027";
+})(InlineResponse2008DataSEXEnum = exports.InlineResponse2008DataSEXEnum || (exports.InlineResponse2008DataSEXEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementListSTATUSEnum;
+(function (MeasurementListSTATUSEnum) {
+    MeasurementListSTATUSEnum["_0"] = "0";
+    MeasurementListSTATUSEnum["_1"] = "1";
+    MeasurementListSTATUSEnum["_2"] = "2";
+    MeasurementListSTATUSEnum["_3"] = "3";
+})(MeasurementListSTATUSEnum = exports.MeasurementListSTATUSEnum || (exports.MeasurementListSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementMeetRequestISWINEnum;
+(function (MeasurementMeetRequestISWINEnum) {
+    MeasurementMeetRequestISWINEnum[MeasurementMeetRequestISWINEnum["NUMBER_1"] = 1] = "NUMBER_1";
+    MeasurementMeetRequestISWINEnum[MeasurementMeetRequestISWINEnum["NUMBER_2"] = 2] = "NUMBER_2";
+})(MeasurementMeetRequestISWINEnum = exports.MeasurementMeetRequestISWINEnum || (exports.MeasurementMeetRequestISWINEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementMeetRequestSTATUSEnum;
+(function (MeasurementMeetRequestSTATUSEnum) {
+    MeasurementMeetRequestSTATUSEnum["_1"] = "1";
+    MeasurementMeetRequestSTATUSEnum["_2"] = "2";
+    MeasurementMeetRequestSTATUSEnum["_3"] = "3";
+    MeasurementMeetRequestSTATUSEnum["_4"] = "4";
+})(MeasurementMeetRequestSTATUSEnum = exports.MeasurementMeetRequestSTATUSEnum || (exports.MeasurementMeetRequestSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementSingleSTATUSEnum;
+(function (MeasurementSingleSTATUSEnum) {
+    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_0"] = 0] = "NUMBER_0";
+    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_1"] = 1] = "NUMBER_1";
+    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_2"] = 2] = "NUMBER_2";
+    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_3"] = 3] = "NUMBER_3";
+})(MeasurementSingleSTATUSEnum = exports.MeasurementSingleSTATUSEnum || (exports.MeasurementSingleSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var ParticipantSEXEnum;
+(function (ParticipantSEXEnum) {
+    ParticipantSEXEnum["\u7537\u6027"] = "\u7537\u6027";
+    ParticipantSEXEnum["\u5973\u6027"] = "\u5973\u6027";
+})(ParticipantSEXEnum = exports.ParticipantSEXEnum || (exports.ParticipantSEXEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var ReportSEXEnum;
+(function (ReportSEXEnum) {
+    ReportSEXEnum["\u7537\u6027"] = "\u7537\u6027";
+    ReportSEXEnum["\u5973\u6027"] = "\u5973\u6027";
+})(ReportSEXEnum = exports.ReportSEXEnum || (exports.ReportSEXEnum = {}));
 /**
  * DosaAdminApi - axios parameter creator
  * @export
@@ -134,129 +303,35 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
     return {
         /**
          *
-         * @summary 測定結果取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} meet_id 測定会ID
-         * @param {number} measurement_id 測定結果ID
+         * @summary 参加測定会一覧情報取得
+         * @param {string} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participant_id, meet_id, measurement_id, options = {}) {
+        getMeasurement(participant_id, options = {}) {
             // verify required parameter 'participant_id' is not null or undefined
             if (participant_id === null || participant_id === undefined) {
                 throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getMeasurement.');
             }
-            // verify required parameter 'meet_id' is not null or undefined
-            if (meet_id === null || meet_id === undefined) {
-                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getMeasurement.');
-            }
-            // verify required parameter 'measurement_id' is not null or undefined
-            if (measurement_id === null || measurement_id === undefined) {
-                throw new base_1.RequiredError('measurement_id', 'Required parameter measurement_id was null or undefined when calling getMeasurement.');
-            }
-            const localVarPath = `/api/v1/participants/{participant_id}/measurement_meets/{meet_id}/measurements/{measurement_id}`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)))
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)))
-                .replace(`{${"measurement_id"}}`, encodeURIComponent(String(measurement_id)));
+            const localVarPath = `/sp/if/measurement.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
                 baseOptions = configuration.baseOptions;
             }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
+            const localVarFormParams = new URLSearchParams();
+            if (participant_id !== undefined) {
+                localVarFormParams.set('participant_id', participant_id);
             }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         *
-         * @summary 測定会取得
-         * @param {number} meet_id 測定会ID
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getMeasurementMeet(meet_id, options = {}) {
-            // verify required parameter 'meet_id' is not null or undefined
-            if (meet_id === null || meet_id === undefined) {
-                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getMeasurementMeet.');
-            }
-            const localVarPath = `/api/v1/measurement_meets/{meet_id}`
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)));
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
-            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         *
-         * @summary 申込み測定会一覧取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} [meet_id] 測定会ID
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getMeasurementMeetRequest(participant_id, meet_id, options = {}) {
-            // verify required parameter 'participant_id' is not null or undefined
-            if (participant_id === null || participant_id === undefined) {
-                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getMeasurementMeetRequest.');
-            }
-            const localVarPath = `/api/v1/participants/{participant_id}/measurement_meet_requests`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)));
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
-            if (meet_id !== undefined) {
-                localVarQueryParameter['meet_id'] = meet_id;
-            }
-            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -265,34 +340,110 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定会一覧取得
-         * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+         * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeets(status, options = {}) {
-            const localVarPath = `/api/v1/measurement_meets`;
+        getMeasurementList(status, options = {}) {
+            // verify required parameter 'status' is not null or undefined
+            if (status === null || status === undefined) {
+                throw new base_1.RequiredError('status', 'Required parameter status was null or undefined when calling getMeasurementList.');
+            }
+            const localVarPath = `/sp/if/measurement_list.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
                 baseOptions = configuration.baseOptions;
             }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
+            const localVarFormParams = new URLSearchParams();
             if (status !== undefined) {
-                localVarQueryParameter['status'] = status;
+                localVarFormParams.set('status', status);
             }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         *
+         * @summary 申し込み測定会一覧取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} [meet_id] 測定会ID
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getMeasurementMeetRequest(participant_id, meet_id, options = {}) {
+            // verify required parameter 'participant_id' is not null or undefined
+            if (participant_id === null || participant_id === undefined) {
+                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getMeasurementMeetRequest.');
+            }
+            const localVarPath = `/sp/if/measurement_meet_request.php`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            const localVarFormParams = new URLSearchParams();
+            if (participant_id !== undefined) {
+                localVarFormParams.set('participant_id', participant_id);
+            }
+            if (meet_id !== undefined) {
+                localVarFormParams.set('meet_id', meet_id);
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
+            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         *
+         * @summary 測定会単発情報取得
+         * @param {string} meet_id 測定会ID
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getMeasurementSingle(meet_id, options = {}) {
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getMeasurementSingle.');
+            }
+            const localVarPath = `/sp/if/measurement_single.php`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            const localVarFormParams = new URLSearchParams();
+            if (meet_id !== undefined) {
+                localVarFormParams.set('meet_id', meet_id);
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
+            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -301,132 +452,16 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mail_address] メールアドレス
+         * @param {string} mail_address メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         getParticipants(mail_address, options = {}) {
-            const localVarPath = `/api/v1/participants`;
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
+            // verify required parameter 'mail_address' is not null or undefined
+            if (mail_address === null || mail_address === undefined) {
+                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling getParticipants.');
             }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
-            if (mail_address !== undefined) {
-                localVarQueryParameter['mail_address'] = mail_address;
-            }
-            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         *
-         * @summary 参加測定会一覧取得
-         * @param {number} participant_id 測定者ID
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getParticipatedMeasurementMeets(participant_id, options = {}) {
-            // verify required parameter 'participant_id' is not null or undefined
-            if (participant_id === null || participant_id === undefined) {
-                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getParticipatedMeasurementMeets.');
-            }
-            const localVarPath = `/api/v1/participants/{participant_id}/measurement_meets`
-                .replace(`{${"participant_id"}}`, encodeURIComponent(String(participant_id)));
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
-            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         *
-         * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-         * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getRankings(rank_range, sex, options = {}) {
-            const localVarPath = `/api/v1/rankings`;
-            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-            const localVarRequestOptions = Object.assign({ method: 'GET' }, baseOptions, options);
-            const localVarHeaderParameter = {};
-            const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
-            }
-            if (rank_range !== undefined) {
-                localVarQueryParameter['rank_range'] = rank_range;
-            }
-            if (sex !== undefined) {
-                localVarQueryParameter['sex'] = sex;
-            }
-            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
-            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
-            delete localVarUrlObj.search;
-            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            return {
-                url: globalImportUrl.format(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         *
-         * @summary 測定会申込み
-         * @param {number} meet_id 測定会ID
-         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options = {}) {
-            // verify required parameter 'meet_id' is not null or undefined
-            if (meet_id === null || meet_id === undefined) {
-                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling postMeasurementMeet.');
-            }
-            const localVarPath = `/api/v1/meaasuremnt_meets/{meet_id}`
-                .replace(`{${"meet_id"}}`, encodeURIComponent(String(meet_id)));
+            const localVarPath = `/sp/if/participants.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -435,20 +470,364 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
             const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
+            const localVarFormParams = new URLSearchParams();
+            if (mail_address !== undefined) {
+                localVarFormParams.set('mail_address', mail_address);
             }
-            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            const needsSerialization = (typeof MeasurementMeetRequestData !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(MeasurementMeetRequestData !== undefined ? MeasurementMeetRequestData : {}) : (MeasurementMeetRequestData || "");
+            localVarRequestOptions.data = localVarFormParams.toString();
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         *
+         * @summary ランキング取得
+         * @param {string} type ランキング対象
+         * @param {string} age_start 何歳から
+         * @param {string} age_end 何歳まで
+         * @param {string} sex 性別(1:男性, 2:女性)
+         * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+         * @param {string} topnum 欲しい件数
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getRanking(type, age_start, age_end, sex, order, topnum, options = {}) {
+            // verify required parameter 'type' is not null or undefined
+            if (type === null || type === undefined) {
+                throw new base_1.RequiredError('type', 'Required parameter type was null or undefined when calling getRanking.');
+            }
+            // verify required parameter 'age_start' is not null or undefined
+            if (age_start === null || age_start === undefined) {
+                throw new base_1.RequiredError('age_start', 'Required parameter age_start was null or undefined when calling getRanking.');
+            }
+            // verify required parameter 'age_end' is not null or undefined
+            if (age_end === null || age_end === undefined) {
+                throw new base_1.RequiredError('age_end', 'Required parameter age_end was null or undefined when calling getRanking.');
+            }
+            // verify required parameter 'sex' is not null or undefined
+            if (sex === null || sex === undefined) {
+                throw new base_1.RequiredError('sex', 'Required parameter sex was null or undefined when calling getRanking.');
+            }
+            // verify required parameter 'order' is not null or undefined
+            if (order === null || order === undefined) {
+                throw new base_1.RequiredError('order', 'Required parameter order was null or undefined when calling getRanking.');
+            }
+            // verify required parameter 'topnum' is not null or undefined
+            if (topnum === null || topnum === undefined) {
+                throw new base_1.RequiredError('topnum', 'Required parameter topnum was null or undefined when calling getRanking.');
+            }
+            const localVarPath = `/sp/if/ranking.php`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            const localVarFormParams = new URLSearchParams();
+            if (type !== undefined) {
+                localVarFormParams.set('type', type);
+            }
+            if (age_start !== undefined) {
+                localVarFormParams.set('age_start', age_start);
+            }
+            if (age_end !== undefined) {
+                localVarFormParams.set('age_end', age_end);
+            }
+            if (sex !== undefined) {
+                localVarFormParams.set('sex', sex);
+            }
+            if (order !== undefined) {
+                localVarFormParams.set('order', order);
+            }
+            if (topnum !== undefined) {
+                localVarFormParams.set('topnum', topnum);
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
+            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         *
+         * @summary レポート情報取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} meet_id 測定会ID
+         * @param {string} measurement_id 測定結果ID
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getReport(participant_id, meet_id, measurement_id, options = {}) {
+            // verify required parameter 'participant_id' is not null or undefined
+            if (participant_id === null || participant_id === undefined) {
+                throw new base_1.RequiredError('participant_id', 'Required parameter participant_id was null or undefined when calling getReport.');
+            }
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling getReport.');
+            }
+            // verify required parameter 'measurement_id' is not null or undefined
+            if (measurement_id === null || measurement_id === undefined) {
+                throw new base_1.RequiredError('measurement_id', 'Required parameter measurement_id was null or undefined when calling getReport.');
+            }
+            const localVarPath = `/sp/if/report.php`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            const localVarFormParams = new URLSearchParams();
+            if (participant_id !== undefined) {
+                localVarFormParams.set('participant_id', participant_id);
+            }
+            if (meet_id !== undefined) {
+                localVarFormParams.set('meet_id', meet_id);
+            }
+            if (measurement_id !== undefined) {
+                localVarFormParams.set('measurement_id', measurement_id);
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
+            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
+            return {
+                url: globalImportUrl.format(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         *
+         * @summary 会員登録（測定会申し込み）
+         * @param {string} meet_id 測定会ID
+         * @param {string} participant_name 名前
+         * @param {string} participant_name_kana 名前（カナ）
+         * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+         * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+         * @param {string} mail_address メールアドレス
+         * @param {string} zipcode1 郵便番号（3桁）
+         * @param {string} zipcode2 郵便番号（4桁）
+         * @param {string} address 住所
+         * @param {string} telephone 電話番号
+         * @param {string} sex 性別
+         * @param {string} birthday1 生年月日（年）
+         * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+         * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+         * @param {string} first_hope_time 希望測定開始時間1
+         * @param {string} second_hope_time 希望測定開始時間2
+         * @param {string} third_hope_time 希望測定開始時間3
+         * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+         * @param {string} school_name 学校名
+         * @param {string} team_name チーム名
+         * @param {string} height 身長（cm）
+         * @param {string} weight 体重（kg）
+         * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+         * @param {string} participate_time 参加回数
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options = {}) {
+            // verify required parameter 'meet_id' is not null or undefined
+            if (meet_id === null || meet_id === undefined) {
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'participant_name' is not null or undefined
+            if (participant_name === null || participant_name === undefined) {
+                throw new base_1.RequiredError('participant_name', 'Required parameter participant_name was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'participant_name_kana' is not null or undefined
+            if (participant_name_kana === null || participant_name_kana === undefined) {
+                throw new base_1.RequiredError('participant_name_kana', 'Required parameter participant_name_kana was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'parent_name1' is not null or undefined
+            if (parent_name1 === null || parent_name1 === undefined) {
+                throw new base_1.RequiredError('parent_name1', 'Required parameter parent_name1 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'parent_name2' is not null or undefined
+            if (parent_name2 === null || parent_name2 === undefined) {
+                throw new base_1.RequiredError('parent_name2', 'Required parameter parent_name2 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'mail_address' is not null or undefined
+            if (mail_address === null || mail_address === undefined) {
+                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'zipcode1' is not null or undefined
+            if (zipcode1 === null || zipcode1 === undefined) {
+                throw new base_1.RequiredError('zipcode1', 'Required parameter zipcode1 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'zipcode2' is not null or undefined
+            if (zipcode2 === null || zipcode2 === undefined) {
+                throw new base_1.RequiredError('zipcode2', 'Required parameter zipcode2 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'address' is not null or undefined
+            if (address === null || address === undefined) {
+                throw new base_1.RequiredError('address', 'Required parameter address was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'telephone' is not null or undefined
+            if (telephone === null || telephone === undefined) {
+                throw new base_1.RequiredError('telephone', 'Required parameter telephone was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'sex' is not null or undefined
+            if (sex === null || sex === undefined) {
+                throw new base_1.RequiredError('sex', 'Required parameter sex was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'birthday1' is not null or undefined
+            if (birthday1 === null || birthday1 === undefined) {
+                throw new base_1.RequiredError('birthday1', 'Required parameter birthday1 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'birthday2' is not null or undefined
+            if (birthday2 === null || birthday2 === undefined) {
+                throw new base_1.RequiredError('birthday2', 'Required parameter birthday2 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'birthday3' is not null or undefined
+            if (birthday3 === null || birthday3 === undefined) {
+                throw new base_1.RequiredError('birthday3', 'Required parameter birthday3 was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'first_hope_time' is not null or undefined
+            if (first_hope_time === null || first_hope_time === undefined) {
+                throw new base_1.RequiredError('first_hope_time', 'Required parameter first_hope_time was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'second_hope_time' is not null or undefined
+            if (second_hope_time === null || second_hope_time === undefined) {
+                throw new base_1.RequiredError('second_hope_time', 'Required parameter second_hope_time was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'third_hope_time' is not null or undefined
+            if (third_hope_time === null || third_hope_time === undefined) {
+                throw new base_1.RequiredError('third_hope_time', 'Required parameter third_hope_time was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'sports_type' is not null or undefined
+            if (sports_type === null || sports_type === undefined) {
+                throw new base_1.RequiredError('sports_type', 'Required parameter sports_type was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'school_name' is not null or undefined
+            if (school_name === null || school_name === undefined) {
+                throw new base_1.RequiredError('school_name', 'Required parameter school_name was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'team_name' is not null or undefined
+            if (team_name === null || team_name === undefined) {
+                throw new base_1.RequiredError('team_name', 'Required parameter team_name was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'height' is not null or undefined
+            if (height === null || height === undefined) {
+                throw new base_1.RequiredError('height', 'Required parameter height was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'weight' is not null or undefined
+            if (weight === null || weight === undefined) {
+                throw new base_1.RequiredError('weight', 'Required parameter weight was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'endurance_long_self' is not null or undefined
+            if (endurance_long_self === null || endurance_long_self === undefined) {
+                throw new base_1.RequiredError('endurance_long_self', 'Required parameter endurance_long_self was null or undefined when calling postMeasurementMeet.');
+            }
+            // verify required parameter 'participate_time' is not null or undefined
+            if (participate_time === null || participate_time === undefined) {
+                throw new base_1.RequiredError('participate_time', 'Required parameter participate_time was null or undefined when calling postMeasurementMeet.');
+            }
+            const localVarPath = `/sp/if/measurement_meet.php`;
+            const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+            const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
+            const localVarHeaderParameter = {};
+            const localVarQueryParameter = {};
+            const localVarFormParams = new URLSearchParams();
+            if (meet_id !== undefined) {
+                localVarFormParams.set('meet_id', meet_id);
+            }
+            if (participant_name !== undefined) {
+                localVarFormParams.set('participant_name', participant_name);
+            }
+            if (participant_name_kana !== undefined) {
+                localVarFormParams.set('participant_name_kana', participant_name_kana);
+            }
+            if (parent_name1 !== undefined) {
+                localVarFormParams.set('parent_name1', parent_name1);
+            }
+            if (parent_name2 !== undefined) {
+                localVarFormParams.set('parent_name2', parent_name2);
+            }
+            if (mail_address !== undefined) {
+                localVarFormParams.set('mail_address', mail_address);
+            }
+            if (zipcode1 !== undefined) {
+                localVarFormParams.set('zipcode1', zipcode1);
+            }
+            if (zipcode2 !== undefined) {
+                localVarFormParams.set('zipcode2', zipcode2);
+            }
+            if (address !== undefined) {
+                localVarFormParams.set('address', address);
+            }
+            if (telephone !== undefined) {
+                localVarFormParams.set('telephone', telephone);
+            }
+            if (sex !== undefined) {
+                localVarFormParams.set('sex', sex);
+            }
+            if (birthday1 !== undefined) {
+                localVarFormParams.set('birthday1', birthday1);
+            }
+            if (birthday2 !== undefined) {
+                localVarFormParams.set('birthday2', birthday2);
+            }
+            if (birthday3 !== undefined) {
+                localVarFormParams.set('birthday3', birthday3);
+            }
+            if (first_hope_time !== undefined) {
+                localVarFormParams.set('first_hope_time', first_hope_time);
+            }
+            if (second_hope_time !== undefined) {
+                localVarFormParams.set('second_hope_time', second_hope_time);
+            }
+            if (third_hope_time !== undefined) {
+                localVarFormParams.set('third_hope_time', third_hope_time);
+            }
+            if (sports_type !== undefined) {
+                localVarFormParams.set('sports_type', sports_type);
+            }
+            if (school_name !== undefined) {
+                localVarFormParams.set('school_name', school_name);
+            }
+            if (team_name !== undefined) {
+                localVarFormParams.set('team_name', team_name);
+            }
+            if (height !== undefined) {
+                localVarFormParams.set('height', height);
+            }
+            if (weight !== undefined) {
+                localVarFormParams.set('weight', weight);
+            }
+            if (endurance_long_self !== undefined) {
+                localVarFormParams.set('endurance_long_self', endurance_long_self);
+            }
+            if (participate_time !== undefined) {
+                localVarFormParams.set('participate_time', participate_time);
+            }
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
+            localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
+            // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
+            delete localVarUrlObj.search;
+            localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
+            localVarRequestOptions.data = localVarFormParams.toString();
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -457,12 +836,16 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [InlineObject]
+         * @param {string} mail_address
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(InlineObject, options = {}) {
-            const localVarPath = `/api/v1/send_test_mail`;
+        postSendTestMail(mail_address, options = {}) {
+            // verify required parameter 'mail_address' is not null or undefined
+            if (mail_address === null || mail_address === undefined) {
+                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling postSendTestMail.');
+            }
+            const localVarPath = `/sp/if/send_test_mail.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
             let baseOptions;
             if (configuration) {
@@ -471,20 +854,16 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
             const localVarRequestOptions = Object.assign({ method: 'POST' }, baseOptions, options);
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            // authentication ApiKeyAuth required
-            if (configuration && configuration.apiKey) {
-                const localVarApiKeyValue = typeof configuration.apiKey === 'function'
-                    ? configuration.apiKey("X-API-KEY")
-                    : configuration.apiKey;
-                localVarHeaderParameter["X-API-KEY"] = localVarApiKeyValue;
+            const localVarFormParams = new URLSearchParams();
+            if (mail_address !== undefined) {
+                localVarFormParams.set('mail_address', mail_address);
             }
-            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Content-Type'] = 'application/x-www-form-urlencoded';
             localVarUrlObj.query = Object.assign({}, localVarUrlObj.query, localVarQueryParameter, options.query);
             // fix override query string Detail: https://stackoverflow.com/a/7517673/1077943
             delete localVarUrlObj.search;
             localVarRequestOptions.headers = Object.assign({}, localVarHeaderParameter, options.headers);
-            const needsSerialization = (typeof InlineObject !== "string") || localVarRequestOptions.headers['Content-Type'] === 'application/json';
-            localVarRequestOptions.data = needsSerialization ? JSON.stringify(InlineObject !== undefined ? InlineObject : {}) : (InlineObject || "");
+            localVarRequestOptions.data = localVarFormParams.toString();
             return {
                 url: globalImportUrl.format(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -500,15 +879,13 @@ exports.DosaAdminApiFp = function (configuration) {
     return {
         /**
          *
-         * @summary 測定結果取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} meet_id 測定会ID
-         * @param {number} measurement_id 測定結果ID
+         * @summary 参加測定会一覧情報取得
+         * @param {string} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participant_id, meet_id, measurement_id, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurement(participant_id, meet_id, measurement_id, options);
+        getMeasurement(participant_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurement(participant_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -516,13 +893,13 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary 測定会取得
-         * @param {number} meet_id 測定会ID
+         * @summary 測定会一覧取得
+         * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meet_id, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeet(meet_id, options);
+        getMeasurementList(status, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementList(status, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -530,9 +907,9 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary 申込み測定会一覧取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} [meet_id] 測定会ID
+         * @summary 申し込み測定会一覧取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} [meet_id] 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -545,13 +922,13 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary 測定会一覧取得
-         * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+         * @summary 測定会単発情報取得
+         * @param {string} meet_id 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeets(status, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementMeets(status, options);
+        getMeasurementSingle(meet_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getMeasurementSingle(meet_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -560,7 +937,7 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mail_address] メールアドレス
+         * @param {string} mail_address メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -573,13 +950,18 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary 参加測定会一覧取得
-         * @param {number} participant_id 測定者ID
+         * @summary ランキング取得
+         * @param {string} type ランキング対象
+         * @param {string} age_start 何歳から
+         * @param {string} age_end 何歳まで
+         * @param {string} sex 性別(1:男性, 2:女性)
+         * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+         * @param {string} topnum 欲しい件数
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipatedMeasurementMeets(participant_id, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getParticipatedMeasurementMeets(participant_id, options);
+        getRanking(type, age_start, age_end, sex, order, topnum, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getRanking(type, age_start, age_end, sex, order, topnum, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -587,14 +969,15 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-         * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+         * @summary レポート情報取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} meet_id 測定会ID
+         * @param {string} measurement_id 測定結果ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rank_range, sex, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getRankings(rank_range, sex, options);
+        getReport(participant_id, meet_id, measurement_id, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).getReport(participant_id, meet_id, measurement_id, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -602,14 +985,36 @@ exports.DosaAdminApiFp = function (configuration) {
         },
         /**
          *
-         * @summary 測定会申込み
-         * @param {number} meet_id 測定会ID
-         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+         * @summary 会員登録（測定会申し込み）
+         * @param {string} meet_id 測定会ID
+         * @param {string} participant_name 名前
+         * @param {string} participant_name_kana 名前（カナ）
+         * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+         * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+         * @param {string} mail_address メールアドレス
+         * @param {string} zipcode1 郵便番号（3桁）
+         * @param {string} zipcode2 郵便番号（4桁）
+         * @param {string} address 住所
+         * @param {string} telephone 電話番号
+         * @param {string} sex 性別
+         * @param {string} birthday1 生年月日（年）
+         * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+         * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+         * @param {string} first_hope_time 希望測定開始時間1
+         * @param {string} second_hope_time 希望測定開始時間2
+         * @param {string} third_hope_time 希望測定開始時間3
+         * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+         * @param {string} school_name 学校名
+         * @param {string} team_name チーム名
+         * @param {string} height 身長（cm）
+         * @param {string} weight 体重（kg）
+         * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+         * @param {string} participate_time 参加回数
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options);
+        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -618,12 +1023,12 @@ exports.DosaAdminApiFp = function (configuration) {
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [InlineObject]
+         * @param {string} mail_address
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(InlineObject, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postSendTestMail(InlineObject, options);
+        postSendTestMail(mail_address, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postSendTestMail(mail_address, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -639,31 +1044,29 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
     return {
         /**
          *
-         * @summary 測定結果取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} meet_id 測定会ID
-         * @param {number} measurement_id 測定結果ID
+         * @summary 参加測定会一覧情報取得
+         * @param {string} participant_id 測定者ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurement(participant_id, meet_id, measurement_id, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurement(participant_id, meet_id, measurement_id, options)(axios, basePath);
+        getMeasurement(participant_id, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurement(participant_id, options)(axios, basePath);
         },
         /**
          *
-         * @summary 測定会取得
-         * @param {number} meet_id 測定会ID
+         * @summary 測定会一覧取得
+         * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeet(meet_id, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurementMeet(meet_id, options)(axios, basePath);
+        getMeasurementList(status, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurementList(status, options)(axios, basePath);
         },
         /**
          *
-         * @summary 申込み測定会一覧取得
-         * @param {number} participant_id 測定者ID
-         * @param {number} [meet_id] 測定会ID
+         * @summary 申し込み測定会一覧取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} [meet_id] 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -672,18 +1075,18 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
         },
         /**
          *
-         * @summary 測定会一覧取得
-         * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+         * @summary 測定会単発情報取得
+         * @param {string} meet_id 測定会ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMeasurementMeets(status, options) {
-            return exports.DosaAdminApiFp(configuration).getMeasurementMeets(status, options)(axios, basePath);
+        getMeasurementSingle(meet_id, options) {
+            return exports.DosaAdminApiFp(configuration).getMeasurementSingle(meet_id, options)(axios, basePath);
         },
         /**
          *
          * @summary 測定者情報一覧取得
-         * @param {string} [mail_address] メールアドレス
+         * @param {string} mail_address メールアドレス
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -692,45 +1095,73 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
         },
         /**
          *
-         * @summary 参加測定会一覧取得
-         * @param {number} participant_id 測定者ID
+         * @summary ランキング取得
+         * @param {string} type ランキング対象
+         * @param {string} age_start 何歳から
+         * @param {string} age_end 何歳まで
+         * @param {string} sex 性別(1:男性, 2:女性)
+         * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+         * @param {string} topnum 欲しい件数
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParticipatedMeasurementMeets(participant_id, options) {
-            return exports.DosaAdminApiFp(configuration).getParticipatedMeasurementMeets(participant_id, options)(axios, basePath);
+        getRanking(type, age_start, age_end, sex, order, topnum, options) {
+            return exports.DosaAdminApiFp(configuration).getRanking(type, age_start, age_end, sex, order, topnum, options)(axios, basePath);
         },
         /**
          *
-         * @summary ランキング一覧取得
-         * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-         * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+         * @summary レポート情報取得
+         * @param {string} participant_id 測定者ID
+         * @param {string} meet_id 測定会ID
+         * @param {string} measurement_id 測定結果ID
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRankings(rank_range, sex, options) {
-            return exports.DosaAdminApiFp(configuration).getRankings(rank_range, sex, options)(axios, basePath);
+        getReport(participant_id, meet_id, measurement_id, options) {
+            return exports.DosaAdminApiFp(configuration).getReport(participant_id, meet_id, measurement_id, options)(axios, basePath);
         },
         /**
          *
-         * @summary 測定会申込み
-         * @param {number} meet_id 測定会ID
-         * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+         * @summary 会員登録（測定会申し込み）
+         * @param {string} meet_id 測定会ID
+         * @param {string} participant_name 名前
+         * @param {string} participant_name_kana 名前（カナ）
+         * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+         * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+         * @param {string} mail_address メールアドレス
+         * @param {string} zipcode1 郵便番号（3桁）
+         * @param {string} zipcode2 郵便番号（4桁）
+         * @param {string} address 住所
+         * @param {string} telephone 電話番号
+         * @param {string} sex 性別
+         * @param {string} birthday1 生年月日（年）
+         * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+         * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+         * @param {string} first_hope_time 希望測定開始時間1
+         * @param {string} second_hope_time 希望測定開始時間2
+         * @param {string} third_hope_time 希望測定開始時間3
+         * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+         * @param {string} school_name 学校名
+         * @param {string} team_name チーム名
+         * @param {string} height 身長（cm）
+         * @param {string} weight 体重（kg）
+         * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+         * @param {string} participate_time 参加回数
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
-            return exports.DosaAdminApiFp(configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options)(axios, basePath);
+        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+            return exports.DosaAdminApiFp(configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(axios, basePath);
         },
         /**
          *
          * @summary テストメール送信
-         * @param {InlineObject} [InlineObject]
+         * @param {string} mail_address
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(InlineObject, options) {
-            return exports.DosaAdminApiFp(configuration).postSendTestMail(InlineObject, options)(axios, basePath);
+        postSendTestMail(mail_address, options) {
+            return exports.DosaAdminApiFp(configuration).postSendTestMail(mail_address, options)(axios, basePath);
         },
     };
 };
@@ -743,33 +1174,31 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
 class DosaAdminApi extends base_1.BaseAPI {
     /**
      *
-     * @summary 測定結果取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} meet_id 測定会ID
-     * @param {number} measurement_id 測定結果ID
+     * @summary 参加測定会一覧情報取得
+     * @param {string} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurement(participant_id, meet_id, measurement_id, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurement(participant_id, meet_id, measurement_id, options)(this.axios, this.basePath);
+    getMeasurement(participant_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurement(participant_id, options)(this.axios, this.basePath);
     }
     /**
      *
-     * @summary 測定会取得
-     * @param {number} meet_id 測定会ID
+     * @summary 測定会一覧取得
+     * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeet(meet_id, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeet(meet_id, options)(this.axios, this.basePath);
+    getMeasurementList(status, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurementList(status, options)(this.axios, this.basePath);
     }
     /**
      *
-     * @summary 申込み測定会一覧取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} [meet_id] 測定会ID
+     * @summary 申し込み測定会一覧取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} [meet_id] 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
@@ -779,19 +1208,19 @@ class DosaAdminApi extends base_1.BaseAPI {
     }
     /**
      *
-     * @summary 測定会一覧取得
-     * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+     * @summary 測定会単発情報取得
+     * @param {string} meet_id 測定会ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeets(status, options) {
-        return exports.DosaAdminApiFp(this.configuration).getMeasurementMeets(status, options)(this.axios, this.basePath);
+    getMeasurementSingle(meet_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getMeasurementSingle(meet_id, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mail_address] メールアドレス
+     * @param {string} mail_address メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
@@ -801,49 +1230,77 @@ class DosaAdminApi extends base_1.BaseAPI {
     }
     /**
      *
-     * @summary 参加測定会一覧取得
-     * @param {number} participant_id 測定者ID
+     * @summary ランキング取得
+     * @param {string} type ランキング対象
+     * @param {string} age_start 何歳から
+     * @param {string} age_end 何歳まで
+     * @param {string} sex 性別(1:男性, 2:女性)
+     * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+     * @param {string} topnum 欲しい件数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipatedMeasurementMeets(participant_id, options) {
-        return exports.DosaAdminApiFp(this.configuration).getParticipatedMeasurementMeets(participant_id, options)(this.axios, this.basePath);
+    getRanking(type, age_start, age_end, sex, order, topnum, options) {
+        return exports.DosaAdminApiFp(this.configuration).getRanking(type, age_start, age_end, sex, order, topnum, options)(this.axios, this.basePath);
     }
     /**
      *
-     * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+     * @summary レポート情報取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} meet_id 測定会ID
+     * @param {string} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getRankings(rank_range, sex, options) {
-        return exports.DosaAdminApiFp(this.configuration).getRankings(rank_range, sex, options)(this.axios, this.basePath);
+    getReport(participant_id, meet_id, measurement_id, options) {
+        return exports.DosaAdminApiFp(this.configuration).getReport(participant_id, meet_id, measurement_id, options)(this.axios, this.basePath);
     }
     /**
      *
-     * @summary 測定会申込み
-     * @param {number} meet_id 測定会ID
-     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+     * @summary 会員登録（測定会申し込み）
+     * @param {string} meet_id 測定会ID
+     * @param {string} participant_name 名前
+     * @param {string} participant_name_kana 名前（カナ）
+     * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+     * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+     * @param {string} mail_address メールアドレス
+     * @param {string} zipcode1 郵便番号（3桁）
+     * @param {string} zipcode2 郵便番号（4桁）
+     * @param {string} address 住所
+     * @param {string} telephone 電話番号
+     * @param {string} sex 性別
+     * @param {string} birthday1 生年月日（年）
+     * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+     * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+     * @param {string} first_hope_time 希望測定開始時間1
+     * @param {string} second_hope_time 希望測定開始時間2
+     * @param {string} third_hope_time 希望測定開始時間3
+     * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+     * @param {string} school_name 学校名
+     * @param {string} team_name チーム名
+     * @param {string} height 身長（cm）
+     * @param {string} weight 体重（kg）
+     * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @param {string} participate_time 参加回数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meet_id, MeasurementMeetRequestData, options) {
-        return exports.DosaAdminApiFp(this.configuration).postMeasurementMeet(meet_id, MeasurementMeetRequestData, options)(this.axios, this.basePath);
+    postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+        return exports.DosaAdminApiFp(this.configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(this.axios, this.basePath);
     }
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [InlineObject]
+     * @param {string} mail_address
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(InlineObject, options) {
-        return exports.DosaAdminApiFp(this.configuration).postSendTestMail(InlineObject, options)(this.axios, this.basePath);
+    postSendTestMail(mail_address, options) {
+        return exports.DosaAdminApiFp(this.configuration).postSendTestMail(mail_address, options)(this.axios, this.basePath);
     }
 }
 exports.DosaAdminApi = DosaAdminApi;

@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Some imports not used depending on template conditions
 // @ts-ignore
 const axios_1 = require("axios");
-exports.BASE_PATH = "http://localhost:8000".replace(/\/+$/, "");
+exports.BASE_PATH = "http://www.dosa.or.jp".replace(/\/+$/, "");
 /**
  *
  * @export

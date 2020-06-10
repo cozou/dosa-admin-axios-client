@@ -23,7 +23,359 @@ export interface InlineObject {
      * @type {string}
      * @memberof InlineObject
      */
-    mail_address?: string;
+    mail_address: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject1
+ */
+export interface InlineObject1 {
+    /**
+     * メールアドレス
+     * @type {string}
+     * @memberof InlineObject1
+     */
+    mail_address: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject2
+ */
+export interface InlineObject2 {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineObject2
+     */
+    participant_id: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject3
+ */
+export interface InlineObject3 {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineObject3
+     */
+    participant_id: string;
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineObject3
+     */
+    meet_id: string;
+    /**
+     * 測定結果ID
+     * @type {string}
+     * @memberof InlineObject3
+     */
+    measurement_id: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject4
+ */
+export interface InlineObject4 {
+    /**
+     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * @type {string}
+     * @memberof InlineObject4
+     */
+    status: InlineObject4StatusEnum;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject4StatusEnum {
+    _0 = "0",
+    _1 = "1",
+    _2 = "2",
+    _3 = "3"
+}
+/**
+ *
+ * @export
+ * @interface InlineObject5
+ */
+export interface InlineObject5 {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineObject5
+     */
+    meet_id: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject6
+ */
+export interface InlineObject6 {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineObject6
+     */
+    participant_id: string;
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineObject6
+     */
+    meet_id?: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineObject7
+ */
+export interface InlineObject7 {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    meet_id: string;
+    /**
+     * 名前
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    participant_name: string;
+    /**
+     * 名前（カナ）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    participant_name_kana: string;
+    /**
+     * 保護者氏名（保護者のメールアドレスの場合）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    parent_name1: string;
+    /**
+     * 保護者氏名（プライバシーポリシーに同意）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    parent_name2: string;
+    /**
+     * メールアドレス
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    mail_address: string;
+    /**
+     * 郵便番号（3桁）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    zipcode1: string;
+    /**
+     * 郵便番号（4桁）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    zipcode2: string;
+    /**
+     * 住所
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    address: string;
+    /**
+     * 電話番号
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    telephone: string;
+    /**
+     * 性別
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    sex: InlineObject7SexEnum;
+    /**
+     * 生年月日（年）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    birthday1: string;
+    /**
+     * 生年月日（月：頭のゼロは不要）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    birthday2: string;
+    /**
+     * 生年月日（日：頭のゼロは不要）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    birthday3: string;
+    /**
+     * 希望測定開始時間1
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    first_hope_time: string;
+    /**
+     * 希望測定開始時間2
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    second_hope_time: string;
+    /**
+     * 希望測定開始時間3
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    third_hope_time: string;
+    /**
+     * 習ったスポーツ（カンマ区切り）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    sports_type: string;
+    /**
+     * 学校名
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    school_name: string;
+    /**
+     * チーム名
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    team_name: string;
+    /**
+     * 身長（cm）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    height: string;
+    /**
+     * 体重（kg）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    weight: string;
+    /**
+     * 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    endurance_long_self: InlineObject7EnduranceLongSelfEnum;
+    /**
+     * 参加回数
+     * @type {string}
+     * @memberof InlineObject7
+     */
+    participate_time: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject7SexEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject7EnduranceLongSelfEnum {
+    _1 = "1",
+    _2 = "2",
+    _3 = "3",
+    _4 = "4",
+    _5 = "5"
+}
+/**
+ *
+ * @export
+ * @interface InlineObject8
+ */
+export interface InlineObject8 {
+    /**
+     * ランキング対象
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    type: InlineObject8TypeEnum;
+    /**
+     * 何歳から
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    age_start: string;
+    /**
+     * 何歳まで
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    age_end: string;
+    /**
+     * 性別(1:男性, 2:女性)
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    sex: InlineObject8SexEnum;
+    /**
+     * 並び替え(asc:早い順, dsec:遅い順)
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    order: InlineObject8OrderEnum;
+    /**
+     * 欲しい件数
+     * @type {string}
+     * @memberof InlineObject8
+     */
+    topnum: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject8TypeEnum {
+    DASH10 = "DASH_10",
+    JUMP = "JUMP",
+    AGILITY = "AGILITY",
+    STEPVISUALRESPONSE = "STEP_VISUAL_RESPONSE",
+    STEPPOWER = "STEP_POWER",
+    SWINGSPEED = "SWING_SPEED",
+    BALANCEL = "BALANCE_L",
+    BALANCER = "BALANCE_R",
+    BALANCELRDIFFERENCE = "BALANCE_LR_DIFFERENCE",
+    ENDURANCELONG = "ENDURANCE_LONG",
+    ENDURANCESHORT = "ENDURANCE_SHORT"
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject8SexEnum {
+    _1 = "1",
+    _2 = "2"
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineObject8OrderEnum {
+    Asc = "asc",
+    Desc = "desc"
 }
 /**
  *
@@ -32,11 +384,25 @@ export interface InlineObject {
  */
 export interface InlineResponse200 {
     /**
-     *
-     * @type {Array<Participant>}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse200
      */
-    data?: Array<Participant>;
+    status: InlineResponse200StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse200
+     */
+    message: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse200StatusEnum {
+    _200 = "200",
+    _402 = "402"
 }
 /**
  *
@@ -45,11 +411,82 @@ export interface InlineResponse200 {
  */
 export interface InlineResponse2001 {
     /**
-     *
-     * @type {Array<ParticipantMeasurementMeet>}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2001
      */
-    data?: Array<ParticipantMeasurementMeet>;
+    status: InlineResponse2001StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2001
+     */
+    message: string;
+    /**
+     * データ
+     * @type {Array<InlineResponse2001Data>}
+     * @memberof InlineResponse2001
+     */
+    data: Array<InlineResponse2001Data>;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2001StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 測定者
+ * @export
+ * @interface InlineResponse2001Data
+ */
+export interface InlineResponse2001Data {
+    /**
+     * 774
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    PARTICIPANT_ID: string;
+    /**
+     * 氏名
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    NAME: string;
+    /**
+     * 氏名（カナ）
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    NAME_KANA: string;
+    /**
+     * 性別（1:男性, 2:女性）
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    SEX: InlineResponse2001DataSEXEnum;
+    /**
+     * 生年月日
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    BIRTHDAY: string;
+    /**
+     * メールアドレス
+     * @type {string}
+     * @memberof InlineResponse2001Data
+     */
+    MAIL_ADDRESS: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2001DataSEXEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
 }
 /**
  *
@@ -58,11 +495,74 @@ export interface InlineResponse2001 {
  */
 export interface InlineResponse2002 {
     /**
-     *
-     * @type {Measurement}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2002
      */
-    data?: Measurement;
+    status: InlineResponse2002StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2002
+     */
+    message: string;
+    /**
+     * データ
+     * @type {Array<InlineResponse2002Data>}
+     * @memberof InlineResponse2002
+     */
+    data: Array<InlineResponse2002Data>;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2002StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 測定会情報取得
+ * @export
+ * @interface InlineResponse2002Data
+ */
+export interface InlineResponse2002Data {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    PARTICIPANT_ID: string;
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定会名
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    MEET_NAME: string;
+    /**
+     * 測定結果ID
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    MEASUREMENT_ID: string;
+    /**
+     * 測定会実施日
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    STARTDATE: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    STARTTIME: string;
 }
 /**
  *
@@ -71,11 +571,466 @@ export interface InlineResponse2002 {
  */
 export interface InlineResponse2003 {
     /**
-     *
-     * @type {Array<MeasurementMeet>}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2003
      */
-    data?: Array<MeasurementMeet>;
+    status: InlineResponse2003StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2003
+     */
+    message: string;
+    /**
+     *
+     * @type {InlineResponse2003Data}
+     * @memberof InlineResponse2003
+     */
+    data: InlineResponse2003Data;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2003StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 測定結果
+ * @export
+ * @interface InlineResponse2003Data
+ */
+export interface InlineResponse2003Data {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定者名
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    NAME: string;
+    /**
+     * 測定結果ID
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    MEASUREMENT_ID: string;
+    /**
+     * 性別
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SEX: InlineResponse2003DataSEXEnum;
+    /**
+     * 生年月日
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BIRTHDAY: string;
+    /**
+     * 学年
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    PARTICIPANT_GAKUNEN: string;
+    /**
+     * 年齢
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    PARTICIPANT_AGE: number;
+    /**
+     * 参加回数
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    PARTICIPATE_TIME: string;
+    /**
+     * 身長（cm）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    HEIGHT: string;
+    /**
+     * 体重（kg）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    WEIGHT: string;
+    /**
+     * 習ったスポーツ（カンマ区切り）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_TYPE: string;
+    /**
+     * チーム名
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    TEAM_NAME: string;
+    /**
+     * 敏しょう性（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    AGILITY_EVA: number;
+    /**
+     * 敏しょう性
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    AGILITY_NAME: string;
+    /**
+     * 敏しょう性（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    AGILITY_SCORE: string;
+    /**
+     * バランス力（左右差）（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_LR_DIFFERENCE_EVA: number;
+    /**
+     * バランス力（左右差）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_LR_DIFFERENCE_NAME: string;
+    /**
+     * バランス力（左右差）（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_LR_DIFFERENCE_SCORE: string;
+    /**
+     * バランス力（左足）（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_L_EVA: number;
+    /**
+     * バランス力（左足）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_L_NAME: string;
+    /**
+     * バランス力（左足）（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_L_SCORE: string;
+    /**
+     * バランス力（右足）（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_R_EVA: number;
+    /**
+     * バランス力（右足）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_R_NAME: string;
+    /**
+     * バランス力（右足）（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_R_SCORE: string;
+    /**
+     * 10mスプリント（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    DASH_10_EVA: number;
+    /**
+     * 10mスプリント
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    DASH_10_NAME: string;
+    /**
+     * 10mスプリント（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    DASH_10_SCORE: string;
+    /**
+     * 長持久力（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_LONG_EVA: number;
+    /**
+     * 長持久力
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_LONG_NAME: string;
+    /**
+     * 長持久力（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_LONG_SCORE: string;
+    /**
+     * 短持久力（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_SHORT_EVA: number;
+    /**
+     * 短持久力
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_SHORT_NAME: string;
+    /**
+     * 短持久力（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    ENDURANCE_SHORT_SCORE: string;
+    /**
+     * ジャンプ力（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    JUMP_EVA: number;
+    /**
+     * ジャンプ力
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    JUMP_NAME: string;
+    /**
+     * ジャンプ力（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    JUMP_SCORE: string;
+    /**
+     * ステップ力（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_POWER_EVA: number;
+    /**
+     * ステップ力
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_POWER_NAME: string;
+    /**
+     * ステップ力（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_POWER_SCORE: string;
+    /**
+     * 視覚反応力（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_VISUAL_RESPONSE_EVA: number;
+    /**
+     * 視覚反応力
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_VISUAL_RESPONSE_NAME: string;
+    /**
+     * 視覚反応力（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_VISUAL_RESPONSE_SCORE: string;
+    /**
+     * スイングスピード（評価）
+     * @type {number}
+     * @memberof InlineResponse2003Data
+     */
+    SWING_SPEED_EVA: number;
+    /**
+     * スイングスピード
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SWING_SPEED_NAME: string;
+    /**
+     * スイングスピード（スコア）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SWING_SPEED_SCORE: string;
+    /**
+     * 活かせる能力No.1
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING1_NAME: string;
+    /**
+     * 活かせる能力No.1
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING1_EVA: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING2_NAME: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING2_EVA: string;
+    /**
+     * 活かせる能力No.3
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING3_NAME: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BODY_JUDGING3_EVA: string;
+    /**
+     * 向いているスポーツNo.1
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP1: string;
+    /**
+     * 向いているスポーツNo.2
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP2: string;
+    /**
+     * 向いているスポーツNo.3
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP3: string;
+    /**
+     * 向いているスポーツNo.4
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP4: string;
+    /**
+     * 向いているスポーツNo.5
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP5: string;
+    /**
+     * 向いているスポーツNo.6
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP6: string;
+    /**
+     * 向いているスポーツNo.7
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP7: string;
+    /**
+     * 向いているスポーツNo.8
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP8: string;
+    /**
+     * 向いているスポーツNo.9
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP9: string;
+    /**
+     * 向いているスポーツNo.10
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SPORTS_SCORE_TOP10: string;
+    /**
+     * ランキング（敏しょう性）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    AGILITYRANK: string;
+    /**
+     * ランキング（バランス力）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    BALANCE_LR_DIFFERENCERANK: string;
+    /**
+     * ランキング（10mスプリント）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    DASH_10RANK: string;
+    /**
+     * ランキング（ジャンプ力）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    JUMPRANK: string;
+    /**
+     * ランキング（ステップ力）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_POWERRANK: string;
+    /**
+     * ランキング（視覚反応力）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STEP_VISUAL_RESPONSERANK: string;
+    /**
+     * ランキング（スイングスピード）
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    SWING_SPEEDRANK: string;
+    /**
+     * ランキング範囲
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    RANGE: string;
+    /**
+     * アドバイス
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    ADVICE_TEXT: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2003DataSEXEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
 }
 /**
  *
@@ -84,11 +1039,162 @@ export interface InlineResponse2003 {
  */
 export interface InlineResponse2004 {
     /**
-     *
-     * @type {MeasurementMeet}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2004
      */
-    data?: MeasurementMeet;
+    status: InlineResponse2004StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2004
+     */
+    message: string;
+    /**
+     *
+     * @type {Array<InlineResponse2004Data>}
+     * @memberof InlineResponse2004
+     */
+    data: Array<InlineResponse2004Data>;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2004StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 申込受付中測定会
+ * @export
+ * @interface InlineResponse2004Data
+ */
+export interface InlineResponse2004Data {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定会名
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    MEET_NAME: string;
+    /**
+     * 測定会実施日
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTDATE: string;
+    /**
+     * 開始時間1
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME01: string;
+    /**
+     * 開始時間2
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME02: string;
+    /**
+     * 開始時間3
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME03: string;
+    /**
+     * 開始時間4
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME04: string;
+    /**
+     * 開始時間5
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME05: string;
+    /**
+     * 開始時間6
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME06: string;
+    /**
+     * 開始時間7
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME07: string;
+    /**
+     * 開始時間8
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME08: string;
+    /**
+     * 開始時間9
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME09: string;
+    /**
+     * 開始時間10
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME10: string;
+    /**
+     * 開始時間11
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME11: string;
+    /**
+     * 開始時間12
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME12: string;
+    /**
+     * 開始時間13
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME13: string;
+    /**
+     * 開始時間14
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME14: string;
+    /**
+     * 開始時間15
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STARTTIME15: string;
+    /**
+     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    STATUS: InlineResponse2004DataSTATUSEnum;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2004DataSTATUSEnum {
+    _0 = "0",
+    _1 = "1",
+    _2 = "2",
+    _3 = "3"
 }
 /**
  *
@@ -97,11 +1203,162 @@ export interface InlineResponse2004 {
  */
 export interface InlineResponse2005 {
     /**
-     *
-     * @type {Array<MeasurementMeetRequest>}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2005
      */
-    data?: Array<MeasurementMeetRequest>;
+    status: InlineResponse2005StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2005
+     */
+    message: string;
+    /**
+     *
+     * @type {InlineResponse2005Data}
+     * @memberof InlineResponse2005
+     */
+    data: InlineResponse2005Data;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2005StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 測定会単発情報取得
+ * @export
+ * @interface InlineResponse2005Data
+ */
+export interface InlineResponse2005Data {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定会名
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    MEET_NAME: string;
+    /**
+     * 測定会実施日
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTDATE: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME01: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME02: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME03: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME04: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME05: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME06: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME07: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME08: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME09: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME10: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME11: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME12: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME13: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME14: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    STARTTIME15: string;
+    /**
+     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * @type {number}
+     * @memberof InlineResponse2005Data
+     */
+    STATUS: InlineResponse2005DataSTATUSEnum;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2005DataSTATUSEnum {
+    NUMBER_0 = 0,
+    NUMBER_1 = 1,
+    NUMBER_2 = 2,
+    NUMBER_3 = 3
 }
 /**
  *
@@ -110,288 +1367,505 @@ export interface InlineResponse2005 {
  */
 export interface InlineResponse2006 {
     /**
-     *
-     * @type {Ranking}
+     * ステータスコード
+     * @type {string}
      * @memberof InlineResponse2006
      */
-    data?: Ranking;
+    status: InlineResponse2006StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2006
+     */
+    message: string;
+    /**
+     *
+     * @type {Array<InlineResponse2006Data>}
+     * @memberof InlineResponse2006
+     */
+    data: Array<InlineResponse2006Data>;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2006StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 申込受付中測定会
+ * @export
+ * @interface InlineResponse2006Data
+ */
+export interface InlineResponse2006Data {
+    /**
+     * リクエストID
+     * @type {number}
+     * @memberof InlineResponse2006Data
+     */
+    REQUEST_ID: number;
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    PARTICIPANT_ID: string;
+    /**
+     * 開始日
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    STARTDATE: string;
+    /**
+     * 第1希望時間
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    FIRST_HOPE_TIME: string;
+    /**
+     * 第2希望時間
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    SECOND_HOPE_TIME: string;
+    /**
+     * 第3希望時間
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    THIRD_HOPE_TIME: string;
+    /**
+     * 当落選結果（1: 当選, 2: 落選）
+     * @type {number}
+     * @memberof InlineResponse2006Data
+     */
+    IS_WIN: InlineResponse2006DataISWINEnum;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    STARTTIME: string;
+    /**
+     * ステータス（1: 受付中, 2: 受付終了, 3: ラベル印刷前, 4: メール配信済み）
+     * @type {string}
+     * @memberof InlineResponse2006Data
+     */
+    STATUS: InlineResponse2006DataSTATUSEnum;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2006DataISWINEnum {
+    NUMBER_1 = 1,
+    NUMBER_2 = 2
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2006DataSTATUSEnum {
+    _1 = "1",
+    _2 = "2",
+    _3 = "3",
+    _4 = "4"
 }
 /**
  *
  * @export
- * @interface InlineResponse201
+ * @interface InlineResponse2007
  */
-export interface InlineResponse201 {
+export interface InlineResponse2007 {
     /**
-     * リクエストID
-     * @type {number}
-     * @memberof InlineResponse201
+     * ステータスコード
+     * @type {string}
+     * @memberof InlineResponse2007
      */
-    request_id?: number;
+    status: InlineResponse2007StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2007
+     */
+    message: string;
+    /**
+     *
+     * @type {InlineResponse2007Data}
+     * @memberof InlineResponse2007
+     */
+    data: InlineResponse2007Data;
 }
 /**
- * 測定結果詳細
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2007StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ * 会員登録（測定会申し込み）
+ * @export
+ * @interface InlineResponse2007Data
+ */
+export interface InlineResponse2007Data {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineResponse2007Data
+     */
+    PARTICIPANT_ID: string;
+}
+/**
+ *
+ * @export
+ * @interface InlineResponse2008
+ */
+export interface InlineResponse2008 {
+    /**
+     * ステータスコード
+     * @type {string}
+     * @memberof InlineResponse2008
+     */
+    status: InlineResponse2008StatusEnum;
+    /**
+     * メッセージ
+     * @type {string}
+     * @memberof InlineResponse2008
+     */
+    message: string;
+    /**
+     * ランキングデータ
+     * @type {Array<InlineResponse2008Data>}
+     * @memberof InlineResponse2008
+     */
+    data: Array<InlineResponse2008Data>;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2008StatusEnum {
+    _200 = "200",
+    _404 = "404"
+}
+/**
+ *
+ * @export
+ * @interface InlineResponse2008Data
+ */
+export interface InlineResponse2008Data {
+    /**
+     * 測定者ID
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    PARTICIPANT_ID: string;
+    /**
+     * 測定者名
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    NAME: string;
+    /**
+     * 性別
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    SEX: InlineResponse2008DataSEXEnum;
+    /**
+     * 測定会名
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    MEET_NAME: string;
+    /**
+     * 誕生日
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    BIRTHDAY: string;
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    MEET_ID: string;
+    /**
+     * 測定結果ID
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    MEASUREMENT_ID: string;
+    /**
+     * 10mスプリント
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    DASH_10: string;
+    /**
+     * ジャンプ力
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    JUMP: string;
+    /**
+     * 敏しょう性
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    AGILITY: string;
+    /**
+     * 資格反応力
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    STEP_VISUAL_RESPONSE: string;
+    /**
+     * ステップ力
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    STEP_POWER: string;
+    /**
+     * スイングスピード
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    SWING_SPEED: string;
+    /**
+     * バランス力（左）
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    BALANCE_L: string;
+    /**
+     * バランス力（右）
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    BALANCE_R: string;
+    /**
+     * バランス力（左右差）
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    BALANCE_LR_DIFFERENCE: string;
+    /**
+     * 長持久力
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    ENDURANCE_LONG: string;
+    /**
+     * 短持久力
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    ENDURANCE_SHORT: string;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum InlineResponse2008DataSEXEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
+}
+/**
+ * 測定会情報取得
  * @export
  * @interface Measurement
  */
 export interface Measurement {
     /**
      * 測定者ID
-     * @type {number}
+     * @type {string}
      * @memberof Measurement
      */
-    participant_id: number;
+    PARTICIPANT_ID: string;
     /**
      * 測定会ID
-     * @type {number}
+     * @type {string}
      * @memberof Measurement
      */
-    meet_id: number;
-    /**
-     * 測定結果ID
-     * @type {number}
-     * @memberof Measurement
-     */
-    measurement_id: number;
+    MEET_ID: string;
     /**
      * 測定会名
      * @type {string}
      * @memberof Measurement
      */
-    meet_name: string;
+    MEET_NAME: string;
+    /**
+     * 測定結果ID
+     * @type {string}
+     * @memberof Measurement
+     */
+    MEASUREMENT_ID: string;
     /**
      * 測定会実施日
      * @type {string}
      * @memberof Measurement
      */
-    start_date: string;
+    STARTDATE: string;
     /**
-     * 名前
+     * 開始時間
      * @type {string}
      * @memberof Measurement
      */
-    name: string;
-    /**
-     * 性別（1:男性, 2:女性）
-     * @type {number}
-     * @memberof Measurement
-     */
-    sex: MeasurementSexEnum;
-    /**
-     * 学年
-     * @type {string}
-     * @memberof Measurement
-     */
-    grade: string;
-    /**
-     * 生年月日
-     * @type {string}
-     * @memberof Measurement
-     */
-    birthday: string;
-    /**
-     * 参加回数
-     * @type {number}
-     * @memberof Measurement
-     */
-    participate_time: number;
-    /**
-     * 身長(cm)
-     * @type {number}
-     * @memberof Measurement
-     */
-    height: number;
-    /**
-     * 体重(kg)
-     * @type {number}
-     * @memberof Measurement
-     */
-    weight: number;
-    /**
-     * 習ったスポーツ
-     * @type {Array<string>}
-     * @memberof Measurement
-     */
-    sports_type: Array<string>;
-    /**
-     * その他の習ったスポーツ
-     * @type {string}
-     * @memberof Measurement
-     */
-    sports_type_other: string;
-    /**
-     * 所属チーム名
-     * @type {string}
-     * @memberof Measurement
-     */
-    team_name: string;
-    /**
-     * バージョン
-     * @type {number}
-     * @memberof Measurement
-     */
-    version: number;
-    /**
-     *
-     * @type {MeasurementResults}
-     * @memberof Measurement
-     */
-    results: MeasurementResults;
-    /**
-     *
-     * @type {MeasurementAdvice}
-     * @memberof Measurement
-     */
-    advice: MeasurementAdvice;
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum MeasurementSexEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
-}
-/**
- * アドバイス
- * @export
- * @interface MeasurementAdvice
- */
-export interface MeasurementAdvice {
-    /**
-     * 概要
-     * @type {string}
-     * @memberof MeasurementAdvice
-     */
-    summary: string;
-    /**
-     * 向いているスポーツ
-     * @type {Array<string>}
-     * @memberof MeasurementAdvice
-     */
-    recommend_sports: Array<string>;
-    /**
-     * 活かせる能力（上位3つ）
-     * @type {Array<MeasurementAdviceRecommendAbility>}
-     * @memberof MeasurementAdvice
-     */
-    recommend_ability: Array<MeasurementAdviceRecommendAbility>;
-}
-/**
- * 活かせる能力
- * @export
- * @interface MeasurementAdviceRecommendAbility
- */
-export interface MeasurementAdviceRecommendAbility {
-    /**
-     * 能力
-     * @type {string}
-     * @memberof MeasurementAdviceRecommendAbility
-     */
-    ability: string;
-    /**
-     * スポーツ
-     * @type {string}
-     * @memberof MeasurementAdviceRecommendAbility
-     */
-    sports: string;
-}
-/**
- * 能力測定データ
- * @export
- * @interface MeasurementData
- */
-export interface MeasurementData {
-    /**
-     * 5段階評価
-     * @type {number}
-     * @memberof MeasurementData
-     */
-    grade: MeasurementDataGradeEnum;
-    /**
-     * 測定値
-     * @type {number}
-     * @memberof MeasurementData
-     */
-    score: number;
-    /**
-     * 全国ランキング
-     * @type {number}
-     * @memberof MeasurementData
-     */
-    rank: number;
-    /**
-     * 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @type {number}
-     * @memberof MeasurementData
-     */
-    rank_range: MeasurementDataRankRangeEnum;
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum MeasurementDataGradeEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2,
-    NUMBER_3 = 3,
-    NUMBER_4 = 4,
-    NUMBER_5 = 5
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum MeasurementDataRankRangeEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2,
-    NUMBER_3 = 3,
-    NUMBER_4 = 4
+    STARTTIME: string;
 }
 /**
  * 申込受付中測定会
+ * @export
+ * @interface MeasurementList
+ */
+export interface MeasurementList {
+    /**
+     * 測定会ID
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    MEET_ID: string;
+    /**
+     * 測定会名
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    MEET_NAME: string;
+    /**
+     * 測定会実施日
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTDATE: string;
+    /**
+     * 開始時間1
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME01: string;
+    /**
+     * 開始時間2
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME02: string;
+    /**
+     * 開始時間3
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME03: string;
+    /**
+     * 開始時間4
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME04: string;
+    /**
+     * 開始時間5
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME05: string;
+    /**
+     * 開始時間6
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME06: string;
+    /**
+     * 開始時間7
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME07: string;
+    /**
+     * 開始時間8
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME08: string;
+    /**
+     * 開始時間9
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME09: string;
+    /**
+     * 開始時間10
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME10: string;
+    /**
+     * 開始時間11
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME11: string;
+    /**
+     * 開始時間12
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME12: string;
+    /**
+     * 開始時間13
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME13: string;
+    /**
+     * 開始時間14
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME14: string;
+    /**
+     * 開始時間15
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STARTTIME15: string;
+    /**
+     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    STATUS: MeasurementListSTATUSEnum;
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export declare enum MeasurementListSTATUSEnum {
+    _0 = "0",
+    _1 = "1",
+    _2 = "2",
+    _3 = "3"
+}
+/**
+ * 会員登録（測定会申し込み）
  * @export
  * @interface MeasurementMeet
  */
 export interface MeasurementMeet {
     /**
-     * 測定会ID
-     * @type {number}
-     * @memberof MeasurementMeet
-     */
-    meet_id: number;
-    /**
-     * 測定会名
+     * 測定者ID
      * @type {string}
      * @memberof MeasurementMeet
      */
-    meet_name: string;
-    /**
-     * 測定会実施日
-     * @type {string}
-     * @memberof MeasurementMeet
-     */
-    start_date: string;
-    /**
-     * 開始時間
-     * @type {Array<string>}
-     * @memberof MeasurementMeet
-     */
-    start_time: Array<string>;
-    /**
-     * 測定会ステータス（1: 募集受付中, 2: 募集終了）
-     * @type {number}
-     * @memberof MeasurementMeet
-     */
-    status: MeasurementMeetStatusEnum;
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum MeasurementMeetStatusEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
+    PARTICIPANT_ID: string;
 }
 /**
  * 申込受付中測定会
@@ -404,61 +1878,67 @@ export interface MeasurementMeetRequest {
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    request_id: number;
+    REQUEST_ID: number;
     /**
      * 測定会ID
-     * @type {number}
+     * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    meet_id: number;
+    MEET_ID: string;
     /**
      * 測定者ID
-     * @type {number}
+     * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    participant_id: number;
+    PARTICIPANT_ID: string;
+    /**
+     * 開始日
+     * @type {string}
+     * @memberof MeasurementMeetRequest
+     */
+    STARTDATE: string;
     /**
      * 第1希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    first_hope_time: string;
+    FIRST_HOPE_TIME: string;
     /**
      * 第2希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    second_hope_time: string;
+    SECOND_HOPE_TIME: string;
     /**
      * 第3希望時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    third_hope_time: string;
+    THIRD_HOPE_TIME: string;
     /**
      * 当落選結果（1: 当選, 2: 落選）
      * @type {number}
      * @memberof MeasurementMeetRequest
      */
-    is_win: MeasurementMeetRequestIsWinEnum;
+    IS_WIN: MeasurementMeetRequestISWINEnum;
     /**
      * 開始時間
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    start_time: string;
+    STARTTIME: string;
     /**
-     * ステータス（1: 未応募, 2: 応募済み）
-     * @type {number}
+     * ステータス（1: 受付中, 2: 受付終了, 3: ラベル印刷前, 4: メール配信済み）
+     * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    status: MeasurementMeetRequestStatusEnum;
+    STATUS: MeasurementMeetRequestSTATUSEnum;
 }
 /**
     * @export
     * @enum {string}
     */
-export declare enum MeasurementMeetRequestIsWinEnum {
+export declare enum MeasurementMeetRequestISWINEnum {
     NUMBER_1 = 1,
     NUMBER_2 = 2
 }
@@ -466,247 +1946,142 @@ export declare enum MeasurementMeetRequestIsWinEnum {
     * @export
     * @enum {string}
     */
-export declare enum MeasurementMeetRequestStatusEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
+export declare enum MeasurementMeetRequestSTATUSEnum {
+    _1 = "1",
+    _2 = "2",
+    _3 = "3",
+    _4 = "4"
 }
 /**
- * 測定会申込み
+ * 測定会単発情報取得
  * @export
- * @interface MeasurementMeetRequestData
+ * @interface MeasurementSingle
  */
-export interface MeasurementMeetRequestData {
+export interface MeasurementSingle {
     /**
-     * 名前
+     * 測定会ID
      * @type {string}
-     * @memberof MeasurementMeetRequestData
+     * @memberof MeasurementSingle
      */
-    name: string;
+    MEET_ID: string;
     /**
-     * 名前（カナ）
+     * 測定会名
      * @type {string}
-     * @memberof MeasurementMeetRequestData
+     * @memberof MeasurementSingle
      */
-    name_kana: string;
+    MEET_NAME: string;
     /**
-     * 性別（1:男性, 2:女性）
+     * 測定会実施日
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTDATE: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME01: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME02: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME03: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME04: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME05: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME06: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME07: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME08: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME09: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME10: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME11: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME12: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME13: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME14: string;
+    /**
+     * 開始時間
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    STARTTIME15: string;
+    /**
+     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @type {number}
-     * @memberof MeasurementMeetRequestData
+     * @memberof MeasurementSingle
      */
-    sex: MeasurementMeetRequestDataSexEnum;
-    /**
-     * 郵便番号1
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    zip_code1: string;
-    /**
-     * 郵便番号2
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    zip_code2: string;
-    /**
-     * 住所
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    address: string;
-    /**
-     * 電話番号
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    telephone: string;
-    /**
-     * メールアドレス
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    mail_address: string;
-    /**
-     * 保護者氏名
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    parent_name: string;
-    /**
-     * 生年月日
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    birthday: string;
-    /**
-     * 希望測定開始時間1
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    first_hope_time: string;
-    /**
-     * 希望測定開始時間2
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    second_hope_time: string;
-    /**
-     * 希望測定開始時間3
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    third_hope_time: string;
-    /**
-     * 習ったスポーツ
-     * @type {Array<string>}
-     * @memberof MeasurementMeetRequestData
-     */
-    sports_type: Array<string>;
-    /**
-     * その他の習ったスポーツ
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    sports_type_other: string;
-    /**
-     * 学校名
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    school_name: string;
-    /**
-     * 所属チーム
-     * @type {string}
-     * @memberof MeasurementMeetRequestData
-     */
-    team_name: string;
-    /**
-     * 身長(cm)
-     * @type {number}
-     * @memberof MeasurementMeetRequestData
-     */
-    height: number;
-    /**
-     * 体重(kg)
-     * @type {number}
-     * @memberof MeasurementMeetRequestData
-     */
-    weight: number;
-    /**
-     * 参加回数
-     * @type {number}
-     * @memberof MeasurementMeetRequestData
-     */
-    participate_time: number;
-    /**
-     * 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
-     * @type {number}
-     * @memberof MeasurementMeetRequestData
-     */
-    endurance_long_self: MeasurementMeetRequestDataEnduranceLongSelfEnum;
+    STATUS: MeasurementSingleSTATUSEnum;
 }
 /**
     * @export
     * @enum {string}
     */
-export declare enum MeasurementMeetRequestDataSexEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum MeasurementMeetRequestDataEnduranceLongSelfEnum {
+export declare enum MeasurementSingleSTATUSEnum {
+    NUMBER_0 = 0,
     NUMBER_1 = 1,
     NUMBER_2 = 2,
-    NUMBER_3 = 3,
-    NUMBER_4 = 4,
-    NUMBER_5 = 5
-}
-/**
- * 測定結果
- * @export
- * @interface MeasurementResults
- */
-export interface MeasurementResults {
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    dash_10?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    endurance_long?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    endurance_short?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    jump: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    agility: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    step_visual_response?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    step_power?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    swing_speed?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    balance_l?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    balance_r?: MeasurementData;
-    /**
-     *
-     * @type {MeasurementData}
-     * @memberof MeasurementResults
-     */
-    balance_lr_difference?: MeasurementData;
-}
-/**
- *
- * @export
- * @interface ModelError
- */
-export interface ModelError {
-    /**
-     *
-     * @type {string}
-     * @memberof ModelError
-     */
-    messages: string;
+    NUMBER_3 = 3
 }
 /**
  * 測定者
@@ -715,250 +2090,484 @@ export interface ModelError {
  */
 export interface Participant {
     /**
-     * 測定者ID
-     * @type {number}
+     * 774
+     * @type {string}
      * @memberof Participant
      */
-    participant_id: number;
+    PARTICIPANT_ID: string;
     /**
      * 氏名
      * @type {string}
      * @memberof Participant
      */
-    name: string;
+    NAME: string;
     /**
      * 氏名（カナ）
      * @type {string}
      * @memberof Participant
      */
-    name_kana: string;
+    NAME_KANA: string;
     /**
      * 性別（1:男性, 2:女性）
-     * @type {number}
+     * @type {string}
      * @memberof Participant
      */
-    sex: ParticipantSexEnum;
+    SEX: ParticipantSEXEnum;
     /**
      * 生年月日
      * @type {string}
      * @memberof Participant
      */
-    birthday: string;
+    BIRTHDAY: string;
     /**
      * メールアドレス
      * @type {string}
      * @memberof Participant
      */
-    mail_address: string;
+    MAIL_ADDRESS: string;
 }
 /**
     * @export
     * @enum {string}
     */
-export declare enum ParticipantSexEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
+export declare enum ParticipantSEXEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
 }
 /**
- * 参加測定会
+ * 測定結果
  * @export
- * @interface ParticipantMeasurementMeet
+ * @interface Report
  */
-export interface ParticipantMeasurementMeet {
-    /**
-     * 測定者ID
-     * @type {number}
-     * @memberof ParticipantMeasurementMeet
-     */
-    participant_id: number;
+export interface Report {
     /**
      * 測定会ID
-     * @type {number}
-     * @memberof ParticipantMeasurementMeet
-     */
-    meet_id: number;
-    /**
-     * 測定結果ID
-     * @type {number}
-     * @memberof ParticipantMeasurementMeet
-     */
-    measurement_id: number;
-    /**
-     * 測定会名
      * @type {string}
-     * @memberof ParticipantMeasurementMeet
+     * @memberof Report
      */
-    meet_name: string;
-    /**
-     * 測定会実施日
-     * @type {string}
-     * @memberof ParticipantMeasurementMeet
-     */
-    start_date: string;
-    /**
-     * 開始時間
-     * @type {string}
-     * @memberof ParticipantMeasurementMeet
-     */
-    start_time: string;
-}
-/**
- *
- * @export
- * @interface Ranking
- */
-export interface Ranking {
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    dash_10: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    endurance_long: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    endurance_short: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    jump: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    agility: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    step_visual_response: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    step_power: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    swing_speed: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    balance_l: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    balance_r: Array<RankingData>;
-    /**
-     *
-     * @type {Array<RankingData>}
-     * @memberof Ranking
-     */
-    balance_lr_difference: Array<RankingData>;
-}
-/**
- *
- * @export
- * @interface RankingData
- */
-export interface RankingData {
+    MEET_ID: string;
     /**
      * 測定者名
      * @type {string}
-     * @memberof RankingData
+     * @memberof Report
      */
-    name: string;
+    NAME: string;
     /**
-     * 性別（1:男性, 2:女性）
-     * @type {number}
-     * @memberof RankingData
+     * 測定結果ID
+     * @type {string}
+     * @memberof Report
      */
-    sex: RankingDataSexEnum;
+    MEASUREMENT_ID: string;
+    /**
+     * 性別
+     * @type {string}
+     * @memberof Report
+     */
+    SEX: ReportSEXEnum;
     /**
      * 生年月日
      * @type {string}
-     * @memberof RankingData
+     * @memberof Report
      */
-    birthday: string;
+    BIRTHDAY: string;
     /**
-     * 測定値
-     * @type {number}
-     * @memberof RankingData
-     */
-    score: number;
-    /**
-     * 全国ランキング
-     * @type {number}
-     * @memberof RankingData
-     */
-    rank: number;
-    /**
-     * 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @type {number}
-     * @memberof RankingData
-     */
-    rank_range: RankingDataRankRangeEnum;
-    /**
-     * 測定会名
+     * 学年
      * @type {string}
-     * @memberof RankingData
+     * @memberof Report
      */
-    meet_name: string;
+    PARTICIPANT_GAKUNEN: string;
     /**
-     * 測定者ID
+     * 年齢
      * @type {number}
-     * @memberof RankingData
+     * @memberof Report
      */
-    participant_id: number;
+    PARTICIPANT_AGE: number;
     /**
-     * 測定会ID
-     * @type {number}
-     * @memberof RankingData
+     * 参加回数
+     * @type {string}
+     * @memberof Report
      */
-    meet_id: number;
+    PARTICIPATE_TIME: string;
     /**
-     * 測定結果ID
-     * @type {number}
-     * @memberof RankingData
+     * 身長（cm）
+     * @type {string}
+     * @memberof Report
      */
-    measurement_id: number;
+    HEIGHT: string;
+    /**
+     * 体重（kg）
+     * @type {string}
+     * @memberof Report
+     */
+    WEIGHT: string;
+    /**
+     * 習ったスポーツ（カンマ区切り）
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_TYPE: string;
+    /**
+     * チーム名
+     * @type {string}
+     * @memberof Report
+     */
+    TEAM_NAME: string;
+    /**
+     * 敏しょう性（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    AGILITY_EVA: number;
+    /**
+     * 敏しょう性
+     * @type {string}
+     * @memberof Report
+     */
+    AGILITY_NAME: string;
+    /**
+     * 敏しょう性（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    AGILITY_SCORE: string;
+    /**
+     * バランス力（左右差）（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    BALANCE_LR_DIFFERENCE_EVA: number;
+    /**
+     * バランス力（左右差）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_LR_DIFFERENCE_NAME: string;
+    /**
+     * バランス力（左右差）（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_LR_DIFFERENCE_SCORE: string;
+    /**
+     * バランス力（左足）（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    BALANCE_L_EVA: number;
+    /**
+     * バランス力（左足）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_L_NAME: string;
+    /**
+     * バランス力（左足）（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_L_SCORE: string;
+    /**
+     * バランス力（右足）（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    BALANCE_R_EVA: number;
+    /**
+     * バランス力（右足）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_R_NAME: string;
+    /**
+     * バランス力（右足）（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_R_SCORE: string;
+    /**
+     * 10mスプリント（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    DASH_10_EVA: number;
+    /**
+     * 10mスプリント
+     * @type {string}
+     * @memberof Report
+     */
+    DASH_10_NAME: string;
+    /**
+     * 10mスプリント（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    DASH_10_SCORE: string;
+    /**
+     * 長持久力（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    ENDURANCE_LONG_EVA: number;
+    /**
+     * 長持久力
+     * @type {string}
+     * @memberof Report
+     */
+    ENDURANCE_LONG_NAME: string;
+    /**
+     * 長持久力（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    ENDURANCE_LONG_SCORE: string;
+    /**
+     * 短持久力（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    ENDURANCE_SHORT_EVA: number;
+    /**
+     * 短持久力
+     * @type {string}
+     * @memberof Report
+     */
+    ENDURANCE_SHORT_NAME: string;
+    /**
+     * 短持久力（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    ENDURANCE_SHORT_SCORE: string;
+    /**
+     * ジャンプ力（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    JUMP_EVA: number;
+    /**
+     * ジャンプ力
+     * @type {string}
+     * @memberof Report
+     */
+    JUMP_NAME: string;
+    /**
+     * ジャンプ力（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    JUMP_SCORE: string;
+    /**
+     * ステップ力（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    STEP_POWER_EVA: number;
+    /**
+     * ステップ力
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_POWER_NAME: string;
+    /**
+     * ステップ力（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_POWER_SCORE: string;
+    /**
+     * 視覚反応力（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    STEP_VISUAL_RESPONSE_EVA: number;
+    /**
+     * 視覚反応力
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_VISUAL_RESPONSE_NAME: string;
+    /**
+     * 視覚反応力（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_VISUAL_RESPONSE_SCORE: string;
+    /**
+     * スイングスピード（評価）
+     * @type {number}
+     * @memberof Report
+     */
+    SWING_SPEED_EVA: number;
+    /**
+     * スイングスピード
+     * @type {string}
+     * @memberof Report
+     */
+    SWING_SPEED_NAME: string;
+    /**
+     * スイングスピード（スコア）
+     * @type {string}
+     * @memberof Report
+     */
+    SWING_SPEED_SCORE: string;
+    /**
+     * 活かせる能力No.1
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING1_NAME: string;
+    /**
+     * 活かせる能力No.1
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING1_EVA: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING2_NAME: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING2_EVA: string;
+    /**
+     * 活かせる能力No.3
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING3_NAME: string;
+    /**
+     * 活かせる能力No.2
+     * @type {string}
+     * @memberof Report
+     */
+    BODY_JUDGING3_EVA: string;
+    /**
+     * 向いているスポーツNo.1
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP1: string;
+    /**
+     * 向いているスポーツNo.2
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP2: string;
+    /**
+     * 向いているスポーツNo.3
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP3: string;
+    /**
+     * 向いているスポーツNo.4
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP4: string;
+    /**
+     * 向いているスポーツNo.5
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP5: string;
+    /**
+     * 向いているスポーツNo.6
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP6: string;
+    /**
+     * 向いているスポーツNo.7
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP7: string;
+    /**
+     * 向いているスポーツNo.8
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP8: string;
+    /**
+     * 向いているスポーツNo.9
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP9: string;
+    /**
+     * 向いているスポーツNo.10
+     * @type {string}
+     * @memberof Report
+     */
+    SPORTS_SCORE_TOP10: string;
+    /**
+     * ランキング（敏しょう性）
+     * @type {string}
+     * @memberof Report
+     */
+    AGILITYRANK: string;
+    /**
+     * ランキング（バランス力）
+     * @type {string}
+     * @memberof Report
+     */
+    BALANCE_LR_DIFFERENCERANK: string;
+    /**
+     * ランキング（10mスプリント）
+     * @type {string}
+     * @memberof Report
+     */
+    DASH_10RANK: string;
+    /**
+     * ランキング（ジャンプ力）
+     * @type {string}
+     * @memberof Report
+     */
+    JUMPRANK: string;
+    /**
+     * ランキング（ステップ力）
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_POWERRANK: string;
+    /**
+     * ランキング（視覚反応力）
+     * @type {string}
+     * @memberof Report
+     */
+    STEP_VISUAL_RESPONSERANK: string;
+    /**
+     * ランキング（スイングスピード）
+     * @type {string}
+     * @memberof Report
+     */
+    SWING_SPEEDRANK: string;
+    /**
+     * ランキング範囲
+     * @type {string}
+     * @memberof Report
+     */
+    RANGE: string;
+    /**
+     * アドバイス
+     * @type {string}
+     * @memberof Report
+     */
+    ADVICE_TEXT: string;
 }
 /**
     * @export
     * @enum {string}
     */
-export declare enum RankingDataSexEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
-}
-/**
-    * @export
-    * @enum {string}
-    */
-export declare enum RankingDataRankRangeEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2,
-    NUMBER_3 = 3,
-    NUMBER_4 = 4
+export declare enum ReportSEXEnum {
+    男性 = "\u7537\u6027",
+    女性 = "\u5973\u6027"
 }
 /**
  * DosaAdminApi - axios parameter creator
@@ -967,81 +2576,107 @@ export declare enum RankingDataRankRangeEnum {
 export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configuration) => {
     /**
      *
-     * @summary 測定結果取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} meet_id 測定会ID
-     * @param {number} measurement_id 測定結果ID
+     * @summary 参加測定会一覧情報取得
+     * @param {string} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): RequestArgs;
-    /**
-     *
-     * @summary 測定会取得
-     * @param {number} meet_id 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeet(meet_id: number, options?: any): RequestArgs;
-    /**
-     *
-     * @summary 申込み測定会一覧取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} [meet_id] 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): RequestArgs;
+    getMeasurement(participant_id: string, options?: any): RequestArgs;
     /**
      *
      * @summary 測定会一覧取得
-     * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+     * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeets(status?: 2 | 1, options?: any): RequestArgs;
+    getMeasurementList(status: string, options?: any): RequestArgs;
+    /**
+     *
+     * @summary 申し込み測定会一覧取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} [meet_id] 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementMeetRequest(participant_id: string, meet_id?: string, options?: any): RequestArgs;
+    /**
+     *
+     * @summary 測定会単発情報取得
+     * @param {string} meet_id 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementSingle(meet_id: string, options?: any): RequestArgs;
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mail_address] メールアドレス
+     * @param {string} mail_address メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mail_address?: string, options?: any): RequestArgs;
+    getParticipants(mail_address: string, options?: any): RequestArgs;
     /**
      *
-     * @summary 参加測定会一覧取得
-     * @param {number} participant_id 測定者ID
+     * @summary ランキング取得
+     * @param {string} type ランキング対象
+     * @param {string} age_start 何歳から
+     * @param {string} age_end 何歳まで
+     * @param {string} sex 性別(1:男性, 2:女性)
+     * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+     * @param {string} topnum 欲しい件数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participant_id: number, options?: any): RequestArgs;
+    getRanking(type: string, age_start: string, age_end: string, sex: string, order: string, topnum: string, options?: any): RequestArgs;
     /**
      *
-     * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+     * @summary レポート情報取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} meet_id 測定会ID
+     * @param {string} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): RequestArgs;
+    getReport(participant_id: string, meet_id: string, measurement_id: string, options?: any): RequestArgs;
     /**
      *
-     * @summary 測定会申込み
-     * @param {number} meet_id 測定会ID
-     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+     * @summary 会員登録（測定会申し込み）
+     * @param {string} meet_id 測定会ID
+     * @param {string} participant_name 名前
+     * @param {string} participant_name_kana 名前（カナ）
+     * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+     * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+     * @param {string} mail_address メールアドレス
+     * @param {string} zipcode1 郵便番号（3桁）
+     * @param {string} zipcode2 郵便番号（4桁）
+     * @param {string} address 住所
+     * @param {string} telephone 電話番号
+     * @param {string} sex 性別
+     * @param {string} birthday1 生年月日（年）
+     * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+     * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+     * @param {string} first_hope_time 希望測定開始時間1
+     * @param {string} second_hope_time 希望測定開始時間2
+     * @param {string} third_hope_time 希望測定開始時間3
+     * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+     * @param {string} school_name 学校名
+     * @param {string} team_name チーム名
+     * @param {string} height 身長（cm）
+     * @param {string} weight 体重（kg）
+     * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @param {string} participate_time 参加回数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): RequestArgs;
+    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): RequestArgs;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [InlineObject]
+     * @param {string} mail_address
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(InlineObject?: InlineObject, options?: any): RequestArgs;
+    postSendTestMail(mail_address: string, options?: any): RequestArgs;
 };
 /**
  * DosaAdminApi - functional programming interface
@@ -1050,81 +2685,107 @@ export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configurati
 export declare const DosaAdminApiFp: (configuration?: Configuration) => {
     /**
      *
-     * @summary 測定結果取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} meet_id 測定会ID
-     * @param {number} measurement_id 測定結果ID
+     * @summary 参加測定会一覧情報取得
+     * @param {string} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2002>;
-    /**
-     *
-     * @summary 測定会取得
-     * @param {number} meet_id 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeet(meet_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2004>;
-    /**
-     *
-     * @summary 申込み測定会一覧取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} [meet_id] 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2005>;
+    getMeasurement(participant_id: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会一覧取得
-     * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+     * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeets(status?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2003>;
+    getMeasurementList(status: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2004>;
+    /**
+     *
+     * @summary 申し込み測定会一覧取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} [meet_id] 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementMeetRequest(participant_id: string, meet_id?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2006>;
+    /**
+     *
+     * @summary 測定会単発情報取得
+     * @param {string} meet_id 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementSingle(meet_id: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mail_address] メールアドレス
+     * @param {string} mail_address メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mail_address?: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2001>;
     /**
      *
-     * @summary 参加測定会一覧取得
-     * @param {number} participant_id 測定者ID
+     * @summary ランキング取得
+     * @param {string} type ランキング対象
+     * @param {string} age_start 何歳から
+     * @param {string} age_end 何歳まで
+     * @param {string} sex 性別(1:男性, 2:女性)
+     * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+     * @param {string} topnum 欲しい件数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participant_id: number, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2001>;
+    getRanking(type: string, age_start: string, age_end: string, sex: string, order: string, topnum: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2008>;
     /**
      *
-     * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+     * @summary レポート情報取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} meet_id 測定会ID
+     * @param {string} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2006>;
+    getReport(participant_id: string, meet_id: string, measurement_id: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2003>;
     /**
      *
-     * @summary 測定会申込み
-     * @param {number} meet_id 測定会ID
-     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+     * @summary 会員登録（測定会申し込み）
+     * @param {string} meet_id 測定会ID
+     * @param {string} participant_name 名前
+     * @param {string} participant_name_kana 名前（カナ）
+     * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+     * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+     * @param {string} mail_address メールアドレス
+     * @param {string} zipcode1 郵便番号（3桁）
+     * @param {string} zipcode2 郵便番号（4桁）
+     * @param {string} address 住所
+     * @param {string} telephone 電話番号
+     * @param {string} sex 性別
+     * @param {string} birthday1 生年月日（年）
+     * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+     * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+     * @param {string} first_hope_time 希望測定開始時間1
+     * @param {string} second_hope_time 希望測定開始時間2
+     * @param {string} third_hope_time 希望測定開始時間3
+     * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+     * @param {string} school_name 学校名
+     * @param {string} team_name チーム名
+     * @param {string} height 身長（cm）
+     * @param {string} weight 体重（kg）
+     * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @param {string} participate_time 参加回数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [InlineObject]
+     * @param {string} mail_address
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(InlineObject?: InlineObject, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>;
+    postSendTestMail(mail_address: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
 };
 /**
  * DosaAdminApi - factory interface
@@ -1133,81 +2794,107 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
 export declare const DosaAdminApiFactory: (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) => {
     /**
      *
-     * @summary 測定結果取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} meet_id 測定会ID
-     * @param {number} measurement_id 測定結果ID
+     * @summary 参加測定会一覧情報取得
+     * @param {string} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): AxiosPromise<InlineResponse2002>;
-    /**
-     *
-     * @summary 測定会取得
-     * @param {number} meet_id 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<InlineResponse2004>;
-    /**
-     *
-     * @summary 申込み測定会一覧取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} [meet_id] 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<InlineResponse2005>;
+    getMeasurement(participant_id: string, options?: any): AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会一覧取得
-     * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+     * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getMeasurementMeets(status?: 2 | 1, options?: any): AxiosPromise<InlineResponse2003>;
+    getMeasurementList(status: string, options?: any): AxiosPromise<InlineResponse2004>;
+    /**
+     *
+     * @summary 申し込み測定会一覧取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} [meet_id] 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementMeetRequest(participant_id: string, meet_id?: string, options?: any): AxiosPromise<InlineResponse2006>;
+    /**
+     *
+     * @summary 測定会単発情報取得
+     * @param {string} meet_id 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    getMeasurementSingle(meet_id: string, options?: any): AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mail_address] メールアドレス
+     * @param {string} mail_address メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipants(mail_address?: string, options?: any): AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address: string, options?: any): AxiosPromise<InlineResponse2001>;
     /**
      *
-     * @summary 参加測定会一覧取得
-     * @param {number} participant_id 測定者ID
+     * @summary ランキング取得
+     * @param {string} type ランキング対象
+     * @param {string} age_start 何歳から
+     * @param {string} age_end 何歳まで
+     * @param {string} sex 性別(1:男性, 2:女性)
+     * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+     * @param {string} topnum 欲しい件数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getParticipatedMeasurementMeets(participant_id: number, options?: any): AxiosPromise<InlineResponse2001>;
+    getRanking(type: string, age_start: string, age_end: string, sex: string, order: string, topnum: string, options?: any): AxiosPromise<InlineResponse2008>;
     /**
      *
-     * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+     * @summary レポート情報取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} meet_id 測定会ID
+     * @param {string} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    getRankings(rank_range?: 2 | 4 | 3 | 1, sex?: 2 | 1, options?: any): AxiosPromise<InlineResponse2006>;
+    getReport(participant_id: string, meet_id: string, measurement_id: string, options?: any): AxiosPromise<InlineResponse2003>;
     /**
      *
-     * @summary 測定会申込み
-     * @param {number} meet_id 測定会ID
-     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+     * @summary 会員登録（測定会申し込み）
+     * @param {string} meet_id 測定会ID
+     * @param {string} participant_name 名前
+     * @param {string} participant_name_kana 名前（カナ）
+     * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+     * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+     * @param {string} mail_address メールアドレス
+     * @param {string} zipcode1 郵便番号（3桁）
+     * @param {string} zipcode2 郵便番号（4桁）
+     * @param {string} address 住所
+     * @param {string} telephone 電話番号
+     * @param {string} sex 性別
+     * @param {string} birthday1 生年月日（年）
+     * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+     * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+     * @param {string} first_hope_time 希望測定開始時間1
+     * @param {string} second_hope_time 希望測定開始時間2
+     * @param {string} third_hope_time 希望測定開始時間3
+     * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+     * @param {string} school_name 学校名
+     * @param {string} team_name チーム名
+     * @param {string} height 身長（cm）
+     * @param {string} weight 体重（kg）
+     * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @param {string} participate_time 参加回数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [InlineObject]
+     * @param {string} mail_address
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(InlineObject?: InlineObject, options?: any): AxiosPromise<void>;
+    postSendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
 };
 /**
  * DosaAdminApi - object-oriented interface
@@ -1218,88 +2905,114 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
 export declare class DosaAdminApi extends BaseAPI {
     /**
      *
-     * @summary 測定結果取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} meet_id 測定会ID
-     * @param {number} measurement_id 測定結果ID
+     * @summary 参加測定会一覧情報取得
+     * @param {string} participant_id 測定者ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurement(participant_id: number, meet_id: number, measurement_id: number, options?: any): AxiosPromise<InlineResponse2002>;
-    /**
-     *
-     * @summary 測定会取得
-     * @param {number} meet_id 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof DosaAdminApi
-     */
-    getMeasurementMeet(meet_id: number, options?: any): AxiosPromise<InlineResponse2004>;
-    /**
-     *
-     * @summary 申込み測定会一覧取得
-     * @param {number} participant_id 測定者ID
-     * @param {number} [meet_id] 測定会ID
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof DosaAdminApi
-     */
-    getMeasurementMeetRequest(participant_id: number, meet_id?: number, options?: any): AxiosPromise<InlineResponse2005>;
+    getMeasurement(participant_id: string, options?: any): AxiosPromise<InlineResponse2002>;
     /**
      *
      * @summary 測定会一覧取得
-     * @param {1 | 2} [status] 測定会ステータス（1: 募集受付中, 2: 募集終了）
+     * @param {string} status 測定会ステータス 1&#x3D;受付中 2&#x3D;受付終了 0&#x3D;だと両方 3&#x3D;だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getMeasurementMeets(status?: 1 | 2, options?: any): AxiosPromise<InlineResponse2003>;
+    getMeasurementList(status: string, options?: any): AxiosPromise<InlineResponse2004>;
+    /**
+     *
+     * @summary 申し込み測定会一覧取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} [meet_id] 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DosaAdminApi
+     */
+    getMeasurementMeetRequest(participant_id: string, meet_id?: string, options?: any): AxiosPromise<InlineResponse2006>;
+    /**
+     *
+     * @summary 測定会単発情報取得
+     * @param {string} meet_id 測定会ID
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof DosaAdminApi
+     */
+    getMeasurementSingle(meet_id: string, options?: any): AxiosPromise<InlineResponse2005>;
     /**
      *
      * @summary 測定者情報一覧取得
-     * @param {string} [mail_address] メールアドレス
+     * @param {string} mail_address メールアドレス
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipants(mail_address?: string, options?: any): AxiosPromise<InlineResponse200>;
+    getParticipants(mail_address: string, options?: any): AxiosPromise<InlineResponse2001>;
     /**
      *
-     * @summary 参加測定会一覧取得
-     * @param {number} participant_id 測定者ID
+     * @summary ランキング取得
+     * @param {string} type ランキング対象
+     * @param {string} age_start 何歳から
+     * @param {string} age_end 何歳まで
+     * @param {string} sex 性別(1:男性, 2:女性)
+     * @param {string} order 並び替え(asc:早い順, dsec:遅い順)
+     * @param {string} topnum 欲しい件数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getParticipatedMeasurementMeets(participant_id: number, options?: any): AxiosPromise<InlineResponse2001>;
+    getRanking(type: string, age_start: string, age_end: string, sex: string, order: string, topnum: string, options?: any): AxiosPromise<InlineResponse2008>;
     /**
      *
-     * @summary ランキング一覧取得
-     * @param {1 | 2 | 3 | 4} [rank_range] 全国ランキングの範囲（1: 6〜8才、2: 9〜11才、3: 12〜14才, 4: 15〜）
-     * @param {1 | 2} [sex] 性別（1:男性, 2:女性）
+     * @summary レポート情報取得
+     * @param {string} participant_id 測定者ID
+     * @param {string} meet_id 測定会ID
+     * @param {string} measurement_id 測定結果ID
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    getRankings(rank_range?: 1 | 2 | 3 | 4, sex?: 1 | 2, options?: any): AxiosPromise<InlineResponse2006>;
+    getReport(participant_id: string, meet_id: string, measurement_id: string, options?: any): AxiosPromise<InlineResponse2003>;
     /**
      *
-     * @summary 測定会申込み
-     * @param {number} meet_id 測定会ID
-     * @param {MeasurementMeetRequestData} [MeasurementMeetRequestData]
+     * @summary 会員登録（測定会申し込み）
+     * @param {string} meet_id 測定会ID
+     * @param {string} participant_name 名前
+     * @param {string} participant_name_kana 名前（カナ）
+     * @param {string} parent_name1 保護者氏名（保護者のメールアドレスの場合）
+     * @param {string} parent_name2 保護者氏名（プライバシーポリシーに同意）
+     * @param {string} mail_address メールアドレス
+     * @param {string} zipcode1 郵便番号（3桁）
+     * @param {string} zipcode2 郵便番号（4桁）
+     * @param {string} address 住所
+     * @param {string} telephone 電話番号
+     * @param {string} sex 性別
+     * @param {string} birthday1 生年月日（年）
+     * @param {string} birthday2 生年月日（月：頭のゼロは不要）
+     * @param {string} birthday3 生年月日（日：頭のゼロは不要）
+     * @param {string} first_hope_time 希望測定開始時間1
+     * @param {string} second_hope_time 希望測定開始時間2
+     * @param {string} third_hope_time 希望測定開始時間3
+     * @param {string} sports_type 習ったスポーツ（カンマ区切り）
+     * @param {string} school_name 学校名
+     * @param {string} team_name チーム名
+     * @param {string} height 身長（cm）
+     * @param {string} weight 体重（kg）
+     * @param {string} endurance_long_self 長距離走について（1: 非常に苦手, 2: 少し苦手, 3: 普通, 4: 少し得意, 5: 非常に得意）
+     * @param {string} participate_time 参加回数
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meet_id: number, MeasurementMeetRequestData?: MeasurementMeetRequestData, options?: any): AxiosPromise<InlineResponse201>;
+    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
-     * @param {InlineObject} [InlineObject]
+     * @param {string} mail_address
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(InlineObject?: InlineObject, options?: any): AxiosPromise<void>;
+    postSendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
 }

@@ -297,8 +297,8 @@ export interface InlineObject7 {
     * @enum {string}
     */
 export enum InlineObject7SexEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 /**
     * @export
@@ -503,8 +503,8 @@ export interface InlineResponse2001Data {
     * @enum {string}
     */
 export enum InlineResponse2001DataSEXEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 
 /**
@@ -1053,8 +1053,8 @@ export interface InlineResponse2003Data {
     * @enum {string}
     */
 export enum InlineResponse2003DataSEXEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 
 /**
@@ -1719,8 +1719,8 @@ export interface InlineResponse2008Data {
     * @enum {string}
     */
 export enum InlineResponse2008DataSEXEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 
 /**
@@ -2181,8 +2181,8 @@ export interface Participant {
     * @enum {string}
     */
 export enum ParticipantSEXEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 
 /**
@@ -2618,8 +2618,8 @@ export interface Report {
     * @enum {string}
     */
 export enum ReportSEXEnum {
-     = '男性',
-     = '女性'
+    男性 = '男性',
+    女性 = '女性'
 }
 
 
