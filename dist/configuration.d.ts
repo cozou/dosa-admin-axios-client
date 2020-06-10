@@ -1,6 +1,6 @@
 /**
  * DOSA管理API
- * RESTful API of DOSA管理システム
+ * DOSA管理API
  *
  * The version of the OpenAPI document: v1
  *
