@@ -2,6 +2,10 @@
 
 ## How to use
 
+Document: [DosaAdminApi](https://cozou.github.io/dosa-admin-client/docs/DosaAdminApi.html)
+
+Example:
+
 ```javascript
 import { DosaAdminApi, Configuration } from 'dosa-admin-client';
 
@@ -16,3 +20,9 @@ import { DosaAdminApi, Configuration } from 'dosa-admin-client';
   console.table(response.data.data);
 })();
 ```
+
+## Build
+
+**直接コード修正を行わない**
+
+クライアントは [dosa-admin-openapi-schema](https://github.com/cozou/dosa-admin-openapi-schema) より `openapi-generator-cli` で自動生成する

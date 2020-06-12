@@ -7,10 +7,12 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc --outDir dist/",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "jsdoc": "jsdoc -r -d docs -R README.md dist"
   },
   "devDependencies": {
     "@types/node": "^13.7.4",
+    "jsdoc": "^3.6.4",
     "typescript": "^2.4"
   },
   "description": "",
