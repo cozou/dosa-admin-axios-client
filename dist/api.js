@@ -174,10 +174,10 @@ var InlineResponse2005StatusEnum;
     */
 var InlineResponse2005DataSTATUSEnum;
 (function (InlineResponse2005DataSTATUSEnum) {
-    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_0"] = 0] = "NUMBER_0";
-    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    InlineResponse2005DataSTATUSEnum[InlineResponse2005DataSTATUSEnum["NUMBER_3"] = 3] = "NUMBER_3";
+    InlineResponse2005DataSTATUSEnum["_0"] = "0";
+    InlineResponse2005DataSTATUSEnum["_1"] = "1";
+    InlineResponse2005DataSTATUSEnum["_2"] = "2";
+    InlineResponse2005DataSTATUSEnum["_3"] = "3";
 })(InlineResponse2005DataSTATUSEnum = exports.InlineResponse2005DataSTATUSEnum || (exports.InlineResponse2005DataSTATUSEnum = {}));
 /**
     * @export
@@ -194,8 +194,8 @@ var InlineResponse2006StatusEnum;
     */
 var InlineResponse2006DataISWINEnum;
 (function (InlineResponse2006DataISWINEnum) {
-    InlineResponse2006DataISWINEnum[InlineResponse2006DataISWINEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    InlineResponse2006DataISWINEnum[InlineResponse2006DataISWINEnum["NUMBER_2"] = 2] = "NUMBER_2";
+    InlineResponse2006DataISWINEnum["_1"] = "1";
+    InlineResponse2006DataISWINEnum["_2"] = "2";
 })(InlineResponse2006DataISWINEnum = exports.InlineResponse2006DataISWINEnum || (exports.InlineResponse2006DataISWINEnum = {}));
 /**
     * @export
@@ -252,8 +252,8 @@ var MeasurementListSTATUSEnum;
     */
 var MeasurementMeetRequestISWINEnum;
 (function (MeasurementMeetRequestISWINEnum) {
-    MeasurementMeetRequestISWINEnum[MeasurementMeetRequestISWINEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementMeetRequestISWINEnum[MeasurementMeetRequestISWINEnum["NUMBER_2"] = 2] = "NUMBER_2";
+    MeasurementMeetRequestISWINEnum["_1"] = "1";
+    MeasurementMeetRequestISWINEnum["_2"] = "2";
 })(MeasurementMeetRequestISWINEnum = exports.MeasurementMeetRequestISWINEnum || (exports.MeasurementMeetRequestISWINEnum = {}));
 /**
     * @export
@@ -272,10 +272,10 @@ var MeasurementMeetRequestSTATUSEnum;
     */
 var MeasurementSingleSTATUSEnum;
 (function (MeasurementSingleSTATUSEnum) {
-    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_0"] = 0] = "NUMBER_0";
-    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_1"] = 1] = "NUMBER_1";
-    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_2"] = 2] = "NUMBER_2";
-    MeasurementSingleSTATUSEnum[MeasurementSingleSTATUSEnum["NUMBER_3"] = 3] = "NUMBER_3";
+    MeasurementSingleSTATUSEnum["_0"] = "0";
+    MeasurementSingleSTATUSEnum["_1"] = "1";
+    MeasurementSingleSTATUSEnum["_2"] = "2";
+    MeasurementSingleSTATUSEnum["_3"] = "3";
 })(MeasurementSingleSTATUSEnum = exports.MeasurementSingleSTATUSEnum || (exports.MeasurementSingleSTATUSEnum = {}));
 /**
     * @export
@@ -643,102 +643,102 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options = {}) {
+        registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options = {}) {
             // verify required parameter 'meet_id' is not null or undefined
             if (meet_id === null || meet_id === undefined) {
-                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('meet_id', 'Required parameter meet_id was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'participant_name' is not null or undefined
             if (participant_name === null || participant_name === undefined) {
-                throw new base_1.RequiredError('participant_name', 'Required parameter participant_name was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('participant_name', 'Required parameter participant_name was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'participant_name_kana' is not null or undefined
             if (participant_name_kana === null || participant_name_kana === undefined) {
-                throw new base_1.RequiredError('participant_name_kana', 'Required parameter participant_name_kana was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('participant_name_kana', 'Required parameter participant_name_kana was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'parent_name1' is not null or undefined
             if (parent_name1 === null || parent_name1 === undefined) {
-                throw new base_1.RequiredError('parent_name1', 'Required parameter parent_name1 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('parent_name1', 'Required parameter parent_name1 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'parent_name2' is not null or undefined
             if (parent_name2 === null || parent_name2 === undefined) {
-                throw new base_1.RequiredError('parent_name2', 'Required parameter parent_name2 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('parent_name2', 'Required parameter parent_name2 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'mail_address' is not null or undefined
             if (mail_address === null || mail_address === undefined) {
-                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'zipcode1' is not null or undefined
             if (zipcode1 === null || zipcode1 === undefined) {
-                throw new base_1.RequiredError('zipcode1', 'Required parameter zipcode1 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('zipcode1', 'Required parameter zipcode1 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'zipcode2' is not null or undefined
             if (zipcode2 === null || zipcode2 === undefined) {
-                throw new base_1.RequiredError('zipcode2', 'Required parameter zipcode2 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('zipcode2', 'Required parameter zipcode2 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'address' is not null or undefined
             if (address === null || address === undefined) {
-                throw new base_1.RequiredError('address', 'Required parameter address was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('address', 'Required parameter address was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'telephone' is not null or undefined
             if (telephone === null || telephone === undefined) {
-                throw new base_1.RequiredError('telephone', 'Required parameter telephone was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('telephone', 'Required parameter telephone was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'sex' is not null or undefined
             if (sex === null || sex === undefined) {
-                throw new base_1.RequiredError('sex', 'Required parameter sex was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('sex', 'Required parameter sex was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'birthday1' is not null or undefined
             if (birthday1 === null || birthday1 === undefined) {
-                throw new base_1.RequiredError('birthday1', 'Required parameter birthday1 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('birthday1', 'Required parameter birthday1 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'birthday2' is not null or undefined
             if (birthday2 === null || birthday2 === undefined) {
-                throw new base_1.RequiredError('birthday2', 'Required parameter birthday2 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('birthday2', 'Required parameter birthday2 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'birthday3' is not null or undefined
             if (birthday3 === null || birthday3 === undefined) {
-                throw new base_1.RequiredError('birthday3', 'Required parameter birthday3 was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('birthday3', 'Required parameter birthday3 was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'first_hope_time' is not null or undefined
             if (first_hope_time === null || first_hope_time === undefined) {
-                throw new base_1.RequiredError('first_hope_time', 'Required parameter first_hope_time was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('first_hope_time', 'Required parameter first_hope_time was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'second_hope_time' is not null or undefined
             if (second_hope_time === null || second_hope_time === undefined) {
-                throw new base_1.RequiredError('second_hope_time', 'Required parameter second_hope_time was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('second_hope_time', 'Required parameter second_hope_time was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'third_hope_time' is not null or undefined
             if (third_hope_time === null || third_hope_time === undefined) {
-                throw new base_1.RequiredError('third_hope_time', 'Required parameter third_hope_time was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('third_hope_time', 'Required parameter third_hope_time was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'sports_type' is not null or undefined
             if (sports_type === null || sports_type === undefined) {
-                throw new base_1.RequiredError('sports_type', 'Required parameter sports_type was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('sports_type', 'Required parameter sports_type was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'school_name' is not null or undefined
             if (school_name === null || school_name === undefined) {
-                throw new base_1.RequiredError('school_name', 'Required parameter school_name was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('school_name', 'Required parameter school_name was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'team_name' is not null or undefined
             if (team_name === null || team_name === undefined) {
-                throw new base_1.RequiredError('team_name', 'Required parameter team_name was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('team_name', 'Required parameter team_name was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'height' is not null or undefined
             if (height === null || height === undefined) {
-                throw new base_1.RequiredError('height', 'Required parameter height was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('height', 'Required parameter height was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'weight' is not null or undefined
             if (weight === null || weight === undefined) {
-                throw new base_1.RequiredError('weight', 'Required parameter weight was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('weight', 'Required parameter weight was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'endurance_long_self' is not null or undefined
             if (endurance_long_self === null || endurance_long_self === undefined) {
-                throw new base_1.RequiredError('endurance_long_self', 'Required parameter endurance_long_self was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('endurance_long_self', 'Required parameter endurance_long_self was null or undefined when calling registerMeasurementMeet.');
             }
             // verify required parameter 'participate_time' is not null or undefined
             if (participate_time === null || participate_time === undefined) {
-                throw new base_1.RequiredError('participate_time', 'Required parameter participate_time was null or undefined when calling postMeasurementMeet.');
+                throw new base_1.RequiredError('participate_time', 'Required parameter participate_time was null or undefined when calling registerMeasurementMeet.');
             }
             const localVarPath = `/sp/if/measurement_meet.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
@@ -840,10 +840,10 @@ exports.DosaAdminApiAxiosParamCreator = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(mail_address, options = {}) {
+        sendTestMail(mail_address, options = {}) {
             // verify required parameter 'mail_address' is not null or undefined
             if (mail_address === null || mail_address === undefined) {
-                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling postSendTestMail.');
+                throw new base_1.RequiredError('mail_address', 'Required parameter mail_address was null or undefined when calling sendTestMail.');
             }
             const localVarPath = `/sp/if/send_test_mail.php`;
             const localVarUrlObj = globalImportUrl.parse(localVarPath, true);
@@ -1013,8 +1013,8 @@ exports.DosaAdminApiFp = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options);
+        registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -1027,8 +1027,8 @@ exports.DosaAdminApiFp = function (configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(mail_address, options) {
-            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).postSendTestMail(mail_address, options);
+        sendTestMail(mail_address, options) {
+            const localVarAxiosArgs = exports.DosaAdminApiAxiosParamCreator(configuration).sendTestMail(mail_address, options);
             return (axios = axios_1.default, basePath = base_1.BASE_PATH) => {
                 const axiosRequestArgs = Object.assign({}, localVarAxiosArgs.options, { url: basePath + localVarAxiosArgs.url });
                 return axios.request(axiosRequestArgs);
@@ -1150,8 +1150,8 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
-            return exports.DosaAdminApiFp(configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(axios, basePath);
+        registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+            return exports.DosaAdminApiFp(configuration).registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(axios, basePath);
         },
         /**
          *
@@ -1160,8 +1160,8 @@ exports.DosaAdminApiFactory = function (configuration, basePath, axios) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postSendTestMail(mail_address, options) {
-            return exports.DosaAdminApiFp(configuration).postSendTestMail(mail_address, options)(axios, basePath);
+        sendTestMail(mail_address, options) {
+            return exports.DosaAdminApiFp(configuration).sendTestMail(mail_address, options)(axios, basePath);
         },
     };
 };
@@ -1288,8 +1288,8 @@ class DosaAdminApi extends base_1.BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
-        return exports.DosaAdminApiFp(this.configuration).postMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(this.axios, this.basePath);
+    registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options) {
+        return exports.DosaAdminApiFp(this.configuration).registerMeasurementMeet(meet_id, participant_name, participant_name_kana, parent_name1, parent_name2, mail_address, zipcode1, zipcode2, address, telephone, sex, birthday1, birthday2, birthday3, first_hope_time, second_hope_time, third_hope_time, sports_type, school_name, team_name, height, weight, endurance_long_self, participate_time, options)(this.axios, this.basePath);
     }
     /**
      *
@@ -1299,8 +1299,8 @@ class DosaAdminApi extends base_1.BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(mail_address, options) {
-        return exports.DosaAdminApiFp(this.configuration).postSendTestMail(mail_address, options)(this.axios, this.basePath);
+    sendTestMail(mail_address, options) {
+        return exports.DosaAdminApiFp(this.configuration).sendTestMail(mail_address, options)(this.axios, this.basePath);
     }
 }
 exports.DosaAdminApi = DosaAdminApi;

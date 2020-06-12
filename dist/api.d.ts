@@ -444,7 +444,7 @@ export declare enum InlineResponse2001StatusEnum {
  */
 export interface InlineResponse2001Data {
     /**
-     * 774
+     * 測定者ID
      * @type {string}
      * @memberof InlineResponse2001Data
      */
@@ -1345,7 +1345,7 @@ export interface InlineResponse2005Data {
     STARTTIME15: string;
     /**
      * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
-     * @type {number}
+     * @type {string}
      * @memberof InlineResponse2005Data
      */
     STATUS: InlineResponse2005DataSTATUSEnum;
@@ -1355,10 +1355,10 @@ export interface InlineResponse2005Data {
     * @enum {string}
     */
 export declare enum InlineResponse2005DataSTATUSEnum {
-    NUMBER_0 = 0,
-    NUMBER_1 = 1,
-    NUMBER_2 = 2,
-    NUMBER_3 = 3
+    _0 = "0",
+    _1 = "1",
+    _2 = "2",
+    _3 = "3"
 }
 /**
  *
@@ -1401,10 +1401,10 @@ export declare enum InlineResponse2006StatusEnum {
 export interface InlineResponse2006Data {
     /**
      * リクエストID
-     * @type {number}
+     * @type {string}
      * @memberof InlineResponse2006Data
      */
-    REQUEST_ID: number;
+    REQUEST_ID: string;
     /**
      * 測定会ID
      * @type {string}
@@ -1443,7 +1443,7 @@ export interface InlineResponse2006Data {
     THIRD_HOPE_TIME: string;
     /**
      * 当落選結果（1: 当選, 2: 落選）
-     * @type {number}
+     * @type {string}
      * @memberof InlineResponse2006Data
      */
     IS_WIN: InlineResponse2006DataISWINEnum;
@@ -1465,8 +1465,8 @@ export interface InlineResponse2006Data {
     * @enum {string}
     */
 export declare enum InlineResponse2006DataISWINEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
+    _1 = "1",
+    _2 = "2"
 }
 /**
     * @export
@@ -1875,10 +1875,10 @@ export interface MeasurementMeet {
 export interface MeasurementMeetRequest {
     /**
      * リクエストID
-     * @type {number}
+     * @type {string}
      * @memberof MeasurementMeetRequest
      */
-    REQUEST_ID: number;
+    REQUEST_ID: string;
     /**
      * 測定会ID
      * @type {string}
@@ -1917,7 +1917,7 @@ export interface MeasurementMeetRequest {
     THIRD_HOPE_TIME: string;
     /**
      * 当落選結果（1: 当選, 2: 落選）
-     * @type {number}
+     * @type {string}
      * @memberof MeasurementMeetRequest
      */
     IS_WIN: MeasurementMeetRequestISWINEnum;
@@ -1939,8 +1939,8 @@ export interface MeasurementMeetRequest {
     * @enum {string}
     */
 export declare enum MeasurementMeetRequestISWINEnum {
-    NUMBER_1 = 1,
-    NUMBER_2 = 2
+    _1 = "1",
+    _2 = "2"
 }
 /**
     * @export
@@ -2068,7 +2068,7 @@ export interface MeasurementSingle {
     STARTTIME15: string;
     /**
      * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
-     * @type {number}
+     * @type {string}
      * @memberof MeasurementSingle
      */
     STATUS: MeasurementSingleSTATUSEnum;
@@ -2078,10 +2078,10 @@ export interface MeasurementSingle {
     * @enum {string}
     */
 export declare enum MeasurementSingleSTATUSEnum {
-    NUMBER_0 = 0,
-    NUMBER_1 = 1,
-    NUMBER_2 = 2,
-    NUMBER_3 = 3
+    _0 = "0",
+    _1 = "1",
+    _2 = "2",
+    _3 = "3"
 }
 /**
  * 測定者
@@ -2090,7 +2090,7 @@ export declare enum MeasurementSingleSTATUSEnum {
  */
 export interface Participant {
     /**
-     * 774
+     * 測定者ID
      * @type {string}
      * @memberof Participant
      */
@@ -2668,7 +2668,7 @@ export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configurati
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): RequestArgs;
+    registerMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): RequestArgs;
     /**
      *
      * @summary テストメール送信
@@ -2676,7 +2676,7 @@ export declare const DosaAdminApiAxiosParamCreator: (configuration?: Configurati
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(mail_address: string, options?: any): RequestArgs;
+    sendTestMail(mail_address: string, options?: any): RequestArgs;
 };
 /**
  * DosaAdminApi - functional programming interface
@@ -2777,7 +2777,7 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2007>;
+    registerMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
@@ -2785,7 +2785,7 @@ export declare const DosaAdminApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(mail_address: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
+    sendTestMail(mail_address: string, options?: any): (axios?: AxiosInstance, basePath?: string) => AxiosPromise<InlineResponse200>;
 };
 /**
  * DosaAdminApi - factory interface
@@ -2886,7 +2886,7 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
+    registerMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
@@ -2894,7 +2894,7 @@ export declare const DosaAdminApiFactory: (configuration?: Configuration, basePa
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    postSendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
+    sendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
 };
 /**
  * DosaAdminApi - object-oriented interface
@@ -3005,7 +3005,7 @@ export declare class DosaAdminApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
+    registerMeasurementMeet(meet_id: string, participant_name: string, participant_name_kana: string, parent_name1: string, parent_name2: string, mail_address: string, zipcode1: string, zipcode2: string, address: string, telephone: string, sex: string, birthday1: string, birthday2: string, birthday3: string, first_hope_time: string, second_hope_time: string, third_hope_time: string, sports_type: string, school_name: string, team_name: string, height: string, weight: string, endurance_long_self: string, participate_time: string, options?: any): AxiosPromise<InlineResponse2007>;
     /**
      *
      * @summary テストメール送信
@@ -3014,5 +3014,5 @@ export declare class DosaAdminApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DosaAdminApi
      */
-    postSendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
+    sendTestMail(mail_address: string, options?: any): AxiosPromise<InlineResponse200>;
 }
