@@ -1207,11 +1207,23 @@ export interface InlineResponse2004Data {
      */
     STARTTIME15: string;
     /**
-     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * 測定会ステータス（1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし）
      * @type {string}
      * @memberof InlineResponse2004Data
      */
     STATUS: InlineResponse2004DataSTATUSEnum;
+    /**
+     * メール配信ステータス（1=メール配信済み 0=メール配信前）
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    IS_SENDMAIL: InlineResponse2004DataISSENDMAILEnum;
+    /**
+     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    IS_LABEL_PRINT: InlineResponse2004DataISLABELPRINTEnum;
 }
 
 /**
@@ -1223,6 +1235,22 @@ export enum InlineResponse2004DataSTATUSEnum {
     _1 = '1',
     _2 = '2',
     _3 = '3'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2004DataISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2004DataISLABELPRINTEnum {
+    _0 = '0',
+    _1 = '1'
 }
 
 /**
@@ -1375,11 +1403,23 @@ export interface InlineResponse2005Data {
      */
     STARTTIME15: string;
     /**
-     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * 測定会ステータス（1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし）
      * @type {string}
      * @memberof InlineResponse2005Data
      */
     STATUS: InlineResponse2005DataSTATUSEnum;
+    /**
+     * メール配信ステータス（1=メール配信済み 0=メール配信前）
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    IS_SENDMAIL: InlineResponse2005DataISSENDMAILEnum;
+    /**
+     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    IS_LABEL_PRINT: InlineResponse2005DataISLABELPRINTEnum;
 }
 
 /**
@@ -1391,6 +1431,22 @@ export enum InlineResponse2005DataSTATUSEnum {
     _1 = '1',
     _2 = '2',
     _3 = '3'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2005DataISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2005DataISLABELPRINTEnum {
+    _0 = '0',
+    _1 = '1'
 }
 
 /**
@@ -1477,7 +1533,7 @@ export interface InlineResponse2006Data {
      */
     THIRD_HOPE_TIME: string;
     /**
-     * 当落選結果（1: 当選, 2: 落選）
+     * 当落選結果（0: 落選, 1: 当選, NULL/空欄: 未定）
      * @type {string}
      * @memberof InlineResponse2006Data
      */
@@ -1489,7 +1545,7 @@ export interface InlineResponse2006Data {
      */
     STARTTIME: string;
     /**
-     * ステータス（1: 受付中, 2: 受付終了, 3: ラベル印刷前, 4: メール配信済み）
+     * ステータス（0: 削除, 1: 受付中, 2: 受付終了）
      * @type {string}
      * @memberof InlineResponse2006Data
      */
@@ -1502,17 +1558,17 @@ export interface InlineResponse2006Data {
     */
 export enum InlineResponse2006DataISWINEnum {
     _1 = '1',
-    _2 = '2'
+    _2 = '2',
+    Empty = ''
 }
 /**
     * @export
     * @enum {string}
     */
 export enum InlineResponse2006DataSTATUSEnum {
+    _0 = '0',
     _1 = '1',
-    _2 = '2',
-    _3 = '3',
-    _4 = '4'
+    _2 = '2'
 }
 
 /**
@@ -1881,11 +1937,23 @@ export interface MeasurementList {
      */
     STARTTIME15: string;
     /**
-     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * 測定会ステータス（1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし）
      * @type {string}
      * @memberof MeasurementList
      */
     STATUS: MeasurementListSTATUSEnum;
+    /**
+     * メール配信ステータス（1=メール配信済み 0=メール配信前）
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    IS_SENDMAIL: MeasurementListISSENDMAILEnum;
+    /**
+     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    IS_LABEL_PRINT: MeasurementListISLABELPRINTEnum;
 }
 
 /**
@@ -1897,6 +1965,22 @@ export enum MeasurementListSTATUSEnum {
     _1 = '1',
     _2 = '2',
     _3 = '3'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementListISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementListISLABELPRINTEnum {
+    _0 = '0',
+    _1 = '1'
 }
 
 /**
@@ -1961,7 +2045,7 @@ export interface MeasurementMeetRequest {
      */
     THIRD_HOPE_TIME: string;
     /**
-     * 当落選結果（1: 当選, 2: 落選）
+     * 当落選結果（0: 落選, 1: 当選, NULL/空欄: 未定）
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
@@ -1973,7 +2057,7 @@ export interface MeasurementMeetRequest {
      */
     STARTTIME: string;
     /**
-     * ステータス（1: 受付中, 2: 受付終了, 3: ラベル印刷前, 4: メール配信済み）
+     * ステータス（0: 削除, 1: 受付中, 2: 受付終了）
      * @type {string}
      * @memberof MeasurementMeetRequest
      */
@@ -1986,17 +2070,17 @@ export interface MeasurementMeetRequest {
     */
 export enum MeasurementMeetRequestISWINEnum {
     _1 = '1',
-    _2 = '2'
+    _2 = '2',
+    Empty = ''
 }
 /**
     * @export
     * @enum {string}
     */
 export enum MeasurementMeetRequestSTATUSEnum {
+    _0 = '0',
     _1 = '1',
-    _2 = '2',
-    _3 = '3',
-    _4 = '4'
+    _2 = '2'
 }
 
 /**
@@ -2114,11 +2198,23 @@ export interface MeasurementSingle {
      */
     STARTTIME15: string;
     /**
-     * 測定会ステータス 1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし。
+     * 測定会ステータス（1=受付中 2=受付終了 0=だと両方 3=だと受付中＋ラベル印刷前+開始日が未来←残念ながら該当測定なし）
      * @type {string}
      * @memberof MeasurementSingle
      */
     STATUS: MeasurementSingleSTATUSEnum;
+    /**
+     * メール配信ステータス（1=メール配信済み 0=メール配信前）
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    IS_SENDMAIL: MeasurementSingleISSENDMAILEnum;
+    /**
+     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    IS_LABEL_PRINT: MeasurementSingleISLABELPRINTEnum;
 }
 
 /**
@@ -2130,6 +2226,22 @@ export enum MeasurementSingleSTATUSEnum {
     _1 = '1',
     _2 = '2',
     _3 = '3'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementSingleISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementSingleISLABELPRINTEnum {
+    _0 = '0',
+    _1 = '1'
 }
 
 /**

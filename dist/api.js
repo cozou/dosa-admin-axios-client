@@ -163,6 +163,24 @@ var InlineResponse2004DataSTATUSEnum;
     * @export
     * @enum {string}
     */
+var InlineResponse2004DataISSENDMAILEnum;
+(function (InlineResponse2004DataISSENDMAILEnum) {
+    InlineResponse2004DataISSENDMAILEnum["_0"] = "0";
+    InlineResponse2004DataISSENDMAILEnum["_1"] = "1";
+})(InlineResponse2004DataISSENDMAILEnum = exports.InlineResponse2004DataISSENDMAILEnum || (exports.InlineResponse2004DataISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2004DataISLABELPRINTEnum;
+(function (InlineResponse2004DataISLABELPRINTEnum) {
+    InlineResponse2004DataISLABELPRINTEnum["_0"] = "0";
+    InlineResponse2004DataISLABELPRINTEnum["_1"] = "1";
+})(InlineResponse2004DataISLABELPRINTEnum = exports.InlineResponse2004DataISLABELPRINTEnum || (exports.InlineResponse2004DataISLABELPRINTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
 var InlineResponse2005StatusEnum;
 (function (InlineResponse2005StatusEnum) {
     InlineResponse2005StatusEnum["_200"] = "200";
@@ -183,6 +201,24 @@ var InlineResponse2005DataSTATUSEnum;
     * @export
     * @enum {string}
     */
+var InlineResponse2005DataISSENDMAILEnum;
+(function (InlineResponse2005DataISSENDMAILEnum) {
+    InlineResponse2005DataISSENDMAILEnum["_0"] = "0";
+    InlineResponse2005DataISSENDMAILEnum["_1"] = "1";
+})(InlineResponse2005DataISSENDMAILEnum = exports.InlineResponse2005DataISSENDMAILEnum || (exports.InlineResponse2005DataISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2005DataISLABELPRINTEnum;
+(function (InlineResponse2005DataISLABELPRINTEnum) {
+    InlineResponse2005DataISLABELPRINTEnum["_0"] = "0";
+    InlineResponse2005DataISLABELPRINTEnum["_1"] = "1";
+})(InlineResponse2005DataISLABELPRINTEnum = exports.InlineResponse2005DataISLABELPRINTEnum || (exports.InlineResponse2005DataISLABELPRINTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
 var InlineResponse2006StatusEnum;
 (function (InlineResponse2006StatusEnum) {
     InlineResponse2006StatusEnum["_200"] = "200";
@@ -196,6 +232,7 @@ var InlineResponse2006DataISWINEnum;
 (function (InlineResponse2006DataISWINEnum) {
     InlineResponse2006DataISWINEnum["_1"] = "1";
     InlineResponse2006DataISWINEnum["_2"] = "2";
+    InlineResponse2006DataISWINEnum["Empty"] = "";
 })(InlineResponse2006DataISWINEnum = exports.InlineResponse2006DataISWINEnum || (exports.InlineResponse2006DataISWINEnum = {}));
 /**
     * @export
@@ -203,10 +240,9 @@ var InlineResponse2006DataISWINEnum;
     */
 var InlineResponse2006DataSTATUSEnum;
 (function (InlineResponse2006DataSTATUSEnum) {
+    InlineResponse2006DataSTATUSEnum["_0"] = "0";
     InlineResponse2006DataSTATUSEnum["_1"] = "1";
     InlineResponse2006DataSTATUSEnum["_2"] = "2";
-    InlineResponse2006DataSTATUSEnum["_3"] = "3";
-    InlineResponse2006DataSTATUSEnum["_4"] = "4";
 })(InlineResponse2006DataSTATUSEnum = exports.InlineResponse2006DataSTATUSEnum || (exports.InlineResponse2006DataSTATUSEnum = {}));
 /**
     * @export
@@ -250,10 +286,29 @@ var MeasurementListSTATUSEnum;
     * @export
     * @enum {string}
     */
+var MeasurementListISSENDMAILEnum;
+(function (MeasurementListISSENDMAILEnum) {
+    MeasurementListISSENDMAILEnum["_0"] = "0";
+    MeasurementListISSENDMAILEnum["_1"] = "1";
+})(MeasurementListISSENDMAILEnum = exports.MeasurementListISSENDMAILEnum || (exports.MeasurementListISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementListISLABELPRINTEnum;
+(function (MeasurementListISLABELPRINTEnum) {
+    MeasurementListISLABELPRINTEnum["_0"] = "0";
+    MeasurementListISLABELPRINTEnum["_1"] = "1";
+})(MeasurementListISLABELPRINTEnum = exports.MeasurementListISLABELPRINTEnum || (exports.MeasurementListISLABELPRINTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
 var MeasurementMeetRequestISWINEnum;
 (function (MeasurementMeetRequestISWINEnum) {
     MeasurementMeetRequestISWINEnum["_1"] = "1";
     MeasurementMeetRequestISWINEnum["_2"] = "2";
+    MeasurementMeetRequestISWINEnum["Empty"] = "";
 })(MeasurementMeetRequestISWINEnum = exports.MeasurementMeetRequestISWINEnum || (exports.MeasurementMeetRequestISWINEnum = {}));
 /**
     * @export
@@ -261,10 +316,9 @@ var MeasurementMeetRequestISWINEnum;
     */
 var MeasurementMeetRequestSTATUSEnum;
 (function (MeasurementMeetRequestSTATUSEnum) {
+    MeasurementMeetRequestSTATUSEnum["_0"] = "0";
     MeasurementMeetRequestSTATUSEnum["_1"] = "1";
     MeasurementMeetRequestSTATUSEnum["_2"] = "2";
-    MeasurementMeetRequestSTATUSEnum["_3"] = "3";
-    MeasurementMeetRequestSTATUSEnum["_4"] = "4";
 })(MeasurementMeetRequestSTATUSEnum = exports.MeasurementMeetRequestSTATUSEnum || (exports.MeasurementMeetRequestSTATUSEnum = {}));
 /**
     * @export
@@ -277,6 +331,24 @@ var MeasurementSingleSTATUSEnum;
     MeasurementSingleSTATUSEnum["_2"] = "2";
     MeasurementSingleSTATUSEnum["_3"] = "3";
 })(MeasurementSingleSTATUSEnum = exports.MeasurementSingleSTATUSEnum || (exports.MeasurementSingleSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementSingleISSENDMAILEnum;
+(function (MeasurementSingleISSENDMAILEnum) {
+    MeasurementSingleISSENDMAILEnum["_0"] = "0";
+    MeasurementSingleISSENDMAILEnum["_1"] = "1";
+})(MeasurementSingleISSENDMAILEnum = exports.MeasurementSingleISSENDMAILEnum || (exports.MeasurementSingleISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementSingleISLABELPRINTEnum;
+(function (MeasurementSingleISLABELPRINTEnum) {
+    MeasurementSingleISLABELPRINTEnum["_0"] = "0";
+    MeasurementSingleISLABELPRINTEnum["_1"] = "1";
+})(MeasurementSingleISLABELPRINTEnum = exports.MeasurementSingleISLABELPRINTEnum || (exports.MeasurementSingleISLABELPRINTEnum = {}));
 /**
     * @export
     * @enum {string}
