@@ -125,11 +125,65 @@ var InlineResponse2002StatusEnum;
     * @export
     * @enum {string}
     */
+var InlineResponse2002DataISWINEnum;
+(function (InlineResponse2002DataISWINEnum) {
+    InlineResponse2002DataISWINEnum["_1"] = "1";
+    InlineResponse2002DataISWINEnum["_2"] = "2";
+})(InlineResponse2002DataISWINEnum = exports.InlineResponse2002DataISWINEnum || (exports.InlineResponse2002DataISWINEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2002DataSTATUSEnum;
+(function (InlineResponse2002DataSTATUSEnum) {
+    InlineResponse2002DataSTATUSEnum["_1"] = "1";
+    InlineResponse2002DataSTATUSEnum["_2"] = "2";
+})(InlineResponse2002DataSTATUSEnum = exports.InlineResponse2002DataSTATUSEnum || (exports.InlineResponse2002DataSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2002DataISLABELOUTPUTEnum;
+(function (InlineResponse2002DataISLABELOUTPUTEnum) {
+    InlineResponse2002DataISLABELOUTPUTEnum["_1"] = "1";
+    InlineResponse2002DataISLABELOUTPUTEnum["_2"] = "2";
+})(InlineResponse2002DataISLABELOUTPUTEnum = exports.InlineResponse2002DataISLABELOUTPUTEnum || (exports.InlineResponse2002DataISLABELOUTPUTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2002DataISSENDMAILEnum;
+(function (InlineResponse2002DataISSENDMAILEnum) {
+    InlineResponse2002DataISSENDMAILEnum["_0"] = "0";
+    InlineResponse2002DataISSENDMAILEnum["_1"] = "1";
+})(InlineResponse2002DataISSENDMAILEnum = exports.InlineResponse2002DataISSENDMAILEnum || (exports.InlineResponse2002DataISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2002DataISMEASUREMENTEnum;
+(function (InlineResponse2002DataISMEASUREMENTEnum) {
+    InlineResponse2002DataISMEASUREMENTEnum["_0"] = "0";
+    InlineResponse2002DataISMEASUREMENTEnum["_1"] = "1";
+})(InlineResponse2002DataISMEASUREMENTEnum = exports.InlineResponse2002DataISMEASUREMENTEnum || (exports.InlineResponse2002DataISMEASUREMENTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
 var InlineResponse2003StatusEnum;
 (function (InlineResponse2003StatusEnum) {
     InlineResponse2003StatusEnum["_200"] = "200";
     InlineResponse2003StatusEnum["_404"] = "404";
 })(InlineResponse2003StatusEnum = exports.InlineResponse2003StatusEnum || (exports.InlineResponse2003StatusEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var InlineResponse2003DataISPRINTREPORTEnum;
+(function (InlineResponse2003DataISPRINTREPORTEnum) {
+    InlineResponse2003DataISPRINTREPORTEnum["_0"] = "0";
+    InlineResponse2003DataISPRINTREPORTEnum["_1"] = "1";
+})(InlineResponse2003DataISPRINTREPORTEnum = exports.InlineResponse2003DataISPRINTREPORTEnum || (exports.InlineResponse2003DataISPRINTREPORTEnum = {}));
 /**
     * @export
     * @enum {string}
@@ -172,11 +226,11 @@ var InlineResponse2004DataISSENDMAILEnum;
     * @export
     * @enum {string}
     */
-var InlineResponse2004DataISLABELPRINTEnum;
-(function (InlineResponse2004DataISLABELPRINTEnum) {
-    InlineResponse2004DataISLABELPRINTEnum["_0"] = "0";
-    InlineResponse2004DataISLABELPRINTEnum["_1"] = "1";
-})(InlineResponse2004DataISLABELPRINTEnum = exports.InlineResponse2004DataISLABELPRINTEnum || (exports.InlineResponse2004DataISLABELPRINTEnum = {}));
+var InlineResponse2004DataISLABELOUTPUTEnum;
+(function (InlineResponse2004DataISLABELOUTPUTEnum) {
+    InlineResponse2004DataISLABELOUTPUTEnum["_0"] = "0";
+    InlineResponse2004DataISLABELOUTPUTEnum["_1"] = "1";
+})(InlineResponse2004DataISLABELOUTPUTEnum = exports.InlineResponse2004DataISLABELOUTPUTEnum || (exports.InlineResponse2004DataISLABELOUTPUTEnum = {}));
 /**
     * @export
     * @enum {string}
@@ -210,11 +264,11 @@ var InlineResponse2005DataISSENDMAILEnum;
     * @export
     * @enum {string}
     */
-var InlineResponse2005DataISLABELPRINTEnum;
-(function (InlineResponse2005DataISLABELPRINTEnum) {
-    InlineResponse2005DataISLABELPRINTEnum["_0"] = "0";
-    InlineResponse2005DataISLABELPRINTEnum["_1"] = "1";
-})(InlineResponse2005DataISLABELPRINTEnum = exports.InlineResponse2005DataISLABELPRINTEnum || (exports.InlineResponse2005DataISLABELPRINTEnum = {}));
+var InlineResponse2005DataISLABELOUTPUTEnum;
+(function (InlineResponse2005DataISLABELOUTPUTEnum) {
+    InlineResponse2005DataISLABELOUTPUTEnum["_0"] = "0";
+    InlineResponse2005DataISLABELOUTPUTEnum["_1"] = "1";
+})(InlineResponse2005DataISLABELOUTPUTEnum = exports.InlineResponse2005DataISLABELOUTPUTEnum || (exports.InlineResponse2005DataISLABELOUTPUTEnum = {}));
 /**
     * @export
     * @enum {string}
@@ -275,6 +329,51 @@ var InlineResponse2008DataSEXEnum;
     * @export
     * @enum {string}
     */
+var MeasurementISWINEnum;
+(function (MeasurementISWINEnum) {
+    MeasurementISWINEnum["_1"] = "1";
+    MeasurementISWINEnum["_2"] = "2";
+})(MeasurementISWINEnum = exports.MeasurementISWINEnum || (exports.MeasurementISWINEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementSTATUSEnum;
+(function (MeasurementSTATUSEnum) {
+    MeasurementSTATUSEnum["_1"] = "1";
+    MeasurementSTATUSEnum["_2"] = "2";
+})(MeasurementSTATUSEnum = exports.MeasurementSTATUSEnum || (exports.MeasurementSTATUSEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementISLABELOUTPUTEnum;
+(function (MeasurementISLABELOUTPUTEnum) {
+    MeasurementISLABELOUTPUTEnum["_1"] = "1";
+    MeasurementISLABELOUTPUTEnum["_2"] = "2";
+})(MeasurementISLABELOUTPUTEnum = exports.MeasurementISLABELOUTPUTEnum || (exports.MeasurementISLABELOUTPUTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementISSENDMAILEnum;
+(function (MeasurementISSENDMAILEnum) {
+    MeasurementISSENDMAILEnum["_0"] = "0";
+    MeasurementISSENDMAILEnum["_1"] = "1";
+})(MeasurementISSENDMAILEnum = exports.MeasurementISSENDMAILEnum || (exports.MeasurementISSENDMAILEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var MeasurementISMEASUREMENTEnum;
+(function (MeasurementISMEASUREMENTEnum) {
+    MeasurementISMEASUREMENTEnum["_0"] = "0";
+    MeasurementISMEASUREMENTEnum["_1"] = "1";
+})(MeasurementISMEASUREMENTEnum = exports.MeasurementISMEASUREMENTEnum || (exports.MeasurementISMEASUREMENTEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
 var MeasurementListSTATUSEnum;
 (function (MeasurementListSTATUSEnum) {
     MeasurementListSTATUSEnum["_0"] = "0";
@@ -295,11 +394,11 @@ var MeasurementListISSENDMAILEnum;
     * @export
     * @enum {string}
     */
-var MeasurementListISLABELPRINTEnum;
-(function (MeasurementListISLABELPRINTEnum) {
-    MeasurementListISLABELPRINTEnum["_0"] = "0";
-    MeasurementListISLABELPRINTEnum["_1"] = "1";
-})(MeasurementListISLABELPRINTEnum = exports.MeasurementListISLABELPRINTEnum || (exports.MeasurementListISLABELPRINTEnum = {}));
+var MeasurementListISLABELOUTPUTEnum;
+(function (MeasurementListISLABELOUTPUTEnum) {
+    MeasurementListISLABELOUTPUTEnum["_0"] = "0";
+    MeasurementListISLABELOUTPUTEnum["_1"] = "1";
+})(MeasurementListISLABELOUTPUTEnum = exports.MeasurementListISLABELOUTPUTEnum || (exports.MeasurementListISLABELOUTPUTEnum = {}));
 /**
     * @export
     * @enum {string}
@@ -344,11 +443,11 @@ var MeasurementSingleISSENDMAILEnum;
     * @export
     * @enum {string}
     */
-var MeasurementSingleISLABELPRINTEnum;
-(function (MeasurementSingleISLABELPRINTEnum) {
-    MeasurementSingleISLABELPRINTEnum["_0"] = "0";
-    MeasurementSingleISLABELPRINTEnum["_1"] = "1";
-})(MeasurementSingleISLABELPRINTEnum = exports.MeasurementSingleISLABELPRINTEnum || (exports.MeasurementSingleISLABELPRINTEnum = {}));
+var MeasurementSingleISLABELOUTPUTEnum;
+(function (MeasurementSingleISLABELOUTPUTEnum) {
+    MeasurementSingleISLABELOUTPUTEnum["_0"] = "0";
+    MeasurementSingleISLABELOUTPUTEnum["_1"] = "1";
+})(MeasurementSingleISLABELOUTPUTEnum = exports.MeasurementSingleISLABELOUTPUTEnum || (exports.MeasurementSingleISLABELOUTPUTEnum = {}));
 /**
     * @export
     * @enum {string}
@@ -358,6 +457,15 @@ var ParticipantSEXEnum;
     ParticipantSEXEnum["\u7537\u6027"] = "\u7537\u6027";
     ParticipantSEXEnum["\u5973\u6027"] = "\u5973\u6027";
 })(ParticipantSEXEnum = exports.ParticipantSEXEnum || (exports.ParticipantSEXEnum = {}));
+/**
+    * @export
+    * @enum {string}
+    */
+var ReportISPRINTREPORTEnum;
+(function (ReportISPRINTREPORTEnum) {
+    ReportISPRINTREPORTEnum["_0"] = "0";
+    ReportISPRINTREPORTEnum["_1"] = "1";
+})(ReportISPRINTREPORTEnum = exports.ReportISPRINTREPORTEnum || (exports.ReportISPRINTREPORTEnum = {}));
 /**
     * @export
     * @enum {string}

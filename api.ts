@@ -479,7 +479,7 @@ export interface InlineResponse2001Data {
      */
     NAME_KANA: string;
     /**
-     * 性別（1:男性, 2:女性）
+     * 性別
      * @type {string}
      * @memberof InlineResponse2001Data
      */
@@ -584,7 +584,79 @@ export interface InlineResponse2002Data {
      * @memberof InlineResponse2002Data
      */
     STARTTIME: string;
+    /**
+     * 当落状況（1:当選, 2:落選）
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    IS_WIN: InlineResponse2002DataISWINEnum;
+    /**
+     * ステータス（1:受付中, 2:受付終了）
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    STATUS: InlineResponse2002DataSTATUSEnum;
+    /**
+     * ラベル出力（0:未ラベル出力, 1:ラベル出力済み）
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    IS_LABEL_OUTPUT: InlineResponse2002DataISLABELOUTPUTEnum;
+    /**
+     * メール配信ステータス（0:未配信, 1:配信済み）
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    IS_SENDMAIL: InlineResponse2002DataISSENDMAILEnum;
+    /**
+     * 参加状況（0:不参加, 1:参加）
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    IS_MEASUREMENT: InlineResponse2002DataISMEASUREMENTEnum;
 }
+
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2002DataISWINEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2002DataSTATUSEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2002DataISLABELOUTPUTEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2002DataISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum InlineResponse2002DataISMEASUREMENTEnum {
+    _0 = '0',
+    _1 = '1'
+}
+
 /**
  * 
  * @export
@@ -644,6 +716,12 @@ export interface InlineResponse2003Data {
      * @memberof InlineResponse2003Data
      */
     MEASUREMENT_ID: string;
+    /**
+     * 0:測定未終了, 1:測定全項目終了して印刷済み
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    IS_PRINT_REPORT: InlineResponse2003DataISPRINTREPORTEnum;
     /**
      * 性別
      * @type {string}
@@ -1052,6 +1130,14 @@ export interface InlineResponse2003Data {
     * @export
     * @enum {string}
     */
+export enum InlineResponse2003DataISPRINTREPORTEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
 export enum InlineResponse2003DataSEXEnum {
     男性 = '男性',
     女性 = '女性'
@@ -1219,11 +1305,11 @@ export interface InlineResponse2004Data {
      */
     IS_SENDMAIL: InlineResponse2004DataISSENDMAILEnum;
     /**
-     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * ラベル印刷ステータス（0=未ラベル出力 1=ラベル出力済み）
      * @type {string}
      * @memberof InlineResponse2004Data
      */
-    IS_LABEL_PRINT: InlineResponse2004DataISLABELPRINTEnum;
+    IS_LABEL_OUTPUT: InlineResponse2004DataISLABELOUTPUTEnum;
 }
 
 /**
@@ -1248,7 +1334,7 @@ export enum InlineResponse2004DataISSENDMAILEnum {
     * @export
     * @enum {string}
     */
-export enum InlineResponse2004DataISLABELPRINTEnum {
+export enum InlineResponse2004DataISLABELOUTPUTEnum {
     _0 = '0',
     _1 = '1'
 }
@@ -1289,7 +1375,7 @@ export enum InlineResponse2005StatusEnum {
 }
 
 /**
- * 測定会単発情報取得
+ * 
  * @export
  * @interface InlineResponse2005Data
  */
@@ -1415,11 +1501,17 @@ export interface InlineResponse2005Data {
      */
     IS_SENDMAIL: InlineResponse2005DataISSENDMAILEnum;
     /**
+     * 当落通知メール予定日
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    SENDMAIL_INFODATE: string;
+    /**
      * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
      * @type {string}
      * @memberof InlineResponse2005Data
      */
-    IS_LABEL_PRINT: InlineResponse2005DataISLABELPRINTEnum;
+    IS_LABEL_OUTPUT: InlineResponse2005DataISLABELOUTPUTEnum;
 }
 
 /**
@@ -1444,7 +1536,7 @@ export enum InlineResponse2005DataISSENDMAILEnum {
     * @export
     * @enum {string}
     */
-export enum InlineResponse2005DataISLABELPRINTEnum {
+export enum InlineResponse2005DataISLABELOUTPUTEnum {
     _0 = '0',
     _1 = '1'
 }
@@ -1768,6 +1860,18 @@ export interface InlineResponse2008Data {
      * @memberof InlineResponse2008Data
      */
     ENDURANCE_SHORT: string;
+    /**
+     * 測定時の年齢
+     * @type {number}
+     * @memberof InlineResponse2008Data
+     */
+    AGE?: number;
+    /**
+     * 測定時の学年
+     * @type {string}
+     * @memberof InlineResponse2008Data
+     */
+    GAKUNEN?: string;
 }
 
 /**
@@ -1821,7 +1925,79 @@ export interface Measurement {
      * @memberof Measurement
      */
     STARTTIME: string;
+    /**
+     * 当落状況（1:当選, 2:落選）
+     * @type {string}
+     * @memberof Measurement
+     */
+    IS_WIN: MeasurementISWINEnum;
+    /**
+     * ステータス（1:受付中, 2:受付終了）
+     * @type {string}
+     * @memberof Measurement
+     */
+    STATUS: MeasurementSTATUSEnum;
+    /**
+     * ラベル出力（0:未ラベル出力, 1:ラベル出力済み）
+     * @type {string}
+     * @memberof Measurement
+     */
+    IS_LABEL_OUTPUT: MeasurementISLABELOUTPUTEnum;
+    /**
+     * メール配信ステータス（0:未配信, 1:配信済み）
+     * @type {string}
+     * @memberof Measurement
+     */
+    IS_SENDMAIL: MeasurementISSENDMAILEnum;
+    /**
+     * 参加状況（0:不参加, 1:参加）
+     * @type {string}
+     * @memberof Measurement
+     */
+    IS_MEASUREMENT: MeasurementISMEASUREMENTEnum;
 }
+
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementISWINEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementSTATUSEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementISLABELOUTPUTEnum {
+    _1 = '1',
+    _2 = '2'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementISSENDMAILEnum {
+    _0 = '0',
+    _1 = '1'
+}
+/**
+    * @export
+    * @enum {string}
+    */
+export enum MeasurementISMEASUREMENTEnum {
+    _0 = '0',
+    _1 = '1'
+}
+
 /**
  * 申込受付中測定会
  * @export
@@ -1949,11 +2125,11 @@ export interface MeasurementList {
      */
     IS_SENDMAIL: MeasurementListISSENDMAILEnum;
     /**
-     * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
+     * ラベル印刷ステータス（0=未ラベル出力 1=ラベル出力済み）
      * @type {string}
      * @memberof MeasurementList
      */
-    IS_LABEL_PRINT: MeasurementListISLABELPRINTEnum;
+    IS_LABEL_OUTPUT: MeasurementListISLABELOUTPUTEnum;
 }
 
 /**
@@ -1978,7 +2154,7 @@ export enum MeasurementListISSENDMAILEnum {
     * @export
     * @enum {string}
     */
-export enum MeasurementListISLABELPRINTEnum {
+export enum MeasurementListISLABELOUTPUTEnum {
     _0 = '0',
     _1 = '1'
 }
@@ -2084,7 +2260,7 @@ export enum MeasurementMeetRequestSTATUSEnum {
 }
 
 /**
- * 測定会単発情報取得
+ * 
  * @export
  * @interface MeasurementSingle
  */
@@ -2210,11 +2386,17 @@ export interface MeasurementSingle {
      */
     IS_SENDMAIL: MeasurementSingleISSENDMAILEnum;
     /**
+     * 当落通知メール予定日
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    SENDMAIL_INFODATE: string;
+    /**
      * ラベル印刷ステータス（1=ラベル印刷済み 0=ラベル印刷前）
      * @type {string}
      * @memberof MeasurementSingle
      */
-    IS_LABEL_PRINT: MeasurementSingleISLABELPRINTEnum;
+    IS_LABEL_OUTPUT: MeasurementSingleISLABELOUTPUTEnum;
 }
 
 /**
@@ -2239,7 +2421,7 @@ export enum MeasurementSingleISSENDMAILEnum {
     * @export
     * @enum {string}
     */
-export enum MeasurementSingleISLABELPRINTEnum {
+export enum MeasurementSingleISLABELOUTPUTEnum {
     _0 = '0',
     _1 = '1'
 }
@@ -2269,7 +2451,7 @@ export interface Participant {
      */
     NAME_KANA: string;
     /**
-     * 性別（1:男性, 2:女性）
+     * 性別
      * @type {string}
      * @memberof Participant
      */
@@ -2321,6 +2503,12 @@ export interface Report {
      * @memberof Report
      */
     MEASUREMENT_ID: string;
+    /**
+     * 0:測定未終了, 1:測定全項目終了して印刷済み
+     * @type {string}
+     * @memberof Report
+     */
+    IS_PRINT_REPORT: ReportISPRINTREPORTEnum;
     /**
      * 性別
      * @type {string}
@@ -2725,6 +2913,14 @@ export interface Report {
     ADVICE_TEXT: string;
 }
 
+/**
+    * @export
+    * @enum {string}
+    */
+export enum ReportISPRINTREPORTEnum {
+    _0 = '0',
+    _1 = '1'
+}
 /**
     * @export
     * @enum {string}
