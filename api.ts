@@ -1710,6 +1710,12 @@ export interface InlineResponse2007Data {
      * @memberof InlineResponse2007Data
      */
     PARTICIPANT_ID: string;
+    /**
+     * 当落メール送信日
+     * @type {string}
+     * @memberof InlineResponse2007Data
+     */
+    SENDMAIL_INFODATE: string;
 }
 /**
  * 
@@ -2171,6 +2177,12 @@ export interface MeasurementMeet {
      * @memberof MeasurementMeet
      */
     PARTICIPANT_ID: string;
+    /**
+     * 当落メール送信日
+     * @type {string}
+     * @memberof MeasurementMeet
+     */
+    SENDMAIL_INFODATE: string;
 }
 /**
  * 申込受付中測定会
