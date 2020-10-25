@@ -674,6 +674,12 @@ export declare enum InlineResponse2003StatusEnum {
  */
 export interface InlineResponse2003Data {
     /**
+     * 測定会名
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    MEET_NAME: string;
+    /**
      * 測定会ID
      * @type {string}
      * @memberof InlineResponse2003Data
@@ -1099,6 +1105,12 @@ export interface InlineResponse2003Data {
      * @memberof InlineResponse2003Data
      */
     ADVICE_TEXT: string;
+    /**
+     * バージョン
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    VERSION: string;
 }
 /**
     * @export
@@ -2443,6 +2455,12 @@ export declare enum ParticipantSEXEnum {
  */
 export interface Report {
     /**
+     * 測定会名
+     * @type {string}
+     * @memberof Report
+     */
+    MEET_NAME: string;
+    /**
      * 測定会ID
      * @type {string}
      * @memberof Report
@@ -2868,6 +2886,12 @@ export interface Report {
      * @memberof Report
      */
     ADVICE_TEXT: string;
+    /**
+     * バージョン
+     * @type {string}
+     * @memberof Report
+     */
+    VERSION: string;
 }
 /**
     * @export
