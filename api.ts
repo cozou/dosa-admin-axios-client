@@ -711,6 +711,12 @@ export interface InlineResponse2003Data {
      */
     MEET_ID: string;
     /**
+     * 測定日
+     * @type {string}
+     * @memberof InlineResponse2003Data
+     */
+    STARTDATE: string;
+    /**
      * 測定者名
      * @type {string}
      * @memberof InlineResponse2003Data
@@ -2521,6 +2527,12 @@ export interface Report {
      * @memberof Report
      */
     MEET_ID: string;
+    /**
+     * 測定日
+     * @type {string}
+     * @memberof Report
+     */
+    STARTDATE: string;
     /**
      * 測定者名
      * @type {string}
