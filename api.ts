@@ -614,6 +614,12 @@ export interface InlineResponse2002Data {
      * @memberof InlineResponse2002Data
      */
     IS_MEASUREMENT: InlineResponse2002DataISMEASUREMENTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof InlineResponse2002Data
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
@@ -1328,6 +1334,12 @@ export interface InlineResponse2004Data {
      * @memberof InlineResponse2004Data
      */
     IS_LABEL_OUTPUT: InlineResponse2004DataISLABELOUTPUTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof InlineResponse2004Data
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
@@ -1530,6 +1542,12 @@ export interface InlineResponse2005Data {
      * @memberof InlineResponse2005Data
      */
     IS_LABEL_OUTPUT: InlineResponse2005DataISLABELOUTPUTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof InlineResponse2005Data
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
@@ -1979,6 +1997,12 @@ export interface Measurement {
      * @memberof Measurement
      */
     IS_MEASUREMENT: MeasurementISMEASUREMENTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof Measurement
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
@@ -2154,6 +2178,12 @@ export interface MeasurementList {
      * @memberof MeasurementList
      */
     IS_LABEL_OUTPUT: MeasurementListISLABELOUTPUTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof MeasurementList
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
@@ -2427,6 +2457,12 @@ export interface MeasurementSingle {
      * @memberof MeasurementSingle
      */
     IS_LABEL_OUTPUT: MeasurementSingleISLABELOUTPUTEnum;
+    /**
+     * 測定会詳細PDF
+     * @type {string}
+     * @memberof MeasurementSingle
+     */
+    MEET_PDF_URL: string;
 }
 
 /**
