@@ -1,45 +1,28 @@
-## dosa-admin-client@1.0.7
+# dosa-admin-client
 
-This generator creates TypeScript/JavaScript client that utilizes [axios](https://github.com/axios/axios). The generated Node module can be used in the following environments:
+## How to use
 
-Environment
-* Node.js
-* Webpack
-* Browserify
+Document: [DosaAdminApi](https://cozou.github.io/dosa-admin-client/docs/DosaAdminApi.html)
 
-Language level
-* ES5 - you must have a Promises/A+ library installed
-* ES6
+Example:
 
-Module system
-* CommonJS
-* ES6 module system
+```javascript
+import { DosaAdminApi, Configuration } from 'dosa-admin-client';
 
-It can be used in both TypeScript and JavaScript. In TypeScript, the definition should be automatically resolved via `package.json`. ([Reference](http://www.typescriptlang.org/docs/handbook/typings-for-npm-packages.html))
+(async () => {
+  const basePath = 'http://localhost:8000';
+  const config = new Configuration({ basePath });
+  const client = new DosaAdminApi(config);
 
-### Building
+  const response = await client.getParticipants('user1@example.com');
+  if (!response.data || !response.data.data) return;
 
-To build and compile the typescript sources to javascript use:
-```
-npm install
-npm run build
+  console.table(response.data.data);
+})();
 ```
 
-### Publishing
+## Build
 
-First build the package then run ```npm publish```
+**直接コード修正を行わない**
 
-### Consuming
-
-navigate to the folder of your consuming project and run one of the following commands.
-
-_published:_
-
-```
-npm install dosa-admin-client@1.0.7 --save
-```
-
-_unPublished (not recommended):_
-
-```
-npm install PATH_TO_GENERATED_PACKAGE --save
+クライアントは [dosa-admin-openapi-schema](https://github.com/cozou/dosa-admin-openapi-schema) より `openapi-generator-cli` で自動生成する
