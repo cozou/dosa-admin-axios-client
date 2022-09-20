@@ -1,5 +1,6 @@
 "use strict";
-// tslint:disable
+/* tslint:disable */
+/* eslint-disable */
 /**
  * DOSA管理API
  * DOSA管理API
@@ -11,10 +12,26 @@
  * https://openapi-generator.tech
  * Do not edit the class manually.
  */
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.RequiredError = exports.BaseAPI = exports.COLLECTION_FORMATS = exports.BASE_PATH = void 0;
 // Some imports not used depending on template conditions
 // @ts-ignore
-const axios_1 = require("axios");
+var axios_1 = require("axios");
 exports.BASE_PATH = "http://www.dosa.or.jp".replace(/\/+$/, "");
 /**
  *
@@ -31,8 +48,10 @@ exports.COLLECTION_FORMATS = {
  * @export
  * @class BaseAPI
  */
-class BaseAPI {
-    constructor(configuration, basePath = exports.BASE_PATH, axios = axios_1.default) {
+var BaseAPI = /** @class */ (function () {
+    function BaseAPI(configuration, basePath, axios) {
+        if (basePath === void 0) { basePath = exports.BASE_PATH; }
+        if (axios === void 0) { axios = axios_1.default; }
         this.basePath = basePath;
         this.axios = axios;
         if (configuration) {
@@ -40,7 +59,8 @@ class BaseAPI {
             this.basePath = configuration.basePath || this.basePath;
         }
     }
-}
+    return BaseAPI;
+}());
 exports.BaseAPI = BaseAPI;
 ;
 /**
@@ -49,11 +69,14 @@ exports.BaseAPI = BaseAPI;
  * @class RequiredError
  * @extends {Error}
  */
-class RequiredError extends Error {
-    constructor(field, msg) {
-        super(msg);
-        this.field = field;
-        this.name = "RequiredError";
+var RequiredError = /** @class */ (function (_super) {
+    __extends(RequiredError, _super);
+    function RequiredError(field, msg) {
+        var _this = _super.call(this, msg) || this;
+        _this.field = field;
+        _this.name = "RequiredError";
+        return _this;
     }
-}
+    return RequiredError;
+}(Error));
 exports.RequiredError = RequiredError;
