@@ -23,7 +23,7 @@
     "jsdoc": "jsdoc -r -d docs -R README.md dist"
   },
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "^1.6.0"
   },
   "devDependencies": {
     "@types/node": "^12.11.5",
